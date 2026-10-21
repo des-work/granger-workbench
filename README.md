@@ -10,7 +10,7 @@ Granger Workbench brings together three parts of an ongoing personal research an
 | **Granger** (`pc granger`) | The voice interface: wake-word standby, spoken conversation, and optional speaker matching. |
 | **Ultra-PC** (`ultra.py`) | The underlying toolkit: diagnostics, offline references, retrieval, media utilities, and a reusable design asset vault. |
 
-The repository was previously named **Ultra-PC**. The existing command and package names remain available.
+This public snapshot brings the former **Ultra-PC** toolkit together with PC Ask and Granger. Existing command and package names remain available.
 
 ## What it does
 
