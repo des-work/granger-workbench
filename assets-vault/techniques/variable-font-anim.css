@@ -1,0 +1,8 @@
+/* variable-font-anim — Animate a variable font's weight/width for living, kinetic type.  [type] */
+.vf {
+  font-variation-settings: "wght" 300;
+  animation: vf-breathe 3s ease-in-out infinite alternate;
+}
+@keyframes vf-breathe {
+  to { font-variation-settings: "wght" 800; letter-spacing: .02em; }
+}

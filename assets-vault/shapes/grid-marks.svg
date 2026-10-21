@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg>

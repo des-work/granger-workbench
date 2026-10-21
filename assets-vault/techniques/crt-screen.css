@@ -1,0 +1,12 @@
+/* crt-screen — Full CRT monitor look — scanlines + vignette + subtle flicker.  [filter] */
+.crt { position: relative; overflow: hidden; }
+.crt::before {  /* scanlines */
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
+  background: repeating-linear-gradient(rgba(0,0,0,.15) 0 1px, transparent 1px 3px);
+}
+.crt::after {   /* vignette + flicker */
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 3;
+  background: radial-gradient(circle, transparent 60%, rgba(0,0,0,.5));
+  animation: crt-flick 6s infinite steps(120);
+}
+@keyframes crt-flick { 0%,98%{opacity:1} 99%{opacity:.82} 100%{opacity:1} }

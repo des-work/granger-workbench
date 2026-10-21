@@ -1,0 +1,9 @@
+/* pixel-art-shadow — Draw pixel art with box-shadow (one shadow = one pixel), scaled up.  [depth] */
+.pixel {
+  width: 6px; height: 6px; transform: scale(6); transform-origin: top left;
+  image-rendering: pixelated; background: var(--accent);
+  box-shadow:
+    6px 0 var(--accent), 12px 6px var(--accent2), 0 6px var(--accent2),
+    18px 12px var(--text);
+  /* generate the shadow list programmatically for real sprites */
+}

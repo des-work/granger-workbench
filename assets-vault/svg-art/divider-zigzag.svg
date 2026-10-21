@@ -1,0 +1,6 @@
+<!-- divider-zigzag — Zigzag divider edge. -->
+<svg viewBox="0 0 1440 60" preserveAspectRatio="none"
+     style="display:block; width:100%; height:40px; color:#ffffff">
+  <path fill="currentColor" d="M0,60 L120,10 L240,60 L360,10 L480,60 L600,10 L720,60
+    L840,10 L960,60 L1080,10 L1200,60 L1320,10 L1440,60 Z"/>
+</svg>

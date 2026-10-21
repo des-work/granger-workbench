@@ -1,0 +1,5 @@
+/* diagonal-stripes — 45° candy stripes. */
+.bg-stripes {
+  background: repeating-linear-gradient(45deg,
+    #f5f5f5 0, #f5f5f5 10px, #ffffff 10px, #ffffff 20px);
+}

@@ -1,0 +1,6 @@
+/* dots — Polka-dot grid. Change color/size via the two values. */
+.bg-dots {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0,0,0,0.15) 1px, transparent 1px);
+  background-size: 16px 16px;
+}

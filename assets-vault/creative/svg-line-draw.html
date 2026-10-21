@@ -1,0 +1,10 @@
+<!-- svg-line-draw — Self-drawing SVG lines/logos (animate stroke) — signature intro move.  [motion]  lib: anime.min.js -->
+<!-- path.draw { fill:none; stroke:#05d9e8; stroke-width:2; } -->
+<script src="../libraries/anime.min.js"></script>
+<script>
+anime({
+  targets: 'path.draw',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine', duration: 1600, delay: (el, i) => i * 250,
+});
+</script>

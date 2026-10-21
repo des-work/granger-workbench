@@ -1,0 +1,2 @@
+/* field-sizing-auto — Auto-growing inputs/textareas with field-sizing: content — no JS resize hack.  [interaction] */
+textarea, input { field-sizing: content; min-height: 2.5rem; max-height: 12rem; }

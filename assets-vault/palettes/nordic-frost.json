@@ -1,0 +1,22 @@
+{
+  "id": "nordic-frost",
+  "style": "nordic",
+  "name": "Nordic \u2014 Frost",
+  "tags": [
+    "nordic",
+    "muted",
+    "cool",
+    "hygge",
+    "calm"
+  ],
+  "colors": [
+    "#2e3440",
+    "#3b4252",
+    "#4c566a",
+    "#88c0d0",
+    "#a3be8c",
+    "#d8dee9",
+    "#eceff4"
+  ],
+  "notes": "The Nord palette \u2014 muted slate blues with soft frost + sage. Cool, quiet, easy on the eyes for long sessions."
+}

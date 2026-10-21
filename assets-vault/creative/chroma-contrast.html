@@ -1,0 +1,12 @@
+<!-- chroma-contrast — Pick guaranteed-readable text colors and enforce WCAG AA contrast programmatically — no more failing color combos.  [color]  lib: chroma.min.js -->
+<script src="../libraries/chroma.min.js"></script>
+<script>
+// best readable text (black/white) for any background:
+const onColor = bg => chroma.contrast(bg, 'white') >= 4.5 ? '#fff' : '#111';
+// darken a foreground until it passes AA against a bg:
+function ensureAA(fg, bg, min = 4.5) {
+  let c = chroma(fg);
+  while (chroma.contrast(c, bg) < min && c.luminance() > 0) c = c.darken(0.1);
+  return c.hex();
+}
+</script>

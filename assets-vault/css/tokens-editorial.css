@@ -1,0 +1,44 @@
+:root {  /* Editorial */
+  /* --- type ------------------------------------------------ */
+  --font: 'Lora', 'Inter', 'Helvetica Neue', sans-serif;
+  --font-display: 'Playfair Display', 'Inter', 'Helvetica Neue', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 18px;
+  --ratio: 1.414;
+  --leading: 1.472;
+  --tracking: -0.01em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 3.181rem;
+  --size-1: 2.249rem;
+  --size-2: 1.591rem;
+  --size-3: 1.125rem;
+  --size-sm: 0.796rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #ffffff;
+  --bg2: #fafafa;
+  --surface: #ffffff;
+  --surface-glass: rgba(255,255,255,0.8);
+  --accent: #e11d2a;
+  --accent2: #111111;
+  --text: #111111;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 28px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 2px;
+  --border-width: 1px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 0 0 0 1px #e5e5e5;
+  /* --- motion ---------------------------------------------- */
+  --dur: 180ms;
+  --ease: cubic-bezier(.2,0,.2,1);
+  --travel: 8px;
+}

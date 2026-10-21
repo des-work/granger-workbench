@@ -1,0 +1,7 @@
+/* emboss-letterpress — Letterpress/emboss text — carved into or raised off the surface.  [depth] */
+/* on a mid-tone bg: */
+/* The bevel highlights stay achromatic — they are light, not palette — while
+   the ink comes from the style so the effect works on any ground. */
+.letterpress { color: var(--muted); text-shadow: 0 1px 0 rgba(255,255,255,.6),
+                                                 0 -1px 0 rgba(0,0,0,.5); }
+.engrave     { color: var(--text); text-shadow: 0 1px 1px rgba(255,255,255,.5); }

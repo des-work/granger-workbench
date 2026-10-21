@@ -1,0 +1,7 @@
+/* popover-api — Native Popover API — menus/tooltips/dialogs with top-layer + backdrop and zero JS.  [interaction] */
+<button popovertarget="menu">Open</button>
+<div id="menu" popover>…</div>
+[popover] { border: 1px solid var(--border,#334155); border-radius: 12px; padding: 1rem; }
+/* a solid scrim, not a blur: backdrop-filter costs contrast and some
+   styles refuse glass outright. */
+[popover]::backdrop { background: rgba(0,0,0,.55); }

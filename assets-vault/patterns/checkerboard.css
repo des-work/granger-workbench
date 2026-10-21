@@ -1,0 +1,8 @@
+/* checkerboard — Soft checkerboard via conic-gradient. */
+.bg-checker {
+  background-color: #ffffff;
+  background-image:
+    conic-gradient(rgba(0,0,0,0.05) 90deg, transparent 90deg 180deg,
+                   rgba(0,0,0,0.05) 180deg 270deg, transparent 270deg);
+  background-size: 24px 24px;
+}

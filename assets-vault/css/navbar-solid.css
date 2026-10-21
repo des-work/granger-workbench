@@ -1,0 +1,14 @@
+/* navbar-solid — Matte navigation bar for styles that forbid glass. Same job as navbar-glass with no backdrop-filter and no translucency.  [style: swiss-international] */
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.8rem 1.4rem; position: sticky; top: 0; z-index: 50;
+  background: var(--surface);
+  border-bottom: var(--border-width, 1px) solid var(--border);
+}
+.nav .brand { font-weight: var(--weight-strong, 700); letter-spacing: var(--tracking); }
+.nav a {
+  color: inherit; text-decoration: none; margin-left: 1.2rem;
+  font-weight: var(--weight-body, 400);
+}
+.nav a:hover { color: var(--accent); }
+.nav a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--accent); }

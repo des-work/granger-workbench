@@ -1,0 +1,1 @@
+.uv-duotone{background:var(--accent);isolation:isolate;position:relative;overflow:hidden;border-radius:var(--radius);}.uv-duotone .uv-visual{color:var(--accent2);mix-blend-mode:screen;}.uv-duotone::after{content:"";position:absolute;inset:0;pointer-events:none;background:var(--bg);mix-blend-mode:multiply;opacity:.3;}

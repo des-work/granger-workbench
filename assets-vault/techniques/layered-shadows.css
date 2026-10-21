@@ -1,0 +1,10 @@
+/* layered-shadows — Stacked shadows that fake real light falloff — far softer/richer than one hard drop shadow (the #1 generic tell).  [depth] */
+/* --shade is derived from the style's own ink, so the stack tints with the
+   page instead of dropping a blue-grey wash on every palette. */
+.depth {
+  --shade: color-mix(in srgb, var(--text) 8%, transparent);
+  box-shadow:
+    0 1px 1px var(--shade), 0 2px 2px var(--shade),
+    0 4px 4px var(--shade), 0 8px 8px var(--shade),
+    0 16px 16px var(--shade), 0 32px 32px var(--shade);
+}

@@ -1,0 +1,44 @@
+:root {  /* Ultraviolet */
+  /* --- type ------------------------------------------------ */
+  --font: 'Space Grotesk', 'Sora', 'Segoe UI', sans-serif;
+  --font-display: 'Sora', 'Sora', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.333;
+  --leading: 1.592;
+  --tracking: 0em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 2.369rem;
+  --size-1: 1.777rem;
+  --size-2: 1.333rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.75rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #0a0618;
+  --bg2: #150e2e;
+  --surface: #1a1238;
+  --surface-glass: rgba(138,112,255,0.07);
+  --accent: #8a70ff;
+  --accent2: #c77dff;
+  --text: #ece7ff;
+  --muted: #8e86b8;
+  --border: #3c2f6e;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 12px;
+  --border-width: 1px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 0 0 24px rgba(138,112,255,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 400ms;
+  --ease: cubic-bezier(.2,.8,.2,1);
+  --travel: 12px;
+}

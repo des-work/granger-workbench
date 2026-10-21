@@ -1,0 +1,44 @@
+:root {  /* Dark Academia */
+  /* --- type ------------------------------------------------ */
+  --font: 'Lora', 'Lora', 'Georgia', serif;
+  --font-display: 'Playfair Display', 'Lora', 'Georgia', serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 18px;
+  --ratio: 1.414;
+  --leading: 1.552;
+  --tracking: 0.01em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: small-caps;
+  --size-0: 3.181rem;
+  --size-1: 2.249rem;
+  --size-2: 1.591rem;
+  --size-3: 1.125rem;
+  --size-sm: 0.796rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #201812;
+  --bg2: #2c221a;
+  --surface: #271e16;
+  --surface-glass: rgba(176,141,79,0.06);
+  --accent: #b08d4f;
+  --accent2: #8c3838;
+  --text: #e9ddc8;
+  --muted: #998a72;
+  --border: #4a3a28;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 32px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 4px;
+  --border-width: 1px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 420ms;
+  --ease: cubic-bezier(.25,.8,.3,1);
+  --travel: 8px;
+}

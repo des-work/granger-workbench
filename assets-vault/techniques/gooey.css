@@ -1,0 +1,8 @@
+/* gooey — Gooey merge filter — blobs/menu items melt together (SVG filter + CSS).  [filter] */
+<svg style="position:absolute;width:0;height:0"><defs>
+  <filter id="goo">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b"/>
+    <feColorMatrix in="b" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"/>
+  </filter>
+</defs></svg>
+.goo { filter: url(#goo); }        /* put on the PARENT of the blobs */

@@ -1,0 +1,22 @@
+{
+  "id": "cyberpunk-night",
+  "style": "cyberpunk",
+  "name": "Cyberpunk \u2014 Night City",
+  "tags": [
+    "neon",
+    "dark",
+    "hacker",
+    "high-contrast",
+    "glow"
+  ],
+  "colors": [
+    "#0d0221",
+    "#01012b",
+    "#ff2a6d",
+    "#05d9e8",
+    "#d1f7ff",
+    "#f9f002",
+    "#7700ff"
+  ],
+  "notes": "Near-black backgrounds with hot-pink/cyan glow accents. Pair accent on dark and add a glow shadow of the same hue."
+}

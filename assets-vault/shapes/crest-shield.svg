@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 L92 18 V60 C92 88 74 106 50 114 C26 106 8 88 8 60 V18 Z"
+        fill="none" stroke="currentColor" stroke-width="5"/>
+  <path d="M50 16 L84 26 V60 C84 82 70 96 50 104 C30 96 16 82 16 60 V26 Z"
+        fill="currentColor" opacity=".2"/>
+  <path d="M22 44 L50 62 L78 44" fill="none" stroke="currentColor" stroke-width="5"/>
+</svg>

@@ -1,0 +1,25 @@
+/* grid-system — The actual grid. Several profiles call the grid their first move and then had nothing to build it with. Columns and gutter come from the style's tokens.  [style: neutral] */
+/* `.layout`, not `.grid`: the subgrid-align technique already owns
+   `.grid` and would win on cascade order wherever both ship. */
+.layout {
+  display: grid;
+  /* 12 is rewritten to the style's --columns when the kit is generated:
+     repeat() takes a literal integer and silently breaks on a var() count. */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--gutter, 24px);
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+/* span helpers — align to the grid or don't ship */
+.layout > .col-3  { grid-column: span 3; }
+.layout > .col-4  { grid-column: span 4; }
+.layout > .col-6  { grid-column: span 6; }
+.layout > .col-8  { grid-column: span 8; }
+.layout > .col-12 { grid-column: span 12; }
+@media (max-width: 720px) { .layout > * { grid-column: 1 / -1; } }
+/* debug: see the armature you are aligning to */
+.layout--show {
+  background-image: repeating-linear-gradient(to right,
+    color-mix(in srgb, var(--accent) 8%, transparent) 0 calc((100% / 12) - var(--gutter)),
+    transparent 0 calc(100% / 12));
+}

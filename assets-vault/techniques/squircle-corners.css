@@ -1,0 +1,6 @@
+/* squircle-corners — Apple-style squircle corners with corner-shape: superellipse (smoother than border-radius).  [depth] */
+.squircle {
+  border-radius: 28px;
+  corner-shape: superellipse(4);   /* higher = squarer; ~2.2 ≈ iOS */
+}
+/* @supports not (corner-shape: superellipse(4)) { .squircle { border-radius: 22px } } */

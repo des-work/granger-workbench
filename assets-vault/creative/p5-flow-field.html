@@ -1,0 +1,14 @@
+<!-- p5-flow-field — Generative flow-field background (Perlin-noise particle streams) — endlessly unique, alive.  [generative]  lib: p5.min.js -->
+<script src="../libraries/p5.min.js"></script>
+<script>
+let ps = [];
+function setup(){ createCanvas(windowWidth, windowHeight); background(13,2,33);
+  for (let i=0;i<900;i++) ps.push(createVector(random(width), random(height)));
+  stroke(43,143,214,22); }
+function draw(){ for (const p of ps){
+  const a = noise(p.x*0.002, p.y*0.002, frameCount*0.003) * TAU * 2;
+  const nx = p.x + cos(a), ny = p.y + sin(a);
+  line(p.x, p.y, nx, ny); p.set(nx, ny);
+  if (p.x<0||p.x>width||p.y<0||p.y>height) p.set(random(width), random(height)); } }
+function windowResized(){ resizeCanvas(windowWidth, windowHeight); }
+</script>

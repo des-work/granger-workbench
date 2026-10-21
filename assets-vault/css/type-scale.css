@@ -1,0 +1,24 @@
+/* type-scale — Binds the computed type scale, leading and measure to real elements, so the style's size budget is what the page uses.  [style: neutral] */
+body {
+  font-family: var(--font);
+  font-size: var(--base, 16px);
+  line-height: var(--leading, 1.5);
+  font-weight: var(--weight-body, 400);
+  letter-spacing: var(--tracking, 0);
+  color: var(--text);
+  background: var(--bg);
+}
+h1 { font-size: var(--size-0); }
+h2 { font-size: var(--size-1); }
+h3 { font-size: var(--size-2, var(--size-1)); }
+h1, h2, h3 {
+  font-weight: var(--weight-strong, 700);
+  line-height: calc(var(--leading) - 0.35);
+  letter-spacing: var(--tracking);
+  text-transform: var(--case, none);
+  text-wrap: balance;
+}
+/* The measure is a ceiling, not a floor — inside a narrow column it has to
+   yield to the column, or the line runs off the page. */
+p, li, blockquote { max-width: min(var(--measure, 66ch), 100%); }
+.prose { max-width: min(var(--measure, 66ch), 100%); text-align: var(--align, left); }

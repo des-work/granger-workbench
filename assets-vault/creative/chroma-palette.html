@@ -1,0 +1,11 @@
+<!-- chroma-palette — Generate a full perceptual color ramp from a few seed colors (bezier + corrected lightness) instead of hand-picking every stop.  [color]  lib: chroma.min.js -->
+<script src="../libraries/chroma.min.js"></script>
+<script>
+// smooth, perceptually-even 9-stop ramp between brand colors:
+const ramp = chroma.bezier(['#2b8fd6', '#b967ff', '#ff2a6d'])
+  .scale().correctLightness().colors(9);
+// 5 tints + 5 shades from ONE color:
+const base = chroma('#2b8fd6');
+const tints  = [.15,.3,.5,.7,.85].map(t => chroma.mix('#fff', base, t).hex());
+const shades = [.15,.3,.5,.7,.85].map(t => chroma.mix('#000', base, t).hex());
+</script>

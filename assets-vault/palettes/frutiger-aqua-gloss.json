@@ -1,0 +1,21 @@
+{
+  "id": "frutiger-aqua-gloss",
+  "style": "frutiger-aero",
+  "name": "Frutiger Aero \u2014 Aqua Gloss",
+  "tags": [
+    "water",
+    "gel",
+    "bubbles",
+    "shine"
+  ],
+  "colors": [
+    "#00a3e0",
+    "#38c6f4",
+    "#8fe3ff",
+    "#d6f6ff",
+    "#ffffff",
+    "#0077b6",
+    "#023e8a"
+  ],
+  "notes": "Wetter, gel-button feel. Pair light-to-dark for glossy 3D."
+}

@@ -1,0 +1,12 @@
+<!-- split-screen — 50/50 vertical split — two panels of equal weight side by side.  (best for: portfolios, two equal choices, product vs pricing) -->
+<style>
+  .l-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
+  .l-split > div { display: grid; place-items: center; padding: 3rem; text-align: center; }
+  .l-split .a { background: var(--accent,#3b82f6); color:#fff; }
+  .l-split .b { background: var(--surface,#1e293b); }
+  @media (max-width:720px){ .l-split{ grid-template-columns:1fr } }
+</style>
+<div class="l-split">
+  <div class="a"><div><h2>Left</h2><p>One path.</p></div></div>
+  <div class="b"><div><h2>Right</h2><p>The other.</p></div></div>
+</div>

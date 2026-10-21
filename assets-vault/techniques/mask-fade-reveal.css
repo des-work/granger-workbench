@@ -1,0 +1,11 @@
+/* mask-fade-reveal — Gradient masks: fade edges, and knock an image out through text.  [shape] */
+.mask-fade {
+  -webkit-mask-image: linear-gradient(#000 55%, transparent);
+          mask-image: linear-gradient(#000 55%, transparent);
+}
+.text-knockout {
+  background: var(--knockout-image, var(--text));
+  background-position: center; background-size: cover;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-weight: 900; font-size: var(--size-0);
+}

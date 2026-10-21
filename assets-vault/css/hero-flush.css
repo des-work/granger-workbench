@@ -1,0 +1,24 @@
+/* hero-flush — Asymmetric flush-left hero on the grid — the counterpart to hero-centered for styles whose rule is 'never centre'.  [style: swiss-international] */
+.hero {
+  display: grid;
+  /* 12 is rewritten to the style's --columns when the kit is generated:
+     repeat() takes a literal integer and silently breaks on a var() count. */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--gutter, 24px);
+  align-content: center;
+  min-height: 62vh;
+  padding: 4rem 1.5rem;
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+.hero > * { grid-column: 1 / span 7; }
+.hero h1 {
+  font-size: var(--size-0);
+  line-height: calc(var(--leading) - 0.4);
+  letter-spacing: var(--tracking);
+  text-transform: var(--case, none);
+  margin-bottom: 0.6rem;
+}
+.hero p { max-width: min(var(--measure, 66ch), 100%); color: var(--muted); }
+.hero .cta { display: flex; gap: 0.8rem; margin-top: 1.4rem; }
+@media (max-width: 720px) { .hero > * { grid-column: 1 / -1; } }

@@ -1,0 +1,44 @@
+:root {  /* Ember */
+  /* --- type ------------------------------------------------ */
+  --font: 'DM Sans', 'DM Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Bebas Neue', 'DM Sans', 'Segoe UI', sans-serif;
+  --mono: 'Fira Code', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.333;
+  --leading: 1.592;
+  --tracking: 0em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 2.369rem;
+  --size-1: 1.777rem;
+  --size-2: 1.333rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.75rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #140d0a;
+  --bg2: #241511;
+  --surface: #2a1a14;
+  --surface-glass: rgba(255,107,53,0.06);
+  --accent: #ff6b35;
+  --accent2: #ffc15e;
+  --text: #ffefe2;
+  --muted: #a8887a;
+  --border: #4d2e1f;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 10px;
+  --border-width: 1px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 0 0 24px rgba(255,107,53,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 350ms;
+  --ease: cubic-bezier(.3,.7,.3,1);
+  --travel: 10px;
+}

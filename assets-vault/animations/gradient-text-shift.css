@@ -1,0 +1,9 @@
+/* gradient-text-shift — Animated gradient sweeping through heading text.  [style: vaporwave] */
+.grad-shift {
+  background: linear-gradient(90deg, var(--accent), var(--accent2),
+              color-mix(in srgb, var(--accent), var(--accent2)), var(--accent));
+  background-size: 300% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: grad-move 6s linear infinite;
+}
+@keyframes grad-move { to { background-position: 300% 0; } }

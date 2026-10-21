@@ -1,0 +1,22 @@
+{
+  "id": "vaporwave-sunset",
+  "style": "vaporwave",
+  "name": "Vaporwave \u2014 Sunset",
+  "tags": [
+    "neon",
+    "pastel",
+    "80s",
+    "retro",
+    "gradient"
+  ],
+  "colors": [
+    "#ff71ce",
+    "#b967ff",
+    "#01cdfe",
+    "#05ffa1",
+    "#fffb96",
+    "#2d1b4e",
+    "#1a1a2e"
+  ],
+  "notes": "The canonical vaporwave five (pink/purple/cyan/green/yellow) over a deep indigo night."
+}

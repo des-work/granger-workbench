@@ -1,0 +1,3 @@
+.uv-progress{position:fixed;inset:0 0 auto;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;z-index:80;}
+@supports(animation-timeline:scroll()){.uv-progress{animation:uv-read linear both;animation-timeline:scroll(root block);}}
+@keyframes uv-read{to{transform:scaleX(1);}}

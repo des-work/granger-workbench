@@ -1,0 +1,1 @@
+.uv-anchor-tip{position:relative;display:inline-block;}.uv-tip{position:fixed;z-index:100;max-width:min(300px,calc(100vw - 32px));padding:16px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:var(--radius);font-size:var(--size-sm);}

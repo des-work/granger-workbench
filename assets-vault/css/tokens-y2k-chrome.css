@@ -1,0 +1,44 @@
+:root {  /* Y2K Chrome */
+  /* --- type ------------------------------------------------ */
+  --font: 'Space Grotesk', 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-display: 'Orbitron', 'Space Grotesk', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.414;
+  --leading: 1.464;
+  --tracking: 0.01em;
+  --measure: 60ch;
+  --weight-body: 400;
+  --weight-strong: 800;
+  --case: none;
+  --size-0: 2.827rem;
+  --size-1: 1.999rem;
+  --size-2: 1.414rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.707rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #eef2f7;
+  --bg2: #dfe7f2;
+  --surface: #f8fafd;
+  --surface-glass: rgba(46,95,208,0.06);
+  --accent: #2e5fd0;
+  --accent2: #8fa5bc;
+  --text: #1a2333;
+  --muted: #5a677a;
+  --border: #c3cfdd;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 20px;
+  --align: center;
+  /* --- material -------------------------------------------- */
+  --radius: 22px;
+  --border-width: 2px;
+  --gloss: 3;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 60%);
+  --shadow: 0 0 24px rgba(46,95,208,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 280ms;
+  --ease: cubic-bezier(.34,1.56,.64,1);
+  --travel: 14px;
+}

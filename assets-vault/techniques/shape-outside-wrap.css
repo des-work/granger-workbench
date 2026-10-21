@@ -1,0 +1,5 @@
+/* shape-outside-wrap — Wrap paragraph text around a circle/blob — real magazine flow.  [shape] */
+.wrapper { float: left; width: 220px; height: 220px; margin: 0 1.5rem 1rem 0;
+  shape-outside: circle(50%); clip-path: circle(50%);
+  background: url(portrait.jpg) center/cover; }
+/* following text now hugs the circular image */

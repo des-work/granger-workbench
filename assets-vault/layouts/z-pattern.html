@@ -1,0 +1,13 @@
+<!-- z-pattern — Alternating left/right rows guide the eye in a Z — image ⇄ text.  (best for: landing pages with a few key points) -->
+<style>
+  .l-z { display: grid; gap: 3rem; max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem; }
+  .l-z .row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .l-z .row:nth-child(even) .media { order: 2; }
+  .l-z .media { aspect-ratio: 4/3; border-radius: var(--radius,12px);
+                background: var(--surface,#1e293b); }
+  @media (max-width:720px){ .l-z .row{ grid-template-columns:1fr } .l-z .media{ order:0 } }
+</style>
+<div class="l-z">
+  <div class="row"><div class="media"></div><div><h2>Point one</h2><p>Explain it.</p></div></div>
+  <div class="row"><div class="media"></div><div><h2>Point two</h2><p>Explain it.</p></div></div>
+</div>

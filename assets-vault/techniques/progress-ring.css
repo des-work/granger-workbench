@@ -1,0 +1,9 @@
+/* progress-ring — Conic progress ring with a masked hole and a smoothly animatable %.  [color] */
+@property --p { syntax: "<number>"; initial-value: 0; inherits: false; }
+.ring {
+  --p: 65; width: 120px; aspect-ratio: 1; border-radius: 50%;
+  background: conic-gradient(var(--accent) calc(var(--p) * 1%), var(--border) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent 70%, #000 72%);
+          mask: radial-gradient(farthest-side, transparent 70%, #000 72%);
+  transition: --p 1s ease;
+}

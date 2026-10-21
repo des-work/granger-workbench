@@ -1,0 +1,15 @@
+<!-- hero-cta — Full-viewport hero: big headline, subcopy, primary + ghost CTA.  (best for: SaaS / product landing pages) -->
+<style>
+  .l-hero { min-height: 88vh; display: grid; place-items: center; text-align: center;
+            padding: 4rem 1.5rem; gap: 1.2rem;
+            background: linear-gradient(160deg, var(--bg,#0f172a), var(--bg2,#1e293b)); }
+  .l-hero h1 { font-size: clamp(2.2rem, 7vw, 4.5rem); line-height: 1.03; max-width: 16ch; }
+  .l-hero p { max-width: 52ch; opacity: .8; font-size: 1.15rem; }
+  .l-hero .row { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; }
+</style>
+<section class="l-hero">
+  <h1>Your bold value proposition</h1>
+  <p>One clear sentence on the outcome you deliver.</p>
+  <div class="row"><button class="btn">Start free</button>
+    <button class="btn" style="background:transparent;color:inherit">See how</button></div>
+</section>

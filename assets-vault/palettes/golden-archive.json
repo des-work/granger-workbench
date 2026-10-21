@@ -1,0 +1,25 @@
+{
+  "id": "golden-archive",
+  "style": "golden-archive",
+  "name": "Golden Archive \u2014 Voyager Record",
+  "tags": [
+    "gold",
+    "space",
+    "museum",
+    "dark",
+    "archive",
+    "voyager",
+    "starfield",
+    "engraved"
+  ],
+  "colors": [
+    "#04070f",
+    "#0a1224",
+    "#0b101f",
+    "#5a4b2c",
+    "#d9b453",
+    "#f2dc9b",
+    "#e8e2d0"
+  ],
+  "notes": "Deep-space navy with engraved gold \u2014 the Voyager Golden Record as a UI. Museum plaques, starfields, thin gold artifact frames, italic serif captions. Born in the Ultra Archive gallery."
+}

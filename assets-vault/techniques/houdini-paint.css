@@ -1,0 +1,14 @@
+/* houdini-paint — Procedural backgrounds with the CSS Paint API (Houdini worklet) — draw anything (confetti, waves, noise) as a CSS background.  [filter] */
+/* paint.js */
+registerPaint("sprinkles", class {
+  static get inputProperties() { return ["--sprinkle-color"]; }
+  paint(ctx, size, props) {
+    const c = props.get("--sprinkle-color").toString() || "currentColor";
+    for (let i = 0; i < 60; i++) {
+      ctx.fillStyle = c; ctx.globalAlpha = Math.random();
+      ctx.fillRect(Math.random()*size.width, Math.random()*size.height, 3, 3);
+    }
+  }
+});
+/* CSS */  /* CSS.paintWorklet.addModule("paint.js") */
+.sprinkled { background-image: paint(sprinkles); --sprinkle-color: var(--accent); }

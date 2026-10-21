@@ -1,0 +1,45 @@
+:root {  /* Frutiger Aero */
+  /* --- type ------------------------------------------------ */
+  --font: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --mono: 'Cascadia Code', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.25;
+  --leading: 1.488;
+  --tracking: 0em;
+  --measure: 64ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 2.441rem;
+  --size-1: 1.953rem;
+  --size-2: 1.562rem;
+  --size-3: 1.25rem;
+  --size-4: 1.0rem;
+  --size-sm: 0.8rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #ceecff;
+  --bg2: #eaf6ff;
+  --surface: #ffffff;
+  --surface-glass: rgba(255,255,255,0.55);
+  --accent: #257dbc;
+  --accent2: #96cd6e;
+  --text: #0b3c5d;
+  --muted: #376b90;
+  --border: #9fd0f0;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 16px;
+  --border-width: 1px;
+  --gloss: 3;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 60%);
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 320ms;
+  --ease: cubic-bezier(.25,.8,.25,1);
+  --travel: 12px;
+}

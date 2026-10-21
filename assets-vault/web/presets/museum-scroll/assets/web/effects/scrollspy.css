@@ -1,0 +1,1 @@
+.uv-spy-nav{position:sticky;top:12px;display:flex;gap:12px;padding:12px;background:var(--surface);z-index:20;border-bottom:1px solid var(--border);}.uv-spy-nav a{color:var(--muted);padding:10px;text-decoration:none;}.uv-spy-nav a[aria-current=true]{color:var(--accent);text-decoration:underline;}.uv-chapter{min-height:75svh;scroll-margin-top:100px;padding-block:60px;}

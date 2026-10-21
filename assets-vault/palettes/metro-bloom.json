@@ -1,0 +1,23 @@
+{
+  "id": "metro-bloom",
+  "style": "frutiger-metro",
+  "name": "Frutiger Metro \u2014 Bloom",
+  "tags": [
+    "frutiger-metro",
+    "vector",
+    "bloom",
+    "flat",
+    "2000s",
+    "vivid"
+  ],
+  "colors": [
+    "#ffffff",
+    "#c81e82",
+    "#8ec400",
+    "#00a5cf",
+    "#f97a00",
+    "#7a3fb8",
+    "#22303b"
+  ],
+  "notes": "Frutiger Aero's flat 2D sibling: loud magenta/lime/aqua/orange vector blooms, flourishes and silhouettes on clean white \u2014 humanist type, full-spectrum gradients, zero gloss."
+}

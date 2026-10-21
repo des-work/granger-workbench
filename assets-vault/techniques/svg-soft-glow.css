@@ -1,0 +1,7 @@
+/* svg-soft-glow — Soft bloom/neon glow around anything (SVG blur + merge filter).  [filter] */
+<svg style="position:absolute;width:0;height:0"><defs>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs></svg>
+.glow { filter: url(#glow); }

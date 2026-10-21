@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "pack": "luminous-product",
+  "style": "ultraviolet",
+  "layout": "product-bento",
+  "effects": {
+    "aurora-field": {
+      "speed": 1,
+      "intensity": 1
+    },
+    "prism-border": {
+      "speed": 1
+    },
+    "gradient-type": {},
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "magnetic-button": {
+      "strength": 0.14
+    },
+    "tilt-card": {
+      "angle": 7
+    },
+    "glass-panel": {
+      "opacity": 0.8,
+      "blur": 20
+    },
+    "scroll-progress": {},
+    "command-menu": {}
+  },
+  "copy": {
+    "title": "Make room for what\u2019s next.",
+    "eyebrow": "Ultraviolet \u00b7 a luminous product language",
+    "description": "A dimensional product experience: drifting light, precise interactions, and surfaces with just enough depth."
+  }
+}

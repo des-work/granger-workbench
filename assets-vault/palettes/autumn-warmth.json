@@ -1,0 +1,22 @@
+{
+  "id": "autumn-warmth",
+  "style": "earthy",
+  "name": "Earthy \u2014 Autumn Warmth",
+  "tags": [
+    "autumn",
+    "rust",
+    "mustard",
+    "burgundy",
+    "cozy"
+  ],
+  "colors": [
+    "#6f1d1b",
+    "#99582a",
+    "#bb9457",
+    "#dda15e",
+    "#e9c46a",
+    "#f4ede4",
+    "#432818"
+  ],
+  "notes": "Rust, mustard, and burgundy \u2014 harvest-season warmth."
+}

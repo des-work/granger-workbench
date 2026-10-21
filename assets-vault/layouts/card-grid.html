@@ -1,0 +1,11 @@
+<!-- card-grid — Responsive auto-fit card grid — columns adapt to width.  (best for: galleries, catalogs, dashboards, blog indexes) -->
+<style>
+  .l-cards { display: grid; gap: 1rem; padding: 2rem 1.25rem; max-width: 1200px; margin: 0 auto;
+             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .l-cards .card { background: var(--surface,#1e293b); border:1px solid var(--border,#334155);
+                   border-radius: 12px; padding: 1.25rem; }
+</style>
+<div class="l-cards">
+  <div class="card">One</div><div class="card">Two</div>
+  <div class="card">Three</div><div class="card">Four</div>
+</div>

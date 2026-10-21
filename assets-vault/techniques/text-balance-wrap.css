@@ -1,0 +1,3 @@
+/* text-balance-wrap — Pro typographic line-breaking: balanced headlines, no orphans in body copy.  [type] */
+h1, h2, h3 { text-wrap: balance; }   /* even, centered-looking lines */
+p        { text-wrap: pretty; }    /* avoids single-word last lines (orphans) */

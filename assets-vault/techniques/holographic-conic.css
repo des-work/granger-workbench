@@ -1,0 +1,8 @@
+/* holographic-conic — Spinning iridescent/holographic sheen from an animated conic gradient.  [color] */
+@property --a { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.holo {
+  background: conic-gradient(from var(--a),
+    #ff71ce, #01cdfe, #05ffa1, #fffb96, #b967ff, #ff71ce);
+  animation: holo 6s linear infinite;
+}
+@keyframes holo { to { --a: 360deg; } }

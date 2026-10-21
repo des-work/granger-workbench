@@ -1,0 +1,14 @@
+<!-- hero-blobs — Two soft overlapping blobs — decorative hero backdrop. Recolor via the two fills; set position:absolute behind content. -->
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg"
+     style="width:100%; height:auto">
+  <g opacity="0.85">
+    <path fill="#a78bfa" transform="translate(180 180)"
+      d="M120,-150C150,-120,160,-70,150,-25C140,20,110,60,70,95C30,130,-20,160,-70,150
+         C-120,140,-170,90,-180,35C-190,-20,-160,-80,-120,-120C-80,-160,-30,-180,20,-175
+         C70,-170,90,-180,120,-150Z"/>
+    <path fill="#f472b6" opacity="0.75" transform="translate(400 230)"
+      d="M100,-120C130,-95,150,-55,145,-15C140,25,110,60,75,90C40,120,0,145,-45,140
+         C-90,135,-135,100,-150,55C-165,10,-150,-45,-115,-85C-80,-125,-25,-150,20,-150
+         C65,-150,70,-145,100,-120Z"/>
+  </g>
+</svg>

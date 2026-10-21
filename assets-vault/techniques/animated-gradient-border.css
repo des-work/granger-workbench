@@ -1,0 +1,10 @@
+/* animated-gradient-border — Rotating conic-gradient border via @property (Houdini). The signature 'this isn't a default template' border.  [color] */
+@property --angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.grad-border {
+  position: relative; border-radius: 16px; padding: 2px; isolation: isolate;
+  background: conic-gradient(from var(--angle), var(--accent), var(--accent2),
+              var(--accent));
+  animation: gb-spin 4s linear infinite;
+}
+.grad-border > * { border-radius: calc(var(--radius) - 2px); background: var(--surface); }
+@keyframes gb-spin { to { --angle: 360deg; } }

@@ -1,0 +1,1156 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Ultra-PC Design Vault — live demo</title><link rel='stylesheet' href='fonts/fonts.css'><style>
+:root{--bg:#0e1116;--panel:#161b23;--surface:#1c2330;--ink:#dce3ec;
+  --dim:#8b95a5;--line:#2a3342;--acc:#4ba3e3;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.6 'Segoe UI',system-ui,sans-serif;}
+header{position:sticky;top:0;z-index:9;background:rgba(14,17,22,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  padding:10px 22px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;}
+header b{font-size:17px;color:var(--acc);}
+header a{color:var(--dim);text-decoration:none;font-size:13px;}
+header a:hover{color:var(--ink);}
+main{max-width:1280px;margin:0 auto;padding:26px 22px 120px;}
+h2{font-size:22px;margin:54px 0 4px;color:var(--acc);
+  border-top:1px solid var(--line);padding-top:20px;}
+h2 small{color:var(--dim);font-weight:400;font-size:13px;}
+p.hint{color:var(--dim);font-size:13px;margin:2px 0 18px;}
+code{background:var(--surface);padding:1px 6px;border-radius:5px;
+  font-size:12.5px;}
+.grid{display:grid;gap:14px;}
+.g-style{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));}
+.g-prof{grid-template-columns:repeat(auto-fill,minmax(360px,1fr));}
+.g-pal{grid-template-columns:repeat(auto-fill,minmax(290px,1fr));}
+.g-tile{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));}
+.g-shape{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));}
+.g-layout{grid-template-columns:repeat(auto-fill,minmax(280px,1fr));}
+.cell{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:10px;}
+.cell .lbl{font-size:12px;color:var(--dim);margin-top:6px;}
+.cell .lbl b{color:var(--ink);font-weight:600;}
+.sw{display:flex;height:34px;border-radius:6px;overflow:hidden;
+  border:1px solid var(--line);}
+.sw i{flex:1;}
+.hexes{font:10.5px ui-monospace,Consolas,monospace;color:var(--dim);
+  margin-top:5px;word-spacing:4px;}
+.tile{height:110px;border-radius:8px;border:1px solid var(--line);}
+.shapebox{height:84px;display:flex;align-items:center;justify-content:center;}
+.shapebox svg{max-width:100%;max-height:78px;}
+.thumb{width:100%;height:190px;overflow:hidden;border-radius:8px;
+  border:1px solid var(--line);background:#fff;position:relative;}
+.thumb iframe{width:1200px;height:840px;border:0;transform:scale(.235);
+  transform-origin:0 0;pointer-events:none;}
+.mini{border-radius:var(--mr,10px);overflow:hidden;
+  border:1px solid var(--mb);}
+.mini .bar{height:26px;display:flex;align-items:center;padding:0 10px;
+  font-size:10.5px;font-weight:700;color:#fff;letter-spacing:.04em;}
+.mini .body{padding:10px;min-height:104px;}
+.mini .card{border-radius:calc(var(--mr,10px)*.7);padding:8px 10px;
+  font-size:11px;border:1px solid var(--mb);}
+.mini .btn{display:inline-block;margin-top:8px;padding:4px 12px;
+  border-radius:999px;font-size:10.5px;font-weight:700;}
+.mini .chip{display:inline-block;margin:8px 0 0 6px;padding:3px 9px;
+  border-radius:999px;font-size:10px;font-weight:700;}
+.prof{border-left:4px solid var(--pa);}
+.prof .era{font-size:11px;color:var(--dim);}
+.prof .vibe{font-size:12.5px;color:var(--ink);margin:6px 0;}
+.prof .meta{font-size:11.5px;color:var(--dim);}
+.prof .shapes{display:flex;gap:10px;margin-top:8px;}
+.prof .shapes svg{height:44px;width:auto;max-width:80px;}
+.fontrow{display:flex;gap:14px;align-items:baseline;border-bottom:1px dashed
+  var(--line);padding:7px 2px;}
+.fontrow .name{width:220px;font-size:12.5px;color:var(--dim);flex:none;}
+.fontrow .sample{font-size:21px;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis;}
+footer{color:var(--dim);font-size:12.5px;margin-top:70px;
+  border-top:1px solid var(--line);padding-top:16px;}
+
+.style-preview{width:100%;height:250px;border:0;}</style></head><body>
+<header><b>Ultra-PC Design Vault</b><a href="#styles">styles 27</a> · <a href="#profiles">profiles 27</a> · <a href="#palettes">palettes 44</a> · <a href="#gradients">gradients 17</a> · <a href="#patterns">patterns 9</a> · <a href="#layouts">layouts 12</a> · <a href="#shapes">shapes 47</a> · <a href="#fonts">fonts 33</a><a href='showcase.html'>Profile showcase</a><a href='web/index.html'>Modern web playground ↗</a></header><main>
+<h2 id="styles">Styles &amp; Themes <small>27 — each card rendered from its own tokens</small></h2><p class="hint">Every card below is drawn live from that style’s token set — <code>assets kit &lt;id&gt;</code> writes the full stylesheet.</p><div class="grid g-style">
+<div class="cell"><iframe class="style-preview" title="frutiger-aero preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/frutiger-aero/index.html"></iframe><div class="lbl"><b>frutiger-aero</b> · <code>assets kit frutiger-aero</code><br>Visual style · <a href="web/styles/frutiger-aero/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="vaporwave preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/vaporwave/index.html"></iframe><div class="lbl"><b>vaporwave</b> · <code>assets kit vaporwave</code><br>Visual style · <a href="web/styles/vaporwave/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="cyberpunk preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/cyberpunk/index.html"></iframe><div class="lbl"><b>cyberpunk</b> · <code>assets kit cyberpunk</code><br>Visual style · <a href="web/styles/cyberpunk/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="neutral preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/neutral/index.html"></iframe><div class="lbl"><b>neutral</b> · <code>assets kit neutral</code><br>System / color register · <a href="web/styles/neutral/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="pastel preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/pastel/index.html"></iframe><div class="lbl"><b>pastel</b> · <code>assets kit pastel</code><br>System / color register · <a href="web/styles/pastel/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="earthy preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/earthy/index.html"></iframe><div class="lbl"><b>earthy</b> · <code>assets kit earthy</code><br>System / color register · <a href="web/styles/earthy/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="editorial preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/editorial/index.html"></iframe><div class="lbl"><b>editorial</b> · <code>assets kit editorial</code><br>Visual style · <a href="web/styles/editorial/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="mono preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/mono/index.html"></iframe><div class="lbl"><b>mono</b> · <code>assets kit mono</code><br>Visual style · <a href="web/styles/mono/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="jewel preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/jewel/index.html"></iframe><div class="lbl"><b>jewel</b> · <code>assets kit jewel</code><br>System / color register · <a href="web/styles/jewel/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="nordic preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/nordic/index.html"></iframe><div class="lbl"><b>nordic</b> · <code>assets kit nordic</code><br>Visual style · <a href="web/styles/nordic/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="golden-archive preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/golden-archive/index.html"></iframe><div class="lbl"><b>golden-archive</b> · <code>assets kit golden-archive</code><br>Visual style · <a href="web/styles/golden-archive/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="ultraviolet preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/ultraviolet/index.html"></iframe><div class="lbl"><b>ultraviolet</b> · <code>assets kit ultraviolet</code><br>System / color register · <a href="web/styles/ultraviolet/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="ember preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/ember/index.html"></iframe><div class="lbl"><b>ember</b> · <code>assets kit ember</code><br>System / color register · <a href="web/styles/ember/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="hi-contrast preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/hi-contrast/index.html"></iframe><div class="lbl"><b>hi-contrast</b> · <code>assets kit hi-contrast</code><br>System / color register · <a href="web/styles/hi-contrast/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="avant-basic preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/avant-basic/index.html"></iframe><div class="lbl"><b>avant-basic</b> · <code>assets kit avant-basic</code><br>Visual style · <a href="web/styles/avant-basic/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="organic-tech preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/organic-tech/index.html"></iframe><div class="lbl"><b>organic-tech</b> · <code>assets kit organic-tech</code><br>Visual style · <a href="web/styles/organic-tech/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="high-fashion preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/high-fashion/index.html"></iframe><div class="lbl"><b>high-fashion</b> · <code>assets kit high-fashion</code><br>Visual style · <a href="web/styles/high-fashion/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="skate-culture preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/skate-culture/index.html"></iframe><div class="lbl"><b>skate-culture</b> · <code>assets kit skate-culture</code><br>Visual style · <a href="web/styles/skate-culture/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="mosaic preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/mosaic/index.html"></iframe><div class="lbl"><b>mosaic</b> · <code>assets kit mosaic</code><br>Visual style · <a href="web/styles/mosaic/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="art-deco preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/art-deco/index.html"></iframe><div class="lbl"><b>art-deco</b> · <code>assets kit art-deco</code><br>Visual style · <a href="web/styles/art-deco/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="frutiger-metro preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/frutiger-metro/index.html"></iframe><div class="lbl"><b>frutiger-metro</b> · <code>assets kit frutiger-metro</code><br>Visual style · <a href="web/styles/frutiger-metro/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="preppy-2000s preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/preppy-2000s/index.html"></iframe><div class="lbl"><b>preppy-2000s</b> · <code>assets kit preppy-2000s</code><br>Visual style · <a href="web/styles/preppy-2000s/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="y2k-chrome preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/y2k-chrome/index.html"></iframe><div class="lbl"><b>y2k-chrome</b> · <code>assets kit y2k-chrome</code><br>Visual style · <a href="web/styles/y2k-chrome/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="dark-academia preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/dark-academia/index.html"></iframe><div class="lbl"><b>dark-academia</b> · <code>assets kit dark-academia</code><br>Visual style · <a href="web/styles/dark-academia/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="swiss-international preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/swiss-international/index.html"></iframe><div class="lbl"><b>swiss-international</b> · <code>assets kit swiss-international</code><br>Visual style · <a href="web/styles/swiss-international/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="bauhaus preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/bauhaus/index.html"></iframe><div class="lbl"><b>bauhaus</b> · <code>assets kit bauhaus</code><br>Visual style · <a href="web/styles/bauhaus/index.html">Full design specimen ↗</a></div></div>
+<div class="cell"><iframe class="style-preview" title="art-nouveau preview" loading="lazy" sandbox="allow-same-origin" src="web/styles/art-nouveau/index.html"></iframe><div class="lbl"><b>art-nouveau</b> · <code>assets kit art-nouveau</code><br>Visual style · <a href="web/styles/art-nouveau/index.html">Full design specimen ↗</a></div></div>
+</div>
+<h2 id="profiles">Design Profiles <small>27 archetype collections</small></h2><p class="hint">Full design-language briefs: 20 narrative sections each. Swatches, fonts and signature shapes shown; <code>assets profile &lt;id&gt;</code> prints everything.</p><div class="grid g-prof">
+<div class="cell prof" style="--pa:#d81b7a"><b>Avant Basic</b> <code>avant-basic</code><div class="era">c. 2019–2023 — peak Instagram/TikTok interiors and DTC e-commerce</div><div class="vibe">2019-22 Instagram/Shein-era maximalism reviving Memphis and the 60s-70s: warped checkerboards, squiggles, solid daisies, diamond stars and arch &#x27;window&#x27; shapes in bright …</div><div class="sw" style="height:22px"><i style="background:#f6e7ee"></i><i style="background:#d81b7a"></i><i style="background:#5438dc"></i><i style="background:#f3a712"></i><i style="background:#7fc243"></i><i style="background:#3a2038"></i><i style="background:#fffaf5"></i></div><div class="meta">fonts: Shrikhand, Fredoka · gloss: flat-pop: hard flat fills, zero gel/glass; depth comes from …</div><div class="shapes"><span style="color:#d81b7a"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 20 Q14 4 24 20 T44 20 T64 20 T84 20 T104 20 T116 20"
+        fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+</svg></span><span style="color:#d81b7a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <ellipse cx="50" cy="18" rx="13" ry="19"/><ellipse cx="50" cy="82" rx="13" ry="19"/>
+    <ellipse cx="18" cy="50" rx="19" ry="13"/><ellipse cx="82" cy="50" rx="19" ry="13"/>
+    <ellipse cx="27" cy="27" rx="15" ry="15"/><ellipse cx="73" cy="27" rx="15" ry="15"/>
+    <ellipse cx="27" cy="73" rx="15" ry="15"/><ellipse cx="73" cy="73" rx="15" ry="15"/>
+  </g><circle cx="50" cy="50" r="16" fill="currentColor" opacity=".35"/>
+</svg></span><span style="color:#d81b7a"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M0 0h20v18H0z"/><path d="M40 2h20v16H40z"/>
+  <path d="M20 18h20v16H20z"/><path d="M60 18h20v18H60z"/>
+  <path d="M0 34h20v18H0z"/><path d="M40 36h20v16H40z"/>
+  <path d="M20 52h20v16H20z"/><path d="M60 54h20v18H60z"/></g>
+</svg></span></div><div class="lbl">full brief: <code>assets profile avant-basic</code> · <a style="color:var(--acc)" href="profiles/avant-basic.md">profiles/avant-basic.md</a></div></div>
+<div class="cell prof" style="--pa:#52704a"><b>Organic Tech</b> <code>organic-tech</code><div class="era">c. 2020–present — wellness tech and post-minimal product design</div><div class="vibe">Biomorphic + biophilic: shapes that read as cells, water or pebbles; the &#x27;living earth&#x27; palette (sage, moss, clay, sand); gradients that shift *within* shapes; no harsh c…</div><div class="sw" style="height:22px"><i style="background:#edeee4"></i><i style="background:#dfe4d2"></i><i style="background:#52704a"></i><i style="background:#8ba888"></i><i style="background:#a5643a"></i><i style="background:#d9c8a9"></i><i style="background:#262e22"></i></div><div class="meta">fonts: Sora, DM Sans · gloss: soft-matte: frosted layers and blurred blob glows; use glass…</div><div class="shapes"><span style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C74 4 96 22 94 48 C92 76 74 96 48 94 C22 92 4 74 6 48 C8 24 26 8 50 6Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M52 26 C66 26 76 36 75 50 C74 66 64 76 50 75 C36 74 26 64 27 50 C28 36 38 26 52 26Z"
+        fill="currentColor" opacity=".35"/>
+</svg></span><span style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="82" rx="36" ry="14" fill="currentColor" opacity=".9"/>
+  <ellipse cx="48" cy="58" rx="28" ry="12" fill="currentColor" opacity=".65"/>
+  <ellipse cx="52" cy="38" rx="20" ry="10" fill="currentColor" opacity=".45"/>
+  <ellipse cx="50" cy="22" rx="12" ry="7" fill="currentColor" opacity=".3"/>
+</svg></span><span style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 96 C20 70 20 34 50 4 C80 34 80 70 50 96Z" fill="currentColor" opacity=".25"/>
+  <path d="M50 90 V10 M50 70 C40 64 34 56 32 44 M50 70 C60 64 66 56 68 44
+           M50 46 C43 42 39 36 38 28 M50 46 C57 42 61 36 62 28"
+        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile organic-tech</code> · <a style="color:var(--acc)" href="profiles/organic-tech.md">profiles/organic-tech.md</a></div></div>
+<div class="cell prof" style="--pa:#141414"><b>High Fashion</b> <code>high-fashion</code><div class="era">canon 1930s–90s editorial; evergreen wherever luxury speaks</div><div class="vibe">Editorial luxury: ivory field, ink-black Didone serifs at huge scale contrast, hairline rules, champagne accents and aggressive whitespace. The layout behaves like a maga…</div><div class="sw" style="height:22px"><i style="background:#f7f4ee"></i><i style="background:#ffffff"></i><i style="background:#141414"></i><i style="background:#8e7747"></i><i style="background:#b4a284"></i><i style="background:#6b665c"></i><i style="background:#d8d2c5"></i></div><div class="meta">fonts: Bodoni Moda, Lora · gloss: none: matte paper only; if depth is needed use a 1px ink rul…</div><div class="shapes"><span style="color:#141414"><svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="108" height="148" fill="none" stroke="currentColor" stroke-width="1"/>
+  <rect x="12" y="12" width="96" height="136" fill="none" stroke="currentColor" stroke-width=".5"/>
+</svg></span><span style="color:#141414"><svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 10 H88 M112 10 H196" stroke="currentColor" stroke-width="1"/>
+  <path d="M100 3 L107 10 L100 17 L93 10 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile high-fashion</code> · <a style="color:var(--acc)" href="profiles/high-fashion.md">profiles/high-fashion.md</a></div></div>
+<div class="cell prof" style="--pa:#ff5c1f"><b>Skate Culture</b> <code>skate-culture</code><div class="era">core 1975–1999; permanent revival cycles ever since</div><div class="vibe">Deck art + sticker bombing + zine grunge: asphalt darks under safety orange and hazard yellow, distressed textures, thick white sticker outlines, hand-marker and pop disp…</div><div class="sw" style="height:22px"><i style="background:#141518"></i><i style="background:#1f2125"></i><i style="background:#ff5c1f"></i><i style="background:#ffd23f"></i><i style="background:#e63946"></i><i style="background:#989fa8"></i><i style="background:#f1efe8"></i></div><div class="meta">fonts: Bangers, Permanent Marker, Inter · gloss: gritty-flat: heavy grain over everything; sticker elements g…</div><div class="shapes"><span style="color:#ff5c1f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 4 L58 22 L76 12 L74 32 L94 32 L80 46 L96 58 L76 62 L82 82 L62 76 L58 96
+           L48 78 L32 92 L32 70 L12 72 L24 56 L6 46 L26 40 L18 20 L38 26 Z"
+        fill="currentColor"/>
+  <circle cx="51" cy="51" r="24" fill="none" stroke="#fff" stroke-width="4" opacity=".9"/>
+</svg></span><span style="color:#ff5c1f"><svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 56 C24 50 20 34 34 30 C30 42 44 44 48 32 C50 42 60 44 64 30
+           C68 42 80 40 82 26 C88 38 100 36 102 20 C110 32 116 28 116 14
+           C118 34 108 56 84 56 Z" fill="currentColor"/>
+</svg></span><span style="color:#ff5c1f"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 26 H52 V24 H6 Z M6 46 H52 V44 H6 Z M6 26 V44 H10 V26 Z M48 26 V44 H52 V26 Z"
+        fill="currentColor"/>
+  <path d="M58 12 L114 35 L58 58 L70 35 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile skate-culture</code> · <a style="color:var(--acc)" href="profiles/skate-culture.md">profiles/skate-culture.md</a></div></div>
+<div class="cell prof" style="--pa:#16697a"><b>Mosaic</b> <code>mosaic</code><div class="era">antiquity → Gaudí c. 1900s → terrazzo-print revival 2018+</div><div class="vibe">Tessellation as a design language: terrazzo chips, Gaudí trencadís crackle, stained-glass panes with visible grout. Glazed jewel fragments (teal, terracotta, ochre, moss)…</div><div class="sw" style="height:22px"><i style="background:#f1ece0"></i><i style="background:#16697a"></i><i style="background:#a8442c"></i><i style="background:#d9a441"></i><i style="background:#4a7c59"></i><i style="background:#6f6a5b"></i><i style="background:#2b2721"></i></div><div class="meta">fonts: Cinzel, Lora · gloss: glazed-tile: a subtle top sheen on chips/panes (like fired g…</div><div class="shapes"><span style="color:#16697a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M14 12 L30 8 L34 22 L20 28 Z"/>
+  <path d="M62 6 L76 14 L70 26 L58 20 Z" opacity=".7"/>
+  <path d="M84 44 L96 52 L88 64 L78 56 Z"/>
+  <path d="M38 40 L54 36 L58 52 L44 58 Z" opacity=".5"/>
+  <path d="M10 62 L24 58 L28 72 L14 78 Z" opacity=".8"/>
+  <path d="M52 72 L68 68 L72 84 L56 90 Z" opacity=".6"/>
+  <path d="M30 86 L40 82 L44 92 L34 96 Z"/></g>
+</svg></span><span style="color:#16697a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M4 4 L44 8 L36 40 L6 34 Z" opacity=".85"/>
+  <path d="M48 6 L96 4 L92 30 L42 42 Z" opacity=".55"/>
+  <path d="M8 38 L34 44 L28 70 L4 64 Z" opacity=".6"/>
+  <path d="M38 46 L88 34 L94 62 L46 72 Z" opacity=".9"/>
+  <path d="M6 68 L26 74 L22 96 L4 94 Z" opacity=".5"/>
+  <path d="M30 76 L92 66 L96 96 L28 96 Z" opacity=".7"/></g>
+</svg></span><span style="color:#16697a"><svg viewBox="0 0 160 24" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <rect x="2" y="4" width="16" height="16" rx="2"/><rect x="22" y="4" width="16" height="16" rx="2" opacity=".6"/>
+    <rect x="42" y="4" width="16" height="16" rx="2" opacity=".85"/><rect x="62" y="4" width="16" height="16" rx="2" opacity=".45"/>
+    <rect x="82" y="4" width="16" height="16" rx="2" opacity=".7"/><rect x="102" y="4" width="16" height="16" rx="2"/>
+    <rect x="122" y="4" width="16" height="16" rx="2" opacity=".55"/><rect x="142" y="4" width="16" height="16" rx="2" opacity=".8"/>
+  </g>
+</svg></span></div><div class="lbl">full brief: <code>assets profile mosaic</code> · <a style="color:var(--acc)" href="profiles/mosaic.md">profiles/mosaic.md</a></div></div>
+<div class="cell prof" style="--pa:#d4af37"><b>Art Deco</b> <code>art-deco</code><div class="era">1925–1940 machine-age zenith; revived for luxury ever since</div><div class="vibe">1920s-40s controlled opulence: black + gold + jewel tones, graduated sunbursts (rays tighter at the center), stepped ziggurat frames, fans, chevrons, strict symmetry, and…</div><div class="sw" style="height:22px"><i style="background:#12100c"></i><i style="background:#d4af37"></i><i style="background:#2f9e77"></i><i style="background:#25567b"></i><i style="background:#8c2f39"></i><i style="background:#99907a"></i><i style="background:#f0e7d0"></i></div><div class="meta">fonts: Poiret One, Cinzel, Poppins · gloss: metallic: gold elements get the gel treatment (they read as …</div><div class="shapes"><span style="color:#d4af37"><svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" fill="none">
+    <path d="M100 96 V8" stroke-width="3"/>
+    <path d="M100 96 L64 12 M100 96 L136 12" stroke-width="2.5"/>
+    <path d="M100 96 L34 26 M100 96 L166 26" stroke-width="2"/>
+    <path d="M100 96 L12 48 M100 96 L188 48" stroke-width="1.5"/>
+    <path d="M100 96 L4 78 M100 96 L196 78" stroke-width="1"/>
+  </g><circle cx="100" cy="96" r="10" fill="currentColor"/>
+</svg></span><span style="color:#d4af37"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M10 66 A50 50 0 0 1 110 66"/><path d="M22 66 A38 38 0 0 1 98 66"/>
+    <path d="M34 66 A26 26 0 0 1 86 66"/><path d="M46 66 A14 14 0 0 1 74 66"/>
+    <path d="M60 66 V16 M60 66 L28 26 M60 66 L92 26"/>
+  </g>
+</svg></span><span style="color:#d4af37"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 116 V44 H16 V32 H28 V20 H40 V8 H116" fill="none"
+        stroke="currentColor" stroke-width="5"/>
+  <path d="M16 116 V56 H28 V44 H40 V32 H52 V20 H116" fill="none"
+        stroke="currentColor" stroke-width="2"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile art-deco</code> · <a style="color:var(--acc)" href="profiles/art-deco.md">profiles/art-deco.md</a></div></div>
+<div class="cell prof" style="--pa:#c81e82"><b>Frutiger Metro</b> <code>frutiger-metro</code><div class="era">c. 2004–2012 — Web 2.0, vector-Flash and phone-box culture</div><div class="vibe">Frutiger Aero&#x27;s flat 2D sibling (mid-2000s vector culture): loud magenta/lime/aqua/orange color blocks, bloom flowers and flourishes, human silhouettes, dot constellation…</div><div class="sw" style="height:22px"><i style="background:#ffffff"></i><i style="background:#c81e82"></i><i style="background:#8ec400"></i><i style="background:#00a5cf"></i><i style="background:#f97a00"></i><i style="background:#7a3fb8"></i><i style="background:#22303b"></i></div><div class="meta">fonts: Fredoka, Poppins · gloss: flat-vivid: no bevels or glass; energy comes from saturated …</div><div class="shapes"><span style="color:#c81e82"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path d="M50 50 C50 20 66 8 82 12 C86 30 72 46 50 50Z"/>
+    <path d="M50 50 C80 50 92 66 88 82 C70 86 54 72 50 50Z" opacity=".7"/>
+    <path d="M50 50 C50 80 34 92 18 88 C14 70 28 54 50 50Z" opacity=".55"/>
+    <path d="M50 50 C20 50 8 34 12 18 C30 14 46 28 50 50Z" opacity=".4"/>
+  </g><circle cx="50" cy="50" r="7" fill="currentColor"/>
+</svg></span><span style="color:#c81e82"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><circle cx="16" cy="30" r="12"/><circle cx="44" cy="18" r="9" opacity=".8"/>
+  <circle cx="66" cy="40" r="7" opacity=".65"/><circle cx="88" cy="22" r="5.5" opacity=".5"/>
+  <circle cx="106" cy="38" r="4" opacity=".4"/><circle cx="122" cy="26" r="3" opacity=".3"/>
+  <circle cx="134" cy="34" r="2" opacity=".25"/></g>
+</svg></span><span style="color:#c81e82"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2 50 C40 54 60 20 92 18 C120 16 140 28 158 10 C150 34 122 44 96 40
+           C64 36 44 60 2 50Z" fill="currentColor"/>
+  <path d="M10 44 C46 44 66 16 96 14" fill="none" stroke="currentColor"
+        stroke-width="2" opacity=".5"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile frutiger-metro</code> · <a style="color:var(--acc)" href="profiles/frutiger-metro.md">profiles/frutiger-metro.md</a></div></div>
+<div class="cell prof" style="--pa:#1e3a67"><b>2000s Preppy</b> <code>preppy-2000s</code><div class="era">c. 1998–2008 mall apex; Ivy/old-money roots in the 1950s</div><div class="vibe">Mall-era collegiate (Abercrombie/Hollister/AE): polo navy + pink + kelly green on cream, argyle and gingham, crests, ribbons, monograms, varsity slab numerals — old-money…</div><div class="sw" style="height:22px"><i style="background:#f7f2e6"></i><i style="background:#1e3a67"></i><i style="background:#c22f6d"></i><i style="background:#2b7a3d"></i><i style="background:#7fb2e5"></i><i style="background:#d9c04a"></i><i style="background:#23304b"></i></div><div class="meta">fonts: Alfa Slab One, Pacifico, Lora · gloss: clean-sheen: crisp cotton flatness with one soft highlight o…</div><div class="shapes"><span style="color:#1e3a67"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 0 L80 40 L40 80 L0 40 Z" fill="currentColor" opacity=".85"/>
+  <path d="M40 16 L64 40 L40 64 L16 40 Z" fill="currentColor" opacity=".35"/>
+  <path d="M0 0 L80 80 M80 0 L0 80" stroke="currentColor" stroke-width="1.5"
+        stroke-dasharray="4 4" opacity=".8"/>
+</svg></span><span style="color:#1e3a67"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><rect x="20" y="0" width="20" height="80" opacity=".35"/>
+  <rect x="60" y="0" width="20" height="80" opacity=".35"/>
+  <rect x="0" y="20" width="80" height="20" opacity=".35"/>
+  <rect x="0" y="60" width="80" height="20" opacity=".35"/>
+  <rect x="20" y="20" width="20" height="20" opacity=".55"/>
+  <rect x="60" y="20" width="20" height="20" opacity=".55"/>
+  <rect x="20" y="60" width="20" height="20" opacity=".55"/>
+  <rect x="60" y="60" width="20" height="20" opacity=".55"/></g>
+</svg></span><span style="color:#1e3a67"><svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 L92 18 V60 C92 88 74 106 50 114 C26 106 8 88 8 60 V18 Z"
+        fill="none" stroke="currentColor" stroke-width="5"/>
+  <path d="M50 16 L84 26 V60 C84 82 70 96 50 104 C30 96 16 82 16 60 V26 Z"
+        fill="currentColor" opacity=".2"/>
+  <path d="M22 44 L50 62 L78 44" fill="none" stroke="currentColor" stroke-width="5"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile preppy-2000s</code> · <a style="color:var(--acc)" href="profiles/preppy-2000s.md">profiles/preppy-2000s.md</a></div></div>
+<div class="cell prof" style="--pa:#257dbc"><b>Frutiger Aero</b> <code>frutiger-aero</code><div class="era">c. 2004–2013 — Vista/PSP-era techno-optimism</div><div class="vibe">2004-13 techno-optimist humanism: glossy water, glass, grass and sky. Bubbles rise, koi drift, interfaces float as translucent panes over bright ecosystems — technology a…</div><div class="sw" style="height:22px"><i style="background:#00a3e0"></i><i style="background:#38c6f4"></i><i style="background:#8fe3ff"></i><i style="background:#d6f6ff"></i><i style="background:#ffffff"></i><i style="background:#0077b6"></i><i style="background:#023e8a"></i></div><div class="meta">fonts: Poppins, Inter · gloss: maximum wet: gel + glass + sheen everywhere — this is the ae…</div><div class="shapes"><span style="color:#257dbc"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><circle cx="40" cy="60" r="30" opacity=".35"/>
+  <circle cx="84" cy="34" r="18" opacity=".5"/><circle cx="100" cy="72" r="10" opacity=".4"/>
+  <circle cx="20" cy="22" r="8" opacity=".55"/></g>
+  <g fill="#fff"><ellipse cx="30" cy="46" rx="12" ry="7" opacity=".8"/>
+  <ellipse cx="78" cy="26" rx="7" ry="4" opacity=".85"/>
+  <ellipse cx="97" cy="67" rx="4" ry="2.5" opacity=".8"/></g>
+</svg></span><span style="color:#257dbc"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="44" fill="currentColor"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+  <ellipse cx="50" cy="30" rx="30" ry="17" fill="#fff" opacity=".55"/>
+  <ellipse cx="50" cy="76" rx="22" ry="9" fill="#fff" opacity=".18"/>
+</svg></span><span style="color:#257dbc"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 44 C40 28 90 30 160 18 V60 H0 Z" fill="currentColor" opacity=".85"/>
+  <path d="M0 50 C50 38 100 40 160 30 V60 H0 Z" fill="currentColor" opacity=".55"/>
+  <path d="M0 40 C40 26 90 28 160 16" fill="none" stroke="#fff"
+        stroke-width="2" opacity=".5"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile frutiger-aero</code> · <a style="color:var(--acc)" href="profiles/frutiger-aero.md">profiles/frutiger-aero.md</a></div></div>
+<div class="cell prof" style="--pa:#2e5fd0"><b>Y2K Chrome</b> <code>y2k-chrome</code><div class="era">c. 1997–2003 — the millennium countdown and its morning after</div><div class="vibe">1997-2003 millennium futurism: liquid chrome, silver everything, translucent candy plastic, lens flares and blob forms floating in white voids — the future staged as a sh…</div><div class="sw" style="height:22px"><i style="background:#eef2f7"></i><i style="background:#dfe7f2"></i><i style="background:#8fa5bc"></i><i style="background:#2e5fd0"></i><i style="background:#7de0e6"></i><i style="background:#c9b8e8"></i><i style="background:#1a2333"></i></div><div class="meta">fonts: Orbitron, Space Grotesk · gloss: mirror-grade: chrome-gel every primary element (the nativeui…</div><div class="shapes"><span style="color:#2e5fd0"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 8 C92 6 112 28 108 52 C104 76 84 94 56 92 C28 90 8 72 12 46 C16 22 34 10 60 8Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M58 20 C80 18 96 32 93 50 C90 66 76 80 56 78 C36 76 24 62 27 44 C30 28 42 21 58 20Z"
+        fill="#fff" opacity=".25"/>
+  <ellipse cx="46" cy="34" rx="18" ry="9" fill="#fff" opacity=".7"/>
+</svg></span><span style="color:#2e5fd0"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 4 L64 52 L112 60 L64 68 L60 116 L56 68 L8 60 L56 52 Z"
+        fill="currentColor" opacity=".9"/>
+  <circle cx="60" cy="60" r="7" fill="#fff"/>
+  <circle cx="60" cy="60" r="20" fill="none" stroke="currentColor"
+          stroke-width="1" opacity=".4"/>
+</svg></span><span style="color:#2e5fd0"><svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor">
+    <ellipse cx="70" cy="50" rx="64" ry="22" stroke-width="2"
+             transform="rotate(-18 70 50)"/>
+    <ellipse cx="70" cy="50" rx="46" ry="14" stroke-width="1" opacity=".5"
+             transform="rotate(-18 70 50)"/>
+  </g>
+  <circle cx="118" cy="30" r="5" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile y2k-chrome</code> · <a style="color:var(--acc)" href="profiles/y2k-chrome.md">profiles/y2k-chrome.md</a></div></div>
+<div class="cell prof" style="--pa:#b08d4f"><b>Dark Academia</b> <code>dark-academia</code><div class="era">founding text 1992; aesthetic codified c. 2014–2022</div><div class="vibe">Candlelit scholarship: oxblood and walnut, brass and parchment, annotated margins, plaster casts and rain against tall windows. Knowledge treated as romance and libraries…</div><div class="sw" style="height:22px"><i style="background:#201812"></i><i style="background:#2c221a"></i><i style="background:#8c3838"></i><i style="background:#3e4a36"></i><i style="background:#b08d4f"></i><i style="background:#96876f"></i><i style="background:#e9ddc8"></i></div><div class="meta">fonts: Playfair Display, Lora, Caveat · gloss: none — brass patina and beeswax at most; the shiniest thing …</div><div class="shapes"><span style="color:#b08d4f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C64 4 78 10 86 22 C94 34 96 50 88 64 C80 78 66 94 48 92
+           C30 90 14 78 10 60 C6 42 12 26 24 16 C32 9 40 7 50 6Z"
+        fill="currentColor" opacity=".9"/>
+  <circle cx="50" cy="50" r="26" fill="none" stroke="#fff"
+          stroke-width="2" opacity=".5"/>
+  <path d="M40 60 V38 L50 50 L60 38 V60" fill="none" stroke="#fff"
+        stroke-width="3" opacity=".75"/>
+</svg></span><span style="color:#b08d4f"><svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78 C84 68 110 68 128 74 V12
+           C110 6 84 6 70 16Z" fill="currentColor" opacity=".25"/>
+  <path d="M70 16 V78 M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78
+           M70 16 C84 6 110 6 128 12 V74 C110 68 84 68 70 78"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M24 26 C38 22 54 23 62 28 M24 40 C38 36 54 37 62 42
+           M78 28 C86 23 102 22 116 26 M78 42 C86 37 102 36 116 40"
+        fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+</svg></span><span style="color:#b08d4f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 90 C10 58 22 26 52 12" fill="none" stroke="currentColor"
+        stroke-width="3"/>
+  <g fill="currentColor">
+    <ellipse cx="20" cy="72" rx="11" ry="5" transform="rotate(-58 20 72)"/>
+    <ellipse cx="26" cy="52" rx="11" ry="5" transform="rotate(-46 26 52)"/>
+    <ellipse cx="36" cy="34" rx="11" ry="5" transform="rotate(-32 36 34)"/>
+    <ellipse cx="50" cy="20" rx="11" ry="5" transform="rotate(-16 50 20)"/>
+    <ellipse cx="34" cy="76" rx="11" ry="5" transform="rotate(-72 34 76)" opacity=".6"/>
+    <ellipse cx="42" cy="56" rx="11" ry="5" transform="rotate(-58 42 56)" opacity=".6"/>
+    <ellipse cx="54" cy="38" rx="11" ry="5" transform="rotate(-40 54 38)" opacity=".6"/>
+  </g>
+</svg></span></div><div class="lbl">full brief: <code>assets profile dark-academia</code> · <a style="color:var(--acc)" href="profiles/dark-academia.md">profiles/dark-academia.md</a></div></div>
+<div class="cell prof" style="--pa:#d0021b"><b>Swiss International</b> <code>swiss-international</code><div class="era">1950s Basel/Zürich; the global default through the 70s–80s; permanent</div><div class="vibe">The International Typographic Style: objective white space, a mathematical grid, one neo-grotesque family, one signal red. Design as civic infrastructure — it informs per…</div><div class="sw" style="height:22px"><i style="background:#ffffff"></i><i style="background:#f2f2f2"></i><i style="background:#d9d9d9"></i><i style="background:#595959"></i><i style="background:#111111"></i><i style="background:#d0021b"></i><i style="background:#0a4d8c"></i></div><div class="meta">fonts: Inter, Inter · gloss: zero — matte print forever; even the red is flat ink. A grad…</div><div class="shapes"><span style="color:#d0021b"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></span><span style="color:#d0021b"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1" opacity=".4">
+    <path d="M8 12 H152 M8 28 H120 M8 44 H136"/>
+  </g>
+  <circle cx="140" cy="28" r="12" fill="currentColor"/>
+</svg></span><span style="color:#d0021b"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 30 H112" stroke="currentColor" stroke-width="8"/>
+  <path d="M96 8 L132 30 L96 52 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile swiss-international</code> · <a style="color:var(--acc)" href="profiles/swiss-international.md">profiles/swiss-international.md</a></div></div>
+<div class="cell prof" style="--pa:#d9b453"><b>Golden Archive</b> <code>golden-archive</code><div class="era">born 2026 in this vault; ancestry 1977 (Voyager record)</div><div class="vibe">This vault&#x27;s homegrown aesthetic: a starlit museum for human knowledge. Deep-space navy, engraved gold, thin artifact frames with halos, constellation paths between exhib…</div><div class="sw" style="height:22px"><i style="background:#04070f"></i><i style="background:#0a1224"></i><i style="background:#0b101f"></i><i style="background:#5a4b2c"></i><i style="background:#d9b453"></i><i style="background:#f2dc9b"></i><i style="background:#e8e2d0"></i></div><div class="meta">fonts: Playfair Display, Fraunces · gloss: polished gold only: gel treatment reserved for gold elements…</div><div class="shapes"><span style="color:#d9b453"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" fill="currentColor" opacity=".9"/>
+  <g fill="none" stroke="#fff">
+    <circle cx="50" cy="50" r="38" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="30" stroke-width="1.5" opacity=".55"/>
+    <circle cx="50" cy="50" r="22" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="14" stroke-width="1.5" opacity=".55"/>
+  </g>
+  <circle cx="50" cy="50" r="6" fill="#0a0a12"/>
+  <circle cx="50" cy="50" r="6" fill="none" stroke="#fff" opacity=".8"/>
+</svg></span><span style="color:#d9b453"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 70 L52 30 L96 52 L146 16" fill="none" stroke="currentColor"
+        stroke-width="1.5" stroke-dasharray="3 6"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="14" cy="70" r="4"/><circle cx="52" cy="30" r="4"/>
+    <circle cx="96" cy="52" r="4"/><circle cx="146" cy="16" r="4"/>
+  </g>
+  <g fill="currentColor"><circle cx="34" cy="14" r="1.5"/><circle cx="76" cy="76" r="1.5"/>
+  <circle cx="120" cy="34" r="1.5"/><circle cx="142" cy="66" r="1"/></g>
+</svg></span><span style="color:#d9b453"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 116 V44 H16 V32 H28 V20 H40 V8 H116" fill="none"
+        stroke="currentColor" stroke-width="5"/>
+  <path d="M16 116 V56 H28 V44 H40 V32 H52 V20 H116" fill="none"
+        stroke="currentColor" stroke-width="2"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile golden-archive</code> · <a style="color:var(--acc)" href="profiles/golden-archive.md">profiles/golden-archive.md</a></div></div>
+<div class="cell prof" style="--pa:#e11d2a"><b>Editorial</b> <code>editorial</code><div class="era">modern form from the 1850s; digital since the mid-1990s; permanent</div><div class="vibe">The page as argument: a column grid, a serif that can carry 4,000 words, one red that means &#x27;read this first&#x27;, and white space measured in column inches rather than sprin…</div><div class="sw" style="height:22px"><i style="background:#111111"></i><i style="background:#2b2b2b"></i><i style="background:#6b6b6b"></i><i style="background:#cfcfcf"></i><i style="background:#f2f2f2"></i><i style="background:#ffffff"></i><i style="background:#e11d2a"></i></div><div class="meta">fonts: Playfair Display, Lora · gloss: none — this is ink on stock. The only shine permitted is a c…</div><div class="shapes"><span style="color:#e11d2a"><svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 10 H88 M112 10 H196" stroke="currentColor" stroke-width="1"/>
+  <path d="M100 3 L107 10 L100 17 L93 10 Z" fill="currentColor"/>
+</svg></span><span style="color:#e11d2a"><svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="108" height="148" fill="none" stroke="currentColor" stroke-width="1"/>
+  <rect x="12" y="12" width="96" height="136" fill="none" stroke="currentColor" stroke-width=".5"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile editorial</code> · <a style="color:var(--acc)" href="profiles/editorial.md">profiles/editorial.md</a></div></div>
+<div class="cell prof" style="--pa:#3b82f6"><b>Neutral</b> <code>neutral</code><div class="era">minimalist roots from the 1960s; the software default since c. 2014</div><div class="vibe">The modern product default, done properly: a slate ramp, one blue that means &#x27;act&#x27;, generous space and nothing with an opinion of its own. Deliberately quiet so the data,…</div><div class="sw" style="height:22px"><i style="background:#0f172a"></i><i style="background:#1e293b"></i><i style="background:#334155"></i><i style="background:#94a3b8"></i><i style="background:#e2e8f0"></i><i style="background:#f8fafc"></i><i style="background:#ffffff"></i></div><div class="meta">fonts: Space Grotesk, Inter · gloss: almost none — a 1-level sheen at most on a primary button, a…</div><div class="shapes"><span style="color:#3b82f6"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></span><span style="color:#3b82f6"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1" opacity=".4">
+    <path d="M8 12 H152 M8 28 H120 M8 44 H136"/>
+  </g>
+  <circle cx="140" cy="28" r="12" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile neutral</code> · <a style="color:var(--acc)" href="profiles/neutral.md">profiles/neutral.md</a></div></div>
+<div class="cell prof" style="--pa:#ffe600"><b>High Contrast</b> <code>hi-contrast</code><div class="era">safety-colour logic from the 1960s; WCAG since 1999; permanent</div><div class="vibe">Legibility as the entire design: pure black, pure white, and a signal yellow that can be read across a car park at dusk. Not a theme so much as a floor — the version of a…</div><div class="sw" style="height:22px"><i style="background:#000000"></i><i style="background:#0d0d0d"></i><i style="background:#101010"></i><i style="background:#ffe600"></i><i style="background:#c7c7c7"></i><i style="background:#ffffff"></i></div><div class="meta">fonts: Archivo Black, Inter · gloss: zero, and not as taste — a sheen lowers local contrast and c…</div><div class="shapes"><span style="color:#ffe600"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1" opacity=".4">
+    <path d="M8 12 H152 M8 28 H120 M8 44 H136"/>
+  </g>
+  <circle cx="140" cy="28" r="12" fill="currentColor"/>
+</svg></span><span style="color:#ffe600"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 30 H112" stroke="currentColor" stroke-width="8"/>
+  <path d="M96 8 L132 30 L96 52 Z" fill="currentColor"/>
+</svg></span><span style="color:#ffe600"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 26 H52 V24 H6 Z M6 46 H52 V44 H6 Z M6 26 V44 H10 V26 Z M48 26 V44 H52 V26 Z"
+        fill="currentColor"/>
+  <path d="M58 12 L114 35 L58 58 L70 35 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile hi-contrast</code> · <a style="color:var(--acc)" href="profiles/hi-contrast.md">profiles/hi-contrast.md</a></div></div>
+<div class="cell prof" style="--pa:#ffffff"><b>Mono / Brutalist</b> <code>mono</code><div class="era">nybrutalism 1950; Banham&#x27;s essay 1955; the web revival from c. 2014</div><div class="vibe">Raw structure, visible: hard edges, no radius, a hairline grid you are meant to see, black and white with one colour used like a warning label. The page admits it is a do…</div><div class="sw" style="height:22px"><i style="background:#0a0a0a"></i><i style="background:#262626"></i><i style="background:#525252"></i><i style="background:#a3a3a3"></i><i style="background:#d4d4d4"></i><i style="background:#f5f5f5"></i><i style="background:#ffffff"></i></div><div class="meta">fonts: Archivo Black, Space Grotesk · gloss: zero, as a matter of ethics rather than taste — gloss is a f…</div><div class="shapes"><span style="color:#ffffff"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 26 H52 V24 H6 Z M6 46 H52 V44 H6 Z M6 26 V44 H10 V26 Z M48 26 V44 H52 V26 Z"
+        fill="currentColor"/>
+  <path d="M58 12 L114 35 L58 58 L70 35 Z" fill="currentColor"/>
+</svg></span><span style="color:#ffffff"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></span><span style="color:#ffffff"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 30 H112" stroke="currentColor" stroke-width="8"/>
+  <path d="M96 8 L132 30 L96 52 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile mono</code> · <a style="color:var(--acc)" href="profiles/mono.md">profiles/mono.md</a></div></div>
+<div class="cell prof" style="--pa:#05d9e8"><b>Neon / Cyberpunk</b> <code>cyberpunk</code><div class="era">literary movement from 1982; a permanent interface dialect since</div><div class="vibe">Film noir with the lights replaced by signage: wet black streets, magenta and cyan bleeding into the dark, monospace everywhere, and an interface that looks like it was b…</div><div class="sw" style="height:22px"><i style="background:#0d0221"></i><i style="background:#01012b"></i><i style="background:#ff2a6d"></i><i style="background:#05d9e8"></i><i style="background:#d1f7ff"></i><i style="background:#f9f002"></i><i style="background:#7700ff"></i></div><div class="meta">fonts: Orbitron, JetBrains Mono · gloss: low but emissive — surfaces are matte and the light comes fr…</div><div class="shapes"><span style="color:#05d9e8"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></span><span style="color:#05d9e8"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1" opacity=".4">
+    <path d="M8 12 H152 M8 28 H120 M8 44 H136"/>
+  </g>
+  <circle cx="140" cy="28" r="12" fill="currentColor"/>
+</svg></span><span style="color:#05d9e8"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 30 H112" stroke="currentColor" stroke-width="8"/>
+  <path d="M96 8 L132 30 L96 52 Z" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile cyberpunk</code> · <a style="color:var(--acc)" href="profiles/cyberpunk.md">profiles/cyberpunk.md</a></div></div>
+<div class="cell prof" style="--pa:#ff71ce"><b>Vaporwave / Y2K</b> <code>vaporwave</code><div class="era">music and aesthetic from c. 2010-2012; peak 2015; permanent as reference</div><div class="vibe">A shopping mall at 3am rendered on a machine from 1996: hot pink and cyan, a Greco-Roman bust, fullwidth letterforms, VHS tracking error. Nostalgic for a corporate future…</div><div class="sw" style="height:22px"><i style="background:#ff71ce"></i><i style="background:#b967ff"></i><i style="background:#01cdfe"></i><i style="background:#05ffa1"></i><i style="background:#fffb96"></i><i style="background:#2d1b4e"></i><i style="background:#1a1a2e"></i></div><div class="meta">fonts: Righteous, Space Grotesk · gloss: high and fake — chrome type, wet plastic, a specular highlig…</div><div class="shapes"><span style="color:#ff71ce"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 8 C92 6 112 28 108 52 C104 76 84 94 56 92 C28 90 8 72 12 46 C16 22 34 10 60 8Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M58 20 C80 18 96 32 93 50 C90 66 76 80 56 78 C36 76 24 62 27 44 C30 28 42 21 58 20Z"
+        fill="#fff" opacity=".25"/>
+  <ellipse cx="46" cy="34" rx="18" ry="9" fill="#fff" opacity=".7"/>
+</svg></span><span style="color:#ff71ce"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 4 L64 52 L112 60 L64 68 L60 116 L56 68 L8 60 L56 52 Z"
+        fill="currentColor" opacity=".9"/>
+  <circle cx="60" cy="60" r="7" fill="#fff"/>
+  <circle cx="60" cy="60" r="20" fill="none" stroke="currentColor"
+          stroke-width="1" opacity=".4"/>
+</svg></span><span style="color:#ff71ce"><svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor">
+    <ellipse cx="70" cy="50" rx="64" ry="22" stroke-width="2"
+             transform="rotate(-18 70 50)"/>
+    <ellipse cx="70" cy="50" rx="46" ry="14" stroke-width="1" opacity=".5"
+             transform="rotate(-18 70 50)"/>
+  </g>
+  <circle cx="118" cy="30" r="5" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile vaporwave</code> · <a style="color:var(--acc)" href="profiles/vaporwave.md">profiles/vaporwave.md</a></div></div>
+<div class="cell prof" style="--pa:#88c0d0"><b>Nordic</b> <code>nordic</code><div class="era">early 20th century; golden age 1950s-60s; continuous since</div><div class="vibe">Long winter light handled well: muted blue-greys, pale wood, generous space and nothing shouting. Calm without being cold, plain without being cheap — designed for a room…</div><div class="sw" style="height:22px"><i style="background:#2e3440"></i><i style="background:#3b4252"></i><i style="background:#4c566a"></i><i style="background:#88c0d0"></i><i style="background:#a3be8c"></i><i style="background:#d8dee9"></i><i style="background:#eceff4"></i></div><div class="meta">fonts: Sora, Inter · gloss: very low — matte ceramic and oiled wood, with a single soft …</div><div class="shapes"><span style="color:#88c0d0"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="82" rx="36" ry="14" fill="currentColor" opacity=".9"/>
+  <ellipse cx="48" cy="58" rx="28" ry="12" fill="currentColor" opacity=".65"/>
+  <ellipse cx="52" cy="38" rx="20" ry="10" fill="currentColor" opacity=".45"/>
+  <ellipse cx="50" cy="22" rx="12" ry="7" fill="currentColor" opacity=".3"/>
+</svg></span><span style="color:#88c0d0"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 96 C20 70 20 34 50 4 C80 34 80 70 50 96Z" fill="currentColor" opacity=".25"/>
+  <path d="M50 90 V10 M50 70 C40 64 34 56 32 44 M50 70 C60 64 66 56 68 44
+           M50 46 C43 42 39 36 38 28 M50 46 C57 42 61 36 62 28"
+        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg></span><span style="color:#88c0d0"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></span></div><div class="lbl">full brief: <code>assets profile nordic</code> · <a style="color:var(--acc)" href="profiles/nordic.md">profiles/nordic.md</a></div></div>
+<div class="cell prof" style="--pa:#c1440e"><b>Earthy</b> <code>earthy</code><div class="era">palette of the 1970s-early 80s; revived through craft from c. 2015</div><div class="vibe">Clay, rust, olive and sand: a palette taken from fired pottery and dry landscape, set in a warm serif with plenty of room. Grounded and unhurried, with the handmade left …</div><div class="sw" style="height:22px"><i style="background:#c1440e"></i><i style="background:#e07856"></i><i style="background:#e6a57e"></i><i style="background:#d9c5a0"></i><i style="background:#8a9a5b"></i><i style="background:#f5efe6"></i><i style="background:#3b2f2a"></i></div><div class="meta">fonts: Fraunces, Lora · gloss: almost none — the sheen of a glazed rim on an otherwise matt…</div><div class="shapes"><span style="color:#c1440e"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="82" rx="36" ry="14" fill="currentColor" opacity=".9"/>
+  <ellipse cx="48" cy="58" rx="28" ry="12" fill="currentColor" opacity=".65"/>
+  <ellipse cx="52" cy="38" rx="20" ry="10" fill="currentColor" opacity=".45"/>
+  <ellipse cx="50" cy="22" rx="12" ry="7" fill="currentColor" opacity=".3"/>
+</svg></span><span style="color:#c1440e"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 96 C20 70 20 34 50 4 C80 34 80 70 50 96Z" fill="currentColor" opacity=".25"/>
+  <path d="M50 90 V10 M50 70 C40 64 34 56 32 44 M50 70 C60 64 66 56 68 44
+           M50 46 C43 42 39 36 38 28 M50 46 C57 42 61 36 62 28"
+        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg></span><span style="color:#c1440e"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C74 4 96 22 94 48 C92 76 74 96 48 94 C22 92 4 74 6 48 C8 24 26 8 50 6Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M52 26 C66 26 76 36 75 50 C74 66 64 76 50 75 C36 74 26 64 27 50 C28 36 38 26 52 26Z"
+        fill="currentColor" opacity=".35"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile earthy</code> · <a style="color:var(--acc)" href="profiles/earthy.md">profiles/earthy.md</a></div></div>
+<div class="cell prof" style="--pa:#d664a0"><b>Pastel</b> <code>pastel</code><div class="era">colour family long-standing; a UI default in waves since c. 2016</div><div class="vibe">High value, low saturation, and air: lilac, butter, mint and baby blue on a blush field, with soft corners and nothing with a hard edge. Reads as gentle and a little nost…</div><div class="sw" style="height:22px"><i style="background:#ffd1dc"></i><i style="background:#ffe5b4"></i><i style="background:#c7ceea"></i><i style="background:#b5ead7"></i><i style="background:#e2f0cb"></i><i style="background:#fff5e1"></i><i style="background:#6d5d6e"></i></div><div class="meta">fonts: Poppins, Quicksand · gloss: soft and low — a 2-level sheen like the glaze on a macaron: …</div><div class="shapes"><span style="color:#d664a0"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C74 4 96 22 94 48 C92 76 74 96 48 94 C22 92 4 74 6 48 C8 24 26 8 50 6Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M52 26 C66 26 76 36 75 50 C74 66 64 76 50 75 C36 74 26 64 27 50 C28 36 38 26 52 26Z"
+        fill="currentColor" opacity=".35"/>
+</svg></span><span style="color:#d664a0"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path d="M50 50 C50 20 66 8 82 12 C86 30 72 46 50 50Z"/>
+    <path d="M50 50 C80 50 92 66 88 82 C70 86 54 72 50 50Z" opacity=".7"/>
+    <path d="M50 50 C50 80 34 92 18 88 C14 70 28 54 50 50Z" opacity=".55"/>
+    <path d="M50 50 C20 50 8 34 12 18 C30 14 46 28 50 50Z" opacity=".4"/>
+  </g><circle cx="50" cy="50" r="7" fill="currentColor"/>
+</svg></span><span style="color:#d664a0"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="44" fill="currentColor"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+  <ellipse cx="50" cy="30" rx="30" ry="17" fill="#fff" opacity=".55"/>
+  <ellipse cx="50" cy="76" rx="22" ry="9" fill="#fff" opacity=".18"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile pastel</code> · <a style="color:var(--acc)" href="profiles/pastel.md">profiles/pastel.md</a></div></div>
+<div class="cell prof" style="--pa:#d4af37"><b>Jewel</b> <code>jewel</code><div class="era">pigment economics from antiquity; a continuous luxury register since</div><div class="vibe">Deep saturated colour over dark grounds: emerald, sapphire, garnet and old gold, lit like a display case. Luxurious without glitter — the richness comes from pigment dept…</div><div class="sw" style="height:22px"><i style="background:#14213d"></i><i style="background:#1b2a4a"></i><i style="background:#5f0f40"></i><i style="background:#0f766e"></i><i style="background:#7c3aed"></i><i style="background:#d4af37"></i><i style="background:#f8f4e8"></i></div><div class="meta">fonts: Playfair Display, Fraunces · gloss: moderate and deep — lacquer rather than chrome. Light should…</div><div class="shapes"><span style="color:#d4af37"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" fill="currentColor" opacity=".9"/>
+  <g fill="none" stroke="#fff">
+    <circle cx="50" cy="50" r="38" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="30" stroke-width="1.5" opacity=".55"/>
+    <circle cx="50" cy="50" r="22" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="14" stroke-width="1.5" opacity=".55"/>
+  </g>
+  <circle cx="50" cy="50" r="6" fill="#0a0a12"/>
+  <circle cx="50" cy="50" r="6" fill="none" stroke="#fff" opacity=".8"/>
+</svg></span><span style="color:#d4af37"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 116 V44 H16 V32 H28 V20 H40 V8 H116" fill="none"
+        stroke="currentColor" stroke-width="5"/>
+  <path d="M16 116 V56 H28 V44 H40 V32 H52 V20 H116" fill="none"
+        stroke="currentColor" stroke-width="2"/>
+</svg></span><span style="color:#d4af37"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 90 C10 58 22 26 52 12" fill="none" stroke="currentColor"
+        stroke-width="3"/>
+  <g fill="currentColor">
+    <ellipse cx="20" cy="72" rx="11" ry="5" transform="rotate(-58 20 72)"/>
+    <ellipse cx="26" cy="52" rx="11" ry="5" transform="rotate(-46 26 52)"/>
+    <ellipse cx="36" cy="34" rx="11" ry="5" transform="rotate(-32 36 34)"/>
+    <ellipse cx="50" cy="20" rx="11" ry="5" transform="rotate(-16 50 20)"/>
+    <ellipse cx="34" cy="76" rx="11" ry="5" transform="rotate(-72 34 76)" opacity=".6"/>
+    <ellipse cx="42" cy="56" rx="11" ry="5" transform="rotate(-58 42 56)" opacity=".6"/>
+    <ellipse cx="54" cy="38" rx="11" ry="5" transform="rotate(-40 54 38)" opacity=".6"/>
+  </g>
+</svg></span></div><div class="lbl">full brief: <code>assets profile jewel</code> · <a style="color:var(--acc)" href="profiles/jewel.md">profiles/jewel.md</a></div></div>
+<div class="cell prof" style="--pa:#8a70ff"><b>Ultraviolet</b> <code>ultraviolet</code><div class="era">spectral since Newton 1672; the dominant dark-mode register since c. 2018</div><div class="vibe">Indigo depth with violet and electric blue blooming out of it: the short end of the spectrum, treated as a mood. Dark but not grim, synthetic but not neon — closer to a n…</div><div class="sw" style="height:22px"><i style="background:#0a0618"></i><i style="background:#150e2e"></i><i style="background:#1a1238"></i><i style="background:#3c2f6e"></i><i style="background:#8a70ff"></i><i style="background:#c77dff"></i><i style="background:#ece7ff"></i></div><div class="meta">fonts: Sora, Space Grotesk · gloss: moderate but emissive — nothing reflects, things glow. A hig…</div><div class="shapes"><span style="color:#8a70ff"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 70 L52 30 L96 52 L146 16" fill="none" stroke="currentColor"
+        stroke-width="1.5" stroke-dasharray="3 6"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="14" cy="70" r="4"/><circle cx="52" cy="30" r="4"/>
+    <circle cx="96" cy="52" r="4"/><circle cx="146" cy="16" r="4"/>
+  </g>
+  <g fill="currentColor"><circle cx="34" cy="14" r="1.5"/><circle cx="76" cy="76" r="1.5"/>
+  <circle cx="120" cy="34" r="1.5"/><circle cx="142" cy="66" r="1"/></g>
+</svg></span><span style="color:#8a70ff"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" fill="currentColor" opacity=".9"/>
+  <g fill="none" stroke="#fff">
+    <circle cx="50" cy="50" r="38" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="30" stroke-width="1.5" opacity=".55"/>
+    <circle cx="50" cy="50" r="22" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="14" stroke-width="1.5" opacity=".55"/>
+  </g>
+  <circle cx="50" cy="50" r="6" fill="#0a0a12"/>
+  <circle cx="50" cy="50" r="6" fill="none" stroke="#fff" opacity=".8"/>
+</svg></span><span style="color:#8a70ff"><svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor">
+    <ellipse cx="70" cy="50" rx="64" ry="22" stroke-width="2"
+             transform="rotate(-18 70 50)"/>
+    <ellipse cx="70" cy="50" rx="46" ry="14" stroke-width="1" opacity=".5"
+             transform="rotate(-18 70 50)"/>
+  </g>
+  <circle cx="118" cy="30" r="5" fill="currentColor"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile ultraviolet</code> · <a style="color:var(--acc)" href="profiles/ultraviolet.md">profiles/ultraviolet.md</a></div></div>
+<div class="cell prof" style="--pa:#ff6b35"><b>Ember</b> <code>ember</code><div class="era">a deliberate warm-dark register; current in tooling since c. 2016</div><div class="vibe">A dark room with a fire in it: near-black browns carrying orange and amber heat, warm shadows, and light that comes from one low source. A dark theme that feels inhabited…</div><div class="sw" style="height:22px"><i style="background:#140d0a"></i><i style="background:#241511"></i><i style="background:#2a1a14"></i><i style="background:#4d2e1f"></i><i style="background:#ff6b35"></i><i style="background:#ffc15e"></i><i style="background:#ffefe2"></i></div><div class="meta">fonts: Bebas Neue, DM Sans · gloss: low and hot — matte everywhere except where something is glo…</div><div class="shapes"><span style="color:#ff6b35"><svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 56 C24 50 20 34 34 30 C30 42 44 44 48 32 C50 42 60 44 64 30
+           C68 42 80 40 82 26 C88 38 100 36 102 20 C110 32 116 28 116 14
+           C118 34 108 56 84 56 Z" fill="currentColor"/>
+</svg></span><span style="color:#ff6b35"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 4 L58 22 L76 12 L74 32 L94 32 L80 46 L96 58 L76 62 L82 82 L62 76 L58 96
+           L48 78 L32 92 L32 70 L12 72 L24 56 L6 46 L26 40 L18 20 L38 26 Z"
+        fill="currentColor"/>
+  <circle cx="51" cy="51" r="24" fill="none" stroke="#fff" stroke-width="4" opacity=".9"/>
+</svg></span><span style="color:#ff6b35"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 116 V44 H16 V32 H28 V20 H40 V8 H116" fill="none"
+        stroke="currentColor" stroke-width="5"/>
+  <path d="M16 116 V56 H28 V44 H40 V32 H52 V20 H116" fill="none"
+        stroke="currentColor" stroke-width="2"/>
+</svg></span></div><div class="lbl">full brief: <code>assets profile ember</code> · <a style="color:var(--acc)" href="profiles/ember.md">profiles/ember.md</a></div></div>
+<div class="cell prof" style="--pa:#b42e23"><b>Bauhaus / Workshop Modernism</b> <code>bauhaus</code><div class="era">1919–1933; contemporary workshop interpretation</div><div class="vibe">A workshop, not a colour theme: asymmetric typography, measured geometric studies and useful objects. Form, material and making occupy the same page.…</div><div class="sw" style="height:22px"><i style="background:#f2eee4"></i><i style="background:#191919"></i><i style="background:#b42e23"></i><i style="background:#23539b"></i><i style="background:#e1af32"></i><i style="background:#57534c"></i></div><div class="meta">fonts: Sora, Inter · gloss: None: flat printed colour on warm stock. Keep edges precise …</div><div class="shapes"><span style="color:#b42e23"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="An original asymmetrical workshop study in geometric form and measured colour"><rect width="720" height="840" fill="#e8e1d2"/><path d="M60 60H660V780H60Z" fill="none" stroke="#191919"/><circle cx="421" cy="276" r="178" fill="#b42e23"/><path d="M100 470L363 128L363 470Z" fill="#23539b"/><path d="M250 433H592V690H250Z" fill="#e1af32"/><circle cx="250" cy="562" r="129" fill="#191919"/><path d="M60 690H660M592 60V780M60 433H660" stroke="#191919" stroke-width="2"/><g font-family="sans-serif" fill="#191919"><text x="83" y="111" font-size="23">FORM / MATERIAL</text><text x="83" y="750" font-size="21">STUDY 01 — WORKSHOP EDITION</text></g></svg></span></div><div class="lbl">full brief: <code>assets profile bauhaus</code> · <a style="color:var(--acc)" href="profiles/bauhaus.md">profiles/bauhaus.md</a></div></div>
+<div class="cell prof" style="--pa:#405840"><b>Art Nouveau / Botanical Line</b> <code>art-nouveau</code><div class="era">c. 1883–1914; contemporary botanical-poster interpretation</div><div class="vibe">A botanical print grown into a page: sinuous stems, elongated lettering, warm paper and a continuous ornamental frame.…</div><div class="sw" style="height:22px"><i style="background:#f2e9d5"></i><i style="background:#27382c"></i><i style="background:#405840"></i><i style="background:#914d37"></i><i style="background:#887957"></i><i style="background:#e3d5b8"></i></div><div class="meta">fonts: Fraunces, Lora · gloss: None: flat lithographic stock with visible ink contours. Let…</div><div class="shapes"><span style="color:#405840"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="An original iris botanical plate with a continuous whiplash border"><rect width="720" height="840" fill="#f2e9d5"/><path d="M48 800V130Q48 40 140 40H580Q672 40 672 130V800Z" fill="none" stroke="#887957" stroke-width="2"/><circle cx="360" cy="278" r="198" fill="#e3d5b8"/><circle cx="360" cy="278" r="180" fill="none" stroke="#887957"/><g fill="none" stroke="#405840" stroke-width="4"><path d="M80 800C125 535 20 610 110 370S140 110 82 40M640 800C595 535 700 610 610 370S580 110 638 40M96 800C170 590 49 600 140 367S190 128 103 40M624 800C550 590 671 600 580 367S530 128 617 40"/><path d="M325 800Q378 572 360 275M354 687Q232 640 219 474M358 570Q458 480 497 335M328 762Q441 704 465 570"/></g><g fill="#405840"><path d="M326 797Q228 646 243 548Q325 665 326 797M348 738Q465 618 481 489Q377 575 348 738M360 621Q289 532 292 417Q358 500 360 621"/></g><g fill="#914d37" stroke="#887957" stroke-width="2"><path d="M360 289Q254 278 275 203Q319 178 351 246Q324 152 362 132Q402 155 377 245Q423 163 458 208Q467 271 378 289Q422 309 391 346Q357 329 360 289Q325 352 299 317Q296 283 360 289Z"/><path d="M497 345Q444 323 455 278Q486 264 495 314Q495 252 524 257Q553 285 520 328Q563 308 565 339Q543 367 511 352Z"/></g><g fill="#887957"><circle cx="360" cy="284" r="12"/><circle cx="507" cy="339" r="8"/></g><path d="M160 785Q360 745 560 785" fill="none" stroke="#887957" stroke-width="2"/></svg></span></div><div class="lbl">full brief: <code>assets profile art-nouveau</code> · <a style="color:var(--acc)" href="profiles/art-nouveau.md">profiles/art-nouveau.md</a></div></div>
+</div>
+<h2 id="palettes">Palettes <small>44</small></h2><div class="grid g-pal">
+<div class="cell"><div class="sw"><i style="background:#2b8fd6"></i><i style="background:#60b2f0"></i><i style="background:#ceecff"></i><i style="background:#eaf6ff"></i><i style="background:#ffffff"></i><i style="background:#96cd6e"></i><i style="background:#4e9638"></i><i style="background:#0b3c5d"></i></div><div class="lbl"><b>Frutiger Aero — Sky</b> <code>frutiger-aero-sky</code></div><div class="hexes">#2b8fd6 #60b2f0 #ceecff #eaf6ff #ffffff #96cd6e #4e9638 #0b3c5d</div></div>
+<div class="cell"><div class="sw"><i style="background:#00a3e0"></i><i style="background:#38c6f4"></i><i style="background:#8fe3ff"></i><i style="background:#d6f6ff"></i><i style="background:#ffffff"></i><i style="background:#0077b6"></i><i style="background:#023e8a"></i></div><div class="lbl"><b>Frutiger Aero — Aqua Gloss</b> <code>frutiger-aqua-gloss</code></div><div class="hexes">#00a3e0 #38c6f4 #8fe3ff #d6f6ff #ffffff #0077b6 #023e8a</div></div>
+<div class="cell"><div class="sw"><i style="background:#7ac74f"></i><i style="background:#a8e063"></i><i style="background:#d9f2b4"></i><i style="background:#eafbe0"></i><i style="background:#ffffff"></i><i style="background:#2b8fd6"></i><i style="background:#1b6ca8"></i></div><div class="lbl"><b>Frutiger Aero — Nature Tech</b> <code>frutiger-nature-tech</code></div><div class="hexes">#7ac74f #a8e063 #d9f2b4 #eafbe0 #ffffff #2b8fd6 #1b6ca8</div></div>
+<div class="cell"><div class="sw"><i style="background:#ff71ce"></i><i style="background:#b967ff"></i><i style="background:#01cdfe"></i><i style="background:#05ffa1"></i><i style="background:#fffb96"></i><i style="background:#2d1b4e"></i><i style="background:#1a1a2e"></i></div><div class="lbl"><b>Vaporwave — Sunset</b> <code>vaporwave-sunset</code></div><div class="hexes">#ff71ce #b967ff #01cdfe #05ffa1 #fffb96 #2d1b4e #1a1a2e</div></div>
+<div class="cell"><div class="sw"><i style="background:#c0c6d0"></i><i style="background:#e8ecf3"></i><i style="background:#ff5fa2"></i><i style="background:#7b6cff"></i><i style="background:#5ff0ff"></i><i style="background:#20123a"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Y2K — Chrome &amp; Bubblegum</b> <code>y2k-chrome</code></div><div class="hexes">#c0c6d0 #e8ecf3 #ff5fa2 #7b6cff #5ff0ff #20123a #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#ff2e97"></i><i style="background:#00e5ff"></i><i style="background:#8a2be2"></i><i style="background:#ffcf40"></i><i style="background:#0f1b3d"></i><i style="background:#071130"></i></div><div class="lbl"><b>Vaporwave — Miami Nights</b> <code>miami-nights</code></div><div class="hexes">#ff2e97 #00e5ff #8a2be2 #ffcf40 #0f1b3d #071130</div></div>
+<div class="cell"><div class="sw"><i style="background:#0d0221"></i><i style="background:#01012b"></i><i style="background:#ff2a6d"></i><i style="background:#05d9e8"></i><i style="background:#d1f7ff"></i><i style="background:#f9f002"></i><i style="background:#7700ff"></i></div><div class="lbl"><b>Cyberpunk — Night City</b> <code>cyberpunk-night</code></div><div class="hexes">#0d0221 #01012b #ff2a6d #05d9e8 #d1f7ff #f9f002 #7700ff</div></div>
+<div class="cell"><div class="sw"><i style="background:#000000"></i><i style="background:#0a1a0a"></i><i style="background:#00ff41"></i><i style="background:#00d4aa"></i><i style="background:#39ff14"></i><i style="background:#0affef"></i></div><div class="lbl"><b>Neon — Terminal Green</b> <code>neon-terminal</code></div><div class="hexes">#000000 #0a1a0a #00ff41 #00d4aa #39ff14 #0affef</div></div>
+<div class="cell"><div class="sw"><i style="background:#ff006e"></i><i style="background:#fb5607"></i><i style="background:#ffbe0b"></i><i style="background:#8338ec"></i><i style="background:#3a86ff"></i><i style="background:#12002b"></i></div><div class="lbl"><b>Neon — Synthwave Grid</b> <code>synthwave-grid</code></div><div class="hexes">#ff006e #fb5607 #ffbe0b #8338ec #3a86ff #12002b</div></div>
+<div class="cell"><div class="sw"><i style="background:#0f172a"></i><i style="background:#1e293b"></i><i style="background:#334155"></i><i style="background:#94a3b8"></i><i style="background:#e2e8f0"></i><i style="background:#f8fafc"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Neutral — Ink &amp; Glass</b> <code>ink-and-glass</code></div><div class="hexes">#0f172a #1e293b #334155 #94a3b8 #e2e8f0 #f8fafc #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#1c1917"></i><i style="background:#44403c"></i><i style="background:#78716c"></i><i style="background:#d6d3d1"></i><i style="background:#f5f5f4"></i><i style="background:#fafaf9"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Neutral — Warm Sand</b> <code>warm-sand</code></div><div class="hexes">#1c1917 #44403c #78716c #d6d3d1 #f5f5f4 #fafaf9 #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#ffd1dc"></i><i style="background:#ffe5b4"></i><i style="background:#c7ceea"></i><i style="background:#b5ead7"></i><i style="background:#e2f0cb"></i><i style="background:#fff5e1"></i><i style="background:#6d5d6e"></i></div><div class="lbl"><b>Pastel — Dream</b> <code>pastel-dream</code></div><div class="hexes">#ffd1dc #ffe5b4 #c7ceea #b5ead7 #e2f0cb #fff5e1 #6d5d6e</div></div>
+<div class="cell"><div class="sw"><i style="background:#ffafcc"></i><i style="background:#ffc8dd"></i><i style="background:#bde0fe"></i><i style="background:#a2d2ff"></i><i style="background:#cdb4db"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Pastel — Cotton Candy</b> <code>cotton-candy</code></div><div class="hexes">#ffafcc #ffc8dd #bde0fe #a2d2ff #cdb4db #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#c1440e"></i><i style="background:#e07856"></i><i style="background:#e6a57e"></i><i style="background:#d9c5a0"></i><i style="background:#8a9a5b"></i><i style="background:#f5efe6"></i><i style="background:#3b2f2a"></i></div><div class="lbl"><b>Earthy — Terracotta Clay</b> <code>terracotta-clay</code></div><div class="hexes">#c1440e #e07856 #e6a57e #d9c5a0 #8a9a5b #f5efe6 #3b2f2a</div></div>
+<div class="cell"><div class="sw"><i style="background:#7d8c5c"></i><i style="background:#a3b18a"></i><i style="background:#cbd5c0"></i><i style="background:#dad7cd"></i><i style="background:#8d8177"></i><i style="background:#f4f1ea"></i><i style="background:#40483a"></i></div><div class="lbl"><b>Earthy — Sage &amp; Stone</b> <code>sage-stone</code></div><div class="hexes">#7d8c5c #a3b18a #cbd5c0 #dad7cd #8d8177 #f4f1ea #40483a</div></div>
+<div class="cell"><div class="sw"><i style="background:#e07a5f"></i><i style="background:#f2cc8f"></i><i style="background:#e6b89c"></i><i style="background:#cd9777"></i><i style="background:#81574a"></i><i style="background:#3d405b"></i></div><div class="lbl"><b>Earthy — Desert Sunset</b> <code>desert-sunset</code></div><div class="hexes">#e07a5f #f2cc8f #e6b89c #cd9777 #81574a #3d405b</div></div>
+<div class="cell"><div class="sw"><i style="background:#6f1d1b"></i><i style="background:#99582a"></i><i style="background:#bb9457"></i><i style="background:#dda15e"></i><i style="background:#e9c46a"></i><i style="background:#f4ede4"></i><i style="background:#432818"></i></div><div class="lbl"><b>Earthy — Autumn Warmth</b> <code>autumn-warmth</code></div><div class="hexes">#6f1d1b #99582a #bb9457 #dda15e #e9c46a #f4ede4 #432818</div></div>
+<div class="cell"><div class="sw"><i style="background:#264653"></i><i style="background:#2a9d8f"></i><i style="background:#8ab17d"></i><i style="background:#e9c46a"></i><i style="background:#e76f51"></i><i style="background:#f4f1de"></i></div><div class="lbl"><b>Earthy — Coastal Calm</b> <code>coastal-calm</code></div><div class="hexes">#264653 #2a9d8f #8ab17d #e9c46a #e76f51 #f4f1de</div></div>
+<div class="cell"><div class="sw"><i style="background:#a44a3f"></i><i style="background:#d68c45"></i><i style="background:#e0b04a"></i><i style="background:#6b8e5a"></i><i style="background:#4a6d7c"></i><i style="background:#f0e6d2"></i></div><div class="lbl"><b>Earthy — Retro 70s</b> <code>retro-70s</code></div><div class="hexes">#a44a3f #d68c45 #e0b04a #6b8e5a #4a6d7c #f0e6d2</div></div>
+<div class="cell"><div class="sw"><i style="background:#111111"></i><i style="background:#2b2b2b"></i><i style="background:#6b6b6b"></i><i style="background:#cfcfcf"></i><i style="background:#f2f2f2"></i><i style="background:#ffffff"></i><i style="background:#e11d2a"></i></div><div class="lbl"><b>Editorial — Ink on Paper</b> <code>editorial-ink</code></div><div class="hexes">#111111 #2b2b2b #6b6b6b #cfcfcf #f2f2f2 #ffffff #e11d2a</div></div>
+<div class="cell"><div class="sw"><i style="background:#000000"></i><i style="background:#ffffff"></i><i style="background:#ff3b30"></i><i style="background:#0a84ff"></i><i style="background:#f2f2f7"></i><i style="background:#8e8e93"></i></div><div class="lbl"><b>Editorial — Swiss Minimal</b> <code>swiss-minimal</code></div><div class="hexes">#000000 #ffffff #ff3b30 #0a84ff #f2f2f7 #8e8e93</div></div>
+<div class="cell"><div class="sw"><i style="background:#0a0a0a"></i><i style="background:#262626"></i><i style="background:#525252"></i><i style="background:#a3a3a3"></i><i style="background:#d4d4d4"></i><i style="background:#f5f5f5"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Mono — Noir</b> <code>mono-noir</code></div><div class="hexes">#0a0a0a #262626 #525252 #a3a3a3 #d4d4d4 #f5f5f5 #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#1a1a1a"></i><i style="background:#3d3d3d"></i><i style="background:#767676"></i><i style="background:#b8b3aa"></i><i style="background:#e8e4dc"></i><i style="background:#faf8f3"></i></div><div class="lbl"><b>Mono — Ivory &amp; Charcoal</b> <code>ivory-charcoal</code></div><div class="hexes">#1a1a1a #3d3d3d #767676 #b8b3aa #e8e4dc #faf8f3</div></div>
+<div class="cell"><div class="sw"><i style="background:#14213d"></i><i style="background:#1b2a4a"></i><i style="background:#5f0f40"></i><i style="background:#0f766e"></i><i style="background:#7c3aed"></i><i style="background:#d4af37"></i><i style="background:#f8f4e8"></i></div><div class="lbl"><b>Jewel — Royal</b> <code>jewel-royal</code></div><div class="hexes">#14213d #1b2a4a #5f0f40 #0f766e #7c3aed #d4af37 #f8f4e8</div></div>
+<div class="cell"><div class="sw"><i style="background:#081c15"></i><i style="background:#1b4332"></i><i style="background:#2d6a4f"></i><i style="background:#40916c"></i><i style="background:#74c69d"></i><i style="background:#b7e4c7"></i><i style="background:#d8f3dc"></i></div><div class="lbl"><b>Jewel — Forest Botanical</b> <code>forest-botanical</code></div><div class="hexes">#081c15 #1b4332 #2d6a4f #40916c #74c69d #b7e4c7 #d8f3dc</div></div>
+<div class="cell"><div class="sw"><i style="background:#2e3440"></i><i style="background:#3b4252"></i><i style="background:#4c566a"></i><i style="background:#88c0d0"></i><i style="background:#a3be8c"></i><i style="background:#d8dee9"></i><i style="background:#eceff4"></i></div><div class="lbl"><b>Nordic — Frost</b> <code>nordic-frost</code></div><div class="hexes">#2e3440 #3b4252 #4c566a #88c0d0 #a3be8c #d8dee9 #eceff4</div></div>
+<div class="cell"><div class="sw"><i style="background:#04070f"></i><i style="background:#0a1224"></i><i style="background:#0b101f"></i><i style="background:#5a4b2c"></i><i style="background:#d9b453"></i><i style="background:#f2dc9b"></i><i style="background:#e8e2d0"></i></div><div class="lbl"><b>Golden Archive — Voyager Record</b> <code>golden-archive</code></div><div class="hexes">#04070f #0a1224 #0b101f #5a4b2c #d9b453 #f2dc9b #e8e2d0</div></div>
+<div class="cell"><div class="sw"><i style="background:#0a0618"></i><i style="background:#150e2e"></i><i style="background:#1a1238"></i><i style="background:#3c2f6e"></i><i style="background:#8a70ff"></i><i style="background:#c77dff"></i><i style="background:#ece7ff"></i></div><div class="lbl"><b>Ultraviolet — Bloom</b> <code>ultraviolet-bloom</code></div><div class="hexes">#0a0618 #150e2e #1a1238 #3c2f6e #8a70ff #c77dff #ece7ff</div></div>
+<div class="cell"><div class="sw"><i style="background:#140d0a"></i><i style="background:#241511"></i><i style="background:#2a1a14"></i><i style="background:#4d2e1f"></i><i style="background:#ff6b35"></i><i style="background:#ffc15e"></i><i style="background:#ffefe2"></i></div><div class="lbl"><b>Ember — Forge</b> <code>ember-forge</code></div><div class="hexes">#140d0a #241511 #2a1a14 #4d2e1f #ff6b35 #ffc15e #ffefe2</div></div>
+<div class="cell"><div class="sw"><i style="background:#000000"></i><i style="background:#0d0d0d"></i><i style="background:#101010"></i><i style="background:#ffe600"></i><i style="background:#c7c7c7"></i><i style="background:#ffffff"></i></div><div class="lbl"><b>Hi-Contrast — Signal</b> <code>signal-contrast</code></div><div class="hexes">#000000 #0d0d0d #101010 #ffe600 #c7c7c7 #ffffff</div></div>
+<div class="cell"><div class="sw"><i style="background:#f6e7ee"></i><i style="background:#d81b7a"></i><i style="background:#5438dc"></i><i style="background:#f3a712"></i><i style="background:#7fc243"></i><i style="background:#3a2038"></i><i style="background:#fffaf5"></i></div><div class="lbl"><b>Avant Basic — Playhouse</b> <code>avant-play</code></div><div class="hexes">#f6e7ee #d81b7a #5438dc #f3a712 #7fc243 #3a2038 #fffaf5</div></div>
+<div class="cell"><div class="sw"><i style="background:#edeee4"></i><i style="background:#dfe4d2"></i><i style="background:#52704a"></i><i style="background:#8ba888"></i><i style="background:#a5643a"></i><i style="background:#d9c8a9"></i><i style="background:#262e22"></i></div><div class="lbl"><b>Organic Tech — Living Earth</b> <code>living-earth</code></div><div class="hexes">#edeee4 #dfe4d2 #52704a #8ba888 #a5643a #d9c8a9 #262e22</div></div>
+<div class="cell"><div class="sw"><i style="background:#f7f4ee"></i><i style="background:#ffffff"></i><i style="background:#141414"></i><i style="background:#8e7747"></i><i style="background:#b4a284"></i><i style="background:#6b665c"></i><i style="background:#d8d2c5"></i></div><div class="lbl"><b>High Fashion — Runway</b> <code>runway-ivory</code></div><div class="hexes">#f7f4ee #ffffff #141414 #8e7747 #b4a284 #6b665c #d8d2c5</div></div>
+<div class="cell"><div class="sw"><i style="background:#141518"></i><i style="background:#1f2125"></i><i style="background:#ff5c1f"></i><i style="background:#ffd23f"></i><i style="background:#e63946"></i><i style="background:#989fa8"></i><i style="background:#f1efe8"></i></div><div class="lbl"><b>Skate Culture — Grip Tape</b> <code>grip-tape</code></div><div class="hexes">#141518 #1f2125 #ff5c1f #ffd23f #e63946 #989fa8 #f1efe8</div></div>
+<div class="cell"><div class="sw"><i style="background:#f1ece0"></i><i style="background:#16697a"></i><i style="background:#a8442c"></i><i style="background:#d9a441"></i><i style="background:#4a7c59"></i><i style="background:#6f6a5b"></i><i style="background:#2b2721"></i></div><div class="lbl"><b>Mosaic — Trencadís</b> <code>trencadis</code></div><div class="hexes">#f1ece0 #16697a #a8442c #d9a441 #4a7c59 #6f6a5b #2b2721</div></div>
+<div class="cell"><div class="sw"><i style="background:#12100c"></i><i style="background:#d4af37"></i><i style="background:#2f9e77"></i><i style="background:#25567b"></i><i style="background:#8c2f39"></i><i style="background:#99907a"></i><i style="background:#f0e7d0"></i></div><div class="lbl"><b>Art Deco — Gatsby</b> <code>gatsby-gold</code></div><div class="hexes">#12100c #d4af37 #2f9e77 #25567b #8c2f39 #99907a #f0e7d0</div></div>
+<div class="cell"><div class="sw"><i style="background:#ffffff"></i><i style="background:#c81e82"></i><i style="background:#8ec400"></i><i style="background:#00a5cf"></i><i style="background:#f97a00"></i><i style="background:#7a3fb8"></i><i style="background:#22303b"></i></div><div class="lbl"><b>Frutiger Metro — Bloom</b> <code>metro-bloom</code></div><div class="hexes">#ffffff #c81e82 #8ec400 #00a5cf #f97a00 #7a3fb8 #22303b</div></div>
+<div class="cell"><div class="sw"><i style="background:#eef2f7"></i><i style="background:#dfe7f2"></i><i style="background:#8fa5bc"></i><i style="background:#2e5fd0"></i><i style="background:#7de0e6"></i><i style="background:#c9b8e8"></i><i style="background:#1a2333"></i></div><div class="lbl"><b>Y2K — Millennium Chrome</b> <code>millennium-chrome</code></div><div class="hexes">#eef2f7 #dfe7f2 #8fa5bc #2e5fd0 #7de0e6 #c9b8e8 #1a2333</div></div>
+<div class="cell"><div class="sw"><i style="background:#201812"></i><i style="background:#2c221a"></i><i style="background:#8c3838"></i><i style="background:#3e4a36"></i><i style="background:#b08d4f"></i><i style="background:#96876f"></i><i style="background:#e9ddc8"></i></div><div class="lbl"><b>Dark Academia — Candlelit Study</b> <code>candlelit-study</code></div><div class="hexes">#201812 #2c221a #8c3838 #3e4a36 #b08d4f #96876f #e9ddc8</div></div>
+<div class="cell"><div class="sw"><i style="background:#ffffff"></i><i style="background:#f2f2f2"></i><i style="background:#d9d9d9"></i><i style="background:#595959"></i><i style="background:#111111"></i><i style="background:#d0021b"></i><i style="background:#0a4d8c"></i></div><div class="lbl"><b>Swiss — Signal Red</b> <code>swiss-signal</code></div><div class="hexes">#ffffff #f2f2f2 #d9d9d9 #595959 #111111 #d0021b #0a4d8c</div></div>
+<div class="cell"><div class="sw"><i style="background:#f7f2e6"></i><i style="background:#1e3a67"></i><i style="background:#c22f6d"></i><i style="background:#2b7a3d"></i><i style="background:#7fb2e5"></i><i style="background:#d9c04a"></i><i style="background:#23304b"></i></div><div class="lbl"><b>2000s Preppy — Mall Prep</b> <code>mall-prep</code></div><div class="hexes">#f7f2e6 #1e3a67 #c22f6d #2b7a3d #7fb2e5 #d9c04a #23304b</div></div>
+<div class="cell"><div class="sw"><i style="background:#f2eee4"></i><i style="background:#191919"></i><i style="background:#b42e23"></i><i style="background:#23539b"></i><i style="background:#e1af32"></i><i style="background:#57534c"></i></div><div class="lbl"><b>Bauhaus — Workshop Study</b> <code>workshop-primary</code></div><div class="hexes">#f2eee4 #191919 #b42e23 #23539b #e1af32 #57534c</div></div>
+<div class="cell"><div class="sw"><i style="background:#f2e9d5"></i><i style="background:#27382c"></i><i style="background:#405840"></i><i style="background:#914d37"></i><i style="background:#887957"></i><i style="background:#e3d5b8"></i></div><div class="lbl"><b>Art Nouveau — Botanical Lithograph</b> <code>botanical-lithograph</code></div><div class="hexes">#f2e9d5 #27382c #405840 #914d37 #887957 #e3d5b8</div></div>
+<div class="cell"><div class="sw"><i style="background:#f4f3ed"></i><i style="background:#e7e7df"></i><i style="background:#29332d"></i><i style="background:#3c605b"></i><i style="background:#bda17c"></i><i style="background:#5b6258"></i></div><div class="lbl"><b>Nordic — Daylight Objects</b> <code>nordic-daylight</code></div><div class="hexes">#f4f3ed #e7e7df #29332d #3c605b #bda17c #5b6258</div></div>
+</div>
+<h2 id="gradients">Gradients <small>17</small></h2><div class="grid g-tile">
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #8ec5fc 0%, #e0c3fc 100%)"></div><div class="lbl"><b>aurora</b> · pastel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%)"></div><div class="lbl"><b>cotton-candy</b> · pastel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)"></div><div class="lbl"><b>peachy</b> · pastel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%)"></div><div class="lbl"><b>mint-fresh</b> · pastel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)"></div><div class="lbl"><b>sunset-warm</b> · vaporwave</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #7f00ff 0%, #e100ff 100%)"></div><div class="lbl"><b>purple-haze</b> · vaporwave</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #f7971e 0%, #ffd200 100%)"></div><div class="lbl"><b>gold-hour</b> · earthy</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #134e5e 0%, #71b280 100%)"></div><div class="lbl"><b>forest-mist</b> · jewel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #2b5876 0%, #4e4376 100%)"></div><div class="lbl"><b>ocean-deep</b> · nordic</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #141e30 0%, #243b55 100%)"></div><div class="lbl"><b>royal-jewel</b> · jewel</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #232526 0%, #414345 100%)"></div><div class="lbl"><b>mono-fade</b> · mono</div></div>
+<div class="cell"><div class="tile" style="background:linear-gradient(135deg, #0d0221 0%, #ff2a6d 50%, #05d9e8 100%)"></div><div class="lbl"><b>cyber-glow</b> · cyberpunk</div></div>
+<div class="cell"><div class="tile" style="background:radial-gradient(at 20% 20%, #ff71ce 0px, transparent 50%), radial-gradient(at 80% 0%, #01cdfe 0px, transparent 50%), radial-gradient(at 0% 80%, #05ffa1 0px, transparent 50%), radial-gradient(at 80% 100%, #b967ff 0px, transparent 50%), #1a1a2e"></div><div class="lbl"><b>mesh-vibrant</b> · vaporwave</div></div>
+<div class="cell"><div class="tile" style="background:radial-gradient(at 75% 15%, rgba(199,125,255,0.25) 0px, transparent 50%), radial-gradient(at 15% 80%, rgba(138,112,255,0.30) 0px, transparent 55%), linear-gradient(160deg, #0a0618 0%, #150e2e 100%)"></div><div class="lbl"><b>ultraviolet-nebula</b> · ultraviolet</div></div>
+<div class="cell"><div class="tile" style="background:radial-gradient(at 50% 110%, rgba(255,107,53,0.35) 0px, transparent 60%), radial-gradient(at 85% 20%, rgba(255,193,94,0.12) 0px, transparent 45%), linear-gradient(180deg, #140d0a 0%, #241511 100%)"></div><div class="lbl"><b>ember-heat</b> · ember</div></div>
+<div class="cell"><div class="tile" style="background:radial-gradient(at 72% 8%, rgba(217,180,83,0.13) 0px, transparent 45%), radial-gradient(at 18% 85%, rgba(32,42,92,0.55) 0px, transparent 55%), linear-gradient(180deg, #04070f 0%, #0a1224 100%)"></div><div class="lbl"><b>archive-space</b> · golden-archive</div></div>
+<div class="cell"><div class="tile" style="background:radial-gradient(at 27% 37%, #ffd1dc 0px, transparent 45%), radial-gradient(at 97% 21%, #c7ceea 0px, transparent 40%), radial-gradient(at 52% 99%, #b5ead7 0px, transparent 40%), radial-gradient(at 10% 90%, #ffe5b4 0px, transparent 40%), #fff5e1"></div><div class="lbl"><b>mesh-pastel</b> · pastel</div></div>
+</div>
+<style>.bg-dots {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0,0,0,0.15) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.bg-grid {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.bg-graph {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.10) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+}
+.bg-stripes {
+  background: repeating-linear-gradient(45deg,
+    #f5f5f5 0, #f5f5f5 10px, #ffffff 10px, #ffffff 20px);
+}
+.bg-checker {
+  background-color: #ffffff;
+  background-image:
+    conic-gradient(rgba(0,0,0,0.05) 90deg, transparent 90deg 180deg,
+                   rgba(0,0,0,0.05) 180deg 270deg, transparent 270deg);
+  background-size: 24px 24px;
+}
+.noise { position: relative; }
+.noise::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+<svg viewBox="0 0 1440 120" preserveAspectRatio="none"
+     style="display:block; width:100%; height:80px; color:#2b8fd6">
+  <path fill="currentColor"
+    d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,72 L1440,120 L0,120 Z"/>
+</svg>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+     style="width:280px; color:#a78bfa">
+  <path fill="currentColor" transform="translate(100 100)"
+    d="M45,-63C58,-54,68,-40,72,-25C76,-9,74,9,67,25C60,41,48,55,33,63
+       C18,71,0,73,-18,69C-36,65,-54,55,-65,40C-76,25,-80,5,-77,-14
+       C-74,-33,-64,-51,-49,-61C-34,-71,-17,-73,0,-72C17,-71,34,-72,45,-63Z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+     style="opacity:0.15; color:#3b2f2a">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="100" cy="100" r="20"/><circle cx="100" cy="100" r="42"/>
+    <circle cx="100" cy="100" r="66"/><circle cx="100" cy="100" r="92"/>
+  </g>
+</svg>  <!-- tile as a repeating background, or place as a decorative layer --></style>
+<h2 id="patterns">Patterns <small>9</small></h2><div class="grid g-tile">
+<div class="cell"><div class="tile bg-dots"></div><div class="lbl"><b>dots</b> — Polka-dot grid. Change color/size via the two </div></div>
+<div class="cell"><div class="tile bg-grid"></div><div class="lbl"><b>grid</b> — Thin line grid.</div></div>
+<div class="cell"><div class="tile bg-graph"></div><div class="lbl"><b>graph-paper</b> — Layered minor+major grid (graph paper).</div></div>
+<div class="cell"><div class="tile bg-stripes"></div><div class="lbl"><b>diagonal-stripes</b> — 45° candy stripes.</div></div>
+<div class="cell"><div class="tile bg-checker"></div><div class="lbl"><b>checkerboard</b> — Soft checkerboard via conic-gradient.</div></div>
+<div class="cell"><div class="tile noise"></div><div class="lbl"><b>noise-texture</b> — Film-grain overlay (SVG feTurbulence data-URI)</div></div>
+<div class="cell"><div class="tile "></div><div class="lbl"><b>wave-divider</b> — Wave section divider. Set a color via `fill`/c</div></div>
+<div class="cell"><div class="tile w3"></div><div class="lbl"><b>blob</b> — Organic blob shape — decorative accent behind </div></div>
+<div class="cell"><div class="tile w3"></div><div class="lbl"><b>topographic</b> — Concentric contour lines — subtle map-like tex</div></div>
+</div>
+<h2 id="layouts">Layouts <small>12 — live scaled previews</small></h2><div class="grid g-layout">
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-single { max-width: 68ch; margin: 0 auto; padding: 3rem 1.25rem; line-height: 1.7; }
+  .l-single h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
+  .l-single p { margin: 0 0 1.1rem; }
+&lt;/style&gt;
+&lt;article class=&quot;l-single&quot;&gt;
+  &lt;h1&gt;Headline&lt;/h1&gt;
+  &lt;p&gt;Body copy sits in a single readable column ~60–75 characters wide…&lt;/p&gt;
+&lt;/article&gt;"></iframe></div><div class="lbl"><b>single-column</b> — blogs, docs, articles, long-form reading</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-hero { min-height: 88vh; display: grid; place-items: center; text-align: center;
+            padding: 4rem 1.5rem; gap: 1.2rem;
+            background: linear-gradient(160deg, var(--bg,#0f172a), var(--bg2,#1e293b)); }
+  .l-hero h1 { font-size: clamp(2.2rem, 7vw, 4.5rem); line-height: 1.03; max-width: 16ch; }
+  .l-hero p { max-width: 52ch; opacity: .8; font-size: 1.15rem; }
+  .l-hero .row { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; }
+&lt;/style&gt;
+&lt;section class=&quot;l-hero&quot;&gt;
+  &lt;h1&gt;Your bold value proposition&lt;/h1&gt;
+  &lt;p&gt;One clear sentence on the outcome you deliver.&lt;/p&gt;
+  &lt;div class=&quot;row&quot;&gt;&lt;button class=&quot;btn&quot;&gt;Start free&lt;/button&gt;
+    &lt;button class=&quot;btn&quot; style=&quot;background:transparent;color:inherit&quot;&gt;See how&lt;/button&gt;&lt;/div&gt;
+&lt;/section&gt;"></iframe></div><div class="lbl"><b>hero-cta</b> — SaaS / product landing pages</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-z { display: grid; gap: 3rem; max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem; }
+  .l-z .row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+  .l-z .row:nth-child(even) .media { order: 2; }
+  .l-z .media { aspect-ratio: 4/3; border-radius: var(--radius,12px);
+                background: var(--surface,#1e293b); }
+  @media (max-width:720px){ .l-z .row{ grid-template-columns:1fr } .l-z .media{ order:0 } }
+&lt;/style&gt;
+&lt;div class=&quot;l-z&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;media&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Point one&lt;/h2&gt;&lt;p&gt;Explain it.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;media&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;h2&gt;Point two&lt;/h2&gt;&lt;p&gt;Explain it.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>z-pattern</b> — landing pages with a few key points</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-f { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+  .l-f section { margin-bottom: 2rem; }
+  .l-f h2 { margin-bottom: .4rem; }
+  .l-f p { max-width: 70ch; opacity: .85; }
+  .l-f .lead { font-size: 1.15rem; border-left: 3px solid var(--accent,#3b82f6);
+               padding-left: 1rem; }
+&lt;/style&gt;
+&lt;main class=&quot;l-f&quot;&gt;
+  &lt;section&gt;&lt;h1&gt;Top headline (widest scan)&lt;/h1&gt;&lt;p class=&quot;lead&quot;&gt;Lead paragraph…&lt;/p&gt;&lt;/section&gt;
+  &lt;section&gt;&lt;h2&gt;Subhead&lt;/h2&gt;&lt;p&gt;Supporting text, left-aligned…&lt;/p&gt;&lt;/section&gt;
+  &lt;section&gt;&lt;h2&gt;Subhead&lt;/h2&gt;&lt;p&gt;Supporting text…&lt;/p&gt;&lt;/section&gt;
+&lt;/main&gt;"></iframe></div><div class="lbl"><b>f-pattern</b> — content-heavy / news / scannable pages</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; }
+  .l-split &gt; div { display: grid; place-items: center; padding: 3rem; text-align: center; }
+  .l-split .a { background: var(--accent,#3b82f6); color:#fff; }
+  .l-split .b { background: var(--surface,#1e293b); }
+  @media (max-width:720px){ .l-split{ grid-template-columns:1fr } }
+&lt;/style&gt;
+&lt;div class=&quot;l-split&quot;&gt;
+  &lt;div class=&quot;a&quot;&gt;&lt;div&gt;&lt;h2&gt;Left&lt;/h2&gt;&lt;p&gt;One path.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;b&quot;&gt;&lt;div&gt;&lt;h2&gt;Right&lt;/h2&gt;&lt;p&gt;The other.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>split-screen</b> — portfolios, two equal choices, product vs pricing</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-app { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+  .l-app aside { background: var(--surface,#1e293b); border-right:1px solid var(--border,#334155);
+                 padding: 1.25rem; }
+  .l-app aside a { display:block; padding:.5rem .6rem; border-radius:8px; color:inherit;
+                   text-decoration:none; opacity:.8; }
+  .l-app aside a:hover { background: var(--bg2,#0f172a); opacity:1; }
+  .l-app main { padding: 2rem; }
+  @media (max-width:720px){ .l-app{ grid-template-columns:1fr } .l-app aside{ display:none } }
+&lt;/style&gt;
+&lt;div class=&quot;l-app&quot;&gt;
+  &lt;aside&gt;&lt;strong&gt;Menu&lt;/strong&gt;&lt;nav&gt;&lt;a&gt;Dashboard&lt;/a&gt;&lt;a&gt;Projects&lt;/a&gt;&lt;a&gt;Settings&lt;/a&gt;&lt;/nav&gt;&lt;/aside&gt;
+  &lt;main&gt;&lt;h1&gt;Content&lt;/h1&gt;&lt;/main&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>sidebar-app</b> — web apps, docs with nav, settings</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-cards { display: grid; gap: 1rem; padding: 2rem 1.25rem; max-width: 1200px; margin: 0 auto;
+             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .l-cards .card { background: var(--surface,#1e293b); border:1px solid var(--border,#334155);
+                   border-radius: 12px; padding: 1.25rem; }
+&lt;/style&gt;
+&lt;div class=&quot;l-cards&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;One&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Two&lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;Three&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;Four&lt;/div&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>card-grid</b> — galleries, catalogs, dashboards, blog indexes</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-bento { display: grid; gap: 1rem; max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem;
+             grid-template-columns: repeat(4, 1fr); grid-auto-rows: 150px; }
+  .l-bento div { background: var(--surface,#1e293b); border:1px solid var(--border,#334155);
+                 border-radius: 16px; padding: 1rem; }
+  .l-bento .big { grid-column: span 2; grid-row: span 2; }
+  .l-bento .wide { grid-column: span 2; }
+  @media (max-width:720px){ .l-bento{ grid-template-columns:repeat(2,1fr) } }
+&lt;/style&gt;
+&lt;div class=&quot;l-bento&quot;&gt;
+  &lt;div class=&quot;big&quot;&gt;Feature&lt;/div&gt;&lt;div&gt;·&lt;/div&gt;&lt;div&gt;·&lt;/div&gt;
+  &lt;div class=&quot;wide&quot;&gt;Wide&lt;/div&gt;&lt;div&gt;·&lt;/div&gt;&lt;div&gt;·&lt;/div&gt;&lt;div&gt;·&lt;/div&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>bento-grid</b> — modern landing feature sections, overviews</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-mag { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; max-width: 1100px;
+           margin: 0 auto; padding: 2.5rem 1.25rem; }
+  .l-mag .lead { grid-row: span 2; }
+  .l-mag article { border-bottom: 1px solid var(--border,#e5e5e5); padding-bottom: 1rem; }
+  .l-mag .lead h1 { font-size: clamp(1.8rem,4vw,3rem); }
+  @media (max-width:720px){ .l-mag{ grid-template-columns:1fr } }
+&lt;/style&gt;
+&lt;div class=&quot;l-mag&quot;&gt;
+  &lt;article class=&quot;lead&quot;&gt;&lt;h1&gt;Lead story&lt;/h1&gt;&lt;p&gt;Feature copy…&lt;/p&gt;&lt;/article&gt;
+  &lt;article&gt;&lt;h3&gt;Secondary&lt;/h3&gt;&lt;/article&gt;
+  &lt;article&gt;&lt;h3&gt;Tertiary&lt;/h3&gt;&lt;/article&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>magazine</b> — editorial homepages, publications</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-fs { height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory; }
+  .l-fs section { height: 100vh; scroll-snap-align: start; display: grid; place-items: center;
+                  font-size: 2rem; }
+  .l-fs section:nth-child(odd){ background: var(--bg,#0f172a); }
+  .l-fs section:nth-child(even){ background: var(--surface,#1e293b); }
+&lt;/style&gt;
+&lt;div class=&quot;l-fs&quot;&gt;&lt;section&gt;One&lt;/section&gt;&lt;section&gt;Two&lt;/section&gt;&lt;section&gt;Three&lt;/section&gt;&lt;/div&gt;"></iframe></div><div class="lbl"><b>full-screen-sections</b> — storytelling scroll sites, product tours</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-dash { display: grid; grid-template-columns: 220px 1fr; grid-template-rows: 56px 1fr;
+            min-height: 100vh; }
+  .l-dash .top { grid-column: 1 / -1; display:flex; align-items:center; padding:0 1.25rem;
+                 background: var(--surface,#1e293b); border-bottom:1px solid var(--border,#334155); }
+  .l-dash .side { background: var(--bg2,#0f172a); padding:1rem; }
+  .l-dash .main { padding:1.5rem; display:grid; gap:1rem;
+                  grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); align-content:start; }
+  .l-dash .stat { background: var(--surface,#1e293b); border-radius:12px; padding:1.1rem; }
+  @media (max-width:720px){ .l-dash{ grid-template-columns:1fr } .l-dash .side{ display:none } }
+&lt;/style&gt;
+&lt;div class=&quot;l-dash&quot;&gt;
+  &lt;header class=&quot;top&quot;&gt;&lt;strong&gt;Dashboard&lt;/strong&gt;&lt;/header&gt;
+  &lt;aside class=&quot;side&quot;&gt;Nav&lt;/aside&gt;
+  &lt;main class=&quot;main&quot;&gt;&lt;div class=&quot;stat&quot;&gt;12.4k&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;98%&lt;/div&gt;&lt;div class=&quot;stat&quot;&gt;$3.2k&lt;/div&gt;&lt;/main&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>dashboard</b> — admin panels, analytics, back-office</div></div>
+<div class="cell"><div class="thumb"><iframe loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;&lt;style&gt;body{margin:0;font:15px/1.5 &#x27;Segoe UI&#x27;,sans-serif;color:#222;background:#fff}&lt;/style&gt;&lt;style&gt;
+  .l-masonry { column-count: 3; column-gap: 1rem; max-width: 1100px; margin: 0 auto;
+               padding: 2rem 1.25rem; }
+  .l-masonry .item { break-inside: avoid; margin: 0 0 1rem; border-radius: 12px;
+                     background: var(--surface,#1e293b); border:1px solid var(--border,#334155); }
+  @media (max-width:900px){ .l-masonry{ column-count:2 } }
+  @media (max-width:560px){ .l-masonry{ column-count:1 } }
+&lt;/style&gt;
+&lt;div class=&quot;l-masonry&quot;&gt;
+  &lt;div class=&quot;item&quot; style=&quot;height:160px&quot;&gt;&lt;/div&gt;&lt;div class=&quot;item&quot; style=&quot;height:230px&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;item&quot; style=&quot;height:120px&quot;&gt;&lt;/div&gt;&lt;div class=&quot;item&quot; style=&quot;height:200px&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;"></iframe></div><div class="lbl"><b>masonry</b> — image walls, Pinterest-style feeds</div></div>
+</div>
+<h2 id="shapes">Shapes <small>47 signature motifs</small></h2><p class="hint">currentColor SVGs — shown in their profile’s accent.</p><div class="grid g-shape">
+<div class="cell"><div class="shapebox" style="color:#d81b7a"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 20 Q14 4 24 20 T44 20 T64 20 T84 20 T104 20 T116 20"
+        fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+</svg></div><div class="lbl"><b>squiggle</b><br>avant-basic</div></div>
+<div class="cell"><div class="shapebox" style="color:#d81b7a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <ellipse cx="50" cy="18" rx="13" ry="19"/><ellipse cx="50" cy="82" rx="13" ry="19"/>
+    <ellipse cx="18" cy="50" rx="19" ry="13"/><ellipse cx="82" cy="50" rx="19" ry="13"/>
+    <ellipse cx="27" cy="27" rx="15" ry="15"/><ellipse cx="73" cy="27" rx="15" ry="15"/>
+    <ellipse cx="27" cy="73" rx="15" ry="15"/><ellipse cx="73" cy="73" rx="15" ry="15"/>
+  </g><circle cx="50" cy="50" r="16" fill="currentColor" opacity=".35"/>
+</svg></div><div class="lbl"><b>daisy</b><br>avant-basic</div></div>
+<div class="cell"><div class="shapebox" style="color:#d81b7a"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M0 0h20v18H0z"/><path d="M40 2h20v16H40z"/>
+  <path d="M20 18h20v16H20z"/><path d="M60 18h20v18H60z"/>
+  <path d="M0 34h20v18H0z"/><path d="M40 36h20v16H40z"/>
+  <path d="M20 52h20v16H20z"/><path d="M60 54h20v18H60z"/></g>
+</svg></div><div class="lbl"><b>checker-wave</b><br>avant-basic</div></div>
+<div class="cell"><div class="shapebox" style="color:#d81b7a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 2 C55 35 65 45 98 50 C65 55 55 65 50 98 C45 65 35 55 2 50 C35 45 45 35 50 2Z"
+        fill="currentColor"/>
+</svg></div><div class="lbl"><b>diamond-star</b><br>avant-basic</div></div>
+<div class="cell"><div class="shapebox" style="color:#d81b7a"><svg viewBox="0 0 80 110" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 102 V44 A32 32 0 0 1 72 44 V102 Z" fill="none"
+        stroke="currentColor" stroke-width="7"/>
+  <path d="M24 102 V52 A16 16 0 0 1 56 52 V102" fill="currentColor" opacity=".3"/>
+</svg></div><div class="lbl"><b>arch-window</b><br>avant-basic</div></div>
+<div class="cell"><div class="shapebox" style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C74 4 96 22 94 48 C92 76 74 96 48 94 C22 92 4 74 6 48 C8 24 26 8 50 6Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M52 26 C66 26 76 36 75 50 C74 66 64 76 50 75 C36 74 26 64 27 50 C28 36 38 26 52 26Z"
+        fill="currentColor" opacity=".35"/>
+</svg></div><div class="lbl"><b>blob-cell</b><br>organic-tech</div></div>
+<div class="cell"><div class="shapebox" style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="50" cy="82" rx="36" ry="14" fill="currentColor" opacity=".9"/>
+  <ellipse cx="48" cy="58" rx="28" ry="12" fill="currentColor" opacity=".65"/>
+  <ellipse cx="52" cy="38" rx="20" ry="10" fill="currentColor" opacity=".45"/>
+  <ellipse cx="50" cy="22" rx="12" ry="7" fill="currentColor" opacity=".3"/>
+</svg></div><div class="lbl"><b>pebble-stack</b><br>organic-tech</div></div>
+<div class="cell"><div class="shapebox" style="color:#52704a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 96 C20 70 20 34 50 4 C80 34 80 70 50 96Z" fill="currentColor" opacity=".25"/>
+  <path d="M50 90 V10 M50 70 C40 64 34 56 32 44 M50 70 C60 64 66 56 68 44
+           M50 46 C43 42 39 36 38 28 M50 46 C57 42 61 36 62 28"
+        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg></div><div class="lbl"><b>leaf-vein</b><br>organic-tech</div></div>
+<div class="cell"><div class="shapebox" style="color:#141414"><svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="108" height="148" fill="none" stroke="currentColor" stroke-width="1"/>
+  <rect x="12" y="12" width="96" height="136" fill="none" stroke="currentColor" stroke-width=".5"/>
+</svg></div><div class="lbl"><b>hairline-frame</b><br>high-fashion</div></div>
+<div class="cell"><div class="shapebox" style="color:#141414"><svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 10 H88 M112 10 H196" stroke="currentColor" stroke-width="1"/>
+  <path d="M100 3 L107 10 L100 17 L93 10 Z" fill="currentColor"/>
+</svg></div><div class="lbl"><b>editorial-rule</b><br>high-fashion</div></div>
+<div class="cell"><div class="shapebox" style="color:#ff5c1f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 4 L58 22 L76 12 L74 32 L94 32 L80 46 L96 58 L76 62 L82 82 L62 76 L58 96
+           L48 78 L32 92 L32 70 L12 72 L24 56 L6 46 L26 40 L18 20 L38 26 Z"
+        fill="currentColor"/>
+  <circle cx="51" cy="51" r="24" fill="none" stroke="#fff" stroke-width="4" opacity=".9"/>
+</svg></div><div class="lbl"><b>burst-sticker</b><br>skate-culture</div></div>
+<div class="cell"><div class="shapebox" style="color:#ff5c1f"><svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 56 C24 50 20 34 34 30 C30 42 44 44 48 32 C50 42 60 44 64 30
+           C68 42 80 40 82 26 C88 38 100 36 102 20 C110 32 116 28 116 14
+           C118 34 108 56 84 56 Z" fill="currentColor"/>
+</svg></div><div class="lbl"><b>flame-line</b><br>skate-culture</div></div>
+<div class="cell"><div class="shapebox" style="color:#ff5c1f"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 26 H52 V24 H6 Z M6 46 H52 V44 H6 Z M6 26 V44 H10 V26 Z M48 26 V44 H52 V26 Z"
+        fill="currentColor"/>
+  <path d="M58 12 L114 35 L58 58 L70 35 Z" fill="currentColor"/>
+</svg></div><div class="lbl"><b>stencil-arrow</b><br>skate-culture</div></div>
+<div class="cell"><div class="shapebox" style="color:#16697a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M14 12 L30 8 L34 22 L20 28 Z"/>
+  <path d="M62 6 L76 14 L70 26 L58 20 Z" opacity=".7"/>
+  <path d="M84 44 L96 52 L88 64 L78 56 Z"/>
+  <path d="M38 40 L54 36 L58 52 L44 58 Z" opacity=".5"/>
+  <path d="M10 62 L24 58 L28 72 L14 78 Z" opacity=".8"/>
+  <path d="M52 72 L68 68 L72 84 L56 90 Z" opacity=".6"/>
+  <path d="M30 86 L40 82 L44 92 L34 96 Z"/></g>
+</svg></div><div class="lbl"><b>terrazzo-chips</b><br>mosaic</div></div>
+<div class="cell"><div class="shapebox" style="color:#16697a"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><path d="M4 4 L44 8 L36 40 L6 34 Z" opacity=".85"/>
+  <path d="M48 6 L96 4 L92 30 L42 42 Z" opacity=".55"/>
+  <path d="M8 38 L34 44 L28 70 L4 64 Z" opacity=".6"/>
+  <path d="M38 46 L88 34 L94 62 L46 72 Z" opacity=".9"/>
+  <path d="M6 68 L26 74 L22 96 L4 94 Z" opacity=".5"/>
+  <path d="M30 76 L92 66 L96 96 L28 96 Z" opacity=".7"/></g>
+</svg></div><div class="lbl"><b>trencadis-pane</b><br>mosaic</div></div>
+<div class="cell"><div class="shapebox" style="color:#16697a"><svg viewBox="0 0 160 24" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <rect x="2" y="4" width="16" height="16" rx="2"/><rect x="22" y="4" width="16" height="16" rx="2" opacity=".6"/>
+    <rect x="42" y="4" width="16" height="16" rx="2" opacity=".85"/><rect x="62" y="4" width="16" height="16" rx="2" opacity=".45"/>
+    <rect x="82" y="4" width="16" height="16" rx="2" opacity=".7"/><rect x="102" y="4" width="16" height="16" rx="2"/>
+    <rect x="122" y="4" width="16" height="16" rx="2" opacity=".55"/><rect x="142" y="4" width="16" height="16" rx="2" opacity=".8"/>
+  </g>
+</svg></div><div class="lbl"><b>tessera-band</b><br>mosaic</div></div>
+<div class="cell"><div class="shapebox" style="color:#d4af37"><svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" fill="none">
+    <path d="M100 96 V8" stroke-width="3"/>
+    <path d="M100 96 L64 12 M100 96 L136 12" stroke-width="2.5"/>
+    <path d="M100 96 L34 26 M100 96 L166 26" stroke-width="2"/>
+    <path d="M100 96 L12 48 M100 96 L188 48" stroke-width="1.5"/>
+    <path d="M100 96 L4 78 M100 96 L196 78" stroke-width="1"/>
+  </g><circle cx="100" cy="96" r="10" fill="currentColor"/>
+</svg></div><div class="lbl"><b>sunburst</b><br>art-deco</div></div>
+<div class="cell"><div class="shapebox" style="color:#d4af37"><svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M10 66 A50 50 0 0 1 110 66"/><path d="M22 66 A38 38 0 0 1 98 66"/>
+    <path d="M34 66 A26 26 0 0 1 86 66"/><path d="M46 66 A14 14 0 0 1 74 66"/>
+    <path d="M60 66 V16 M60 66 L28 26 M60 66 L92 26"/>
+  </g>
+</svg></div><div class="lbl"><b>deco-fan</b><br>art-deco</div></div>
+<div class="cell"><div class="shapebox" style="color:#d4af37"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 116 V44 H16 V32 H28 V20 H40 V8 H116" fill="none"
+        stroke="currentColor" stroke-width="5"/>
+  <path d="M16 116 V56 H28 V44 H40 V32 H52 V20 H116" fill="none"
+        stroke="currentColor" stroke-width="2"/>
+</svg></div><div class="lbl"><b>stepped-frame</b><br>art-deco</div></div>
+<div class="cell"><div class="shapebox" style="color:#d4af37"><svg viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor">
+    <path d="M0 28 L20 8 L40 28 L60 8 L80 28 L100 8 L120 28 L140 8 L160 28" stroke-width="5"/>
+    <path d="M0 36 L20 16 L40 36 L60 16 L80 36 L100 16 L120 36 L140 16 L160 36"
+          stroke-width="2" opacity=".6"/>
+  </g>
+</svg></div><div class="lbl"><b>chevron-band</b><br>art-deco</div></div>
+<div class="cell"><div class="shapebox" style="color:#c81e82"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path d="M50 50 C50 20 66 8 82 12 C86 30 72 46 50 50Z"/>
+    <path d="M50 50 C80 50 92 66 88 82 C70 86 54 72 50 50Z" opacity=".7"/>
+    <path d="M50 50 C50 80 34 92 18 88 C14 70 28 54 50 50Z" opacity=".55"/>
+    <path d="M50 50 C20 50 8 34 12 18 C30 14 46 28 50 50Z" opacity=".4"/>
+  </g><circle cx="50" cy="50" r="7" fill="currentColor"/>
+</svg></div><div class="lbl"><b>bloom-flower</b><br>frutiger-metro</div></div>
+<div class="cell"><div class="shapebox" style="color:#c81e82"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><circle cx="16" cy="30" r="12"/><circle cx="44" cy="18" r="9" opacity=".8"/>
+  <circle cx="66" cy="40" r="7" opacity=".65"/><circle cx="88" cy="22" r="5.5" opacity=".5"/>
+  <circle cx="106" cy="38" r="4" opacity=".4"/><circle cx="122" cy="26" r="3" opacity=".3"/>
+  <circle cx="134" cy="34" r="2" opacity=".25"/></g>
+</svg></div><div class="lbl"><b>metro-dots</b><br>frutiger-metro</div></div>
+<div class="cell"><div class="shapebox" style="color:#c81e82"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2 50 C40 54 60 20 92 18 C120 16 140 28 158 10 C150 34 122 44 96 40
+           C64 36 44 60 2 50Z" fill="currentColor"/>
+  <path d="M10 44 C46 44 66 16 96 14" fill="none" stroke="currentColor"
+        stroke-width="2" opacity=".5"/>
+</svg></div><div class="lbl"><b>swoosh-ribbon</b><br>frutiger-metro</div></div>
+<div class="cell"><div class="shapebox" style="color:#1e3a67"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 0 L80 40 L40 80 L0 40 Z" fill="currentColor" opacity=".85"/>
+  <path d="M40 16 L64 40 L40 64 L16 40 Z" fill="currentColor" opacity=".35"/>
+  <path d="M0 0 L80 80 M80 0 L0 80" stroke="currentColor" stroke-width="1.5"
+        stroke-dasharray="4 4" opacity=".8"/>
+</svg></div><div class="lbl"><b>argyle-tile</b><br>preppy-2000s</div></div>
+<div class="cell"><div class="shapebox" style="color:#1e3a67"><svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><rect x="20" y="0" width="20" height="80" opacity=".35"/>
+  <rect x="60" y="0" width="20" height="80" opacity=".35"/>
+  <rect x="0" y="20" width="80" height="20" opacity=".35"/>
+  <rect x="0" y="60" width="80" height="20" opacity=".35"/>
+  <rect x="20" y="20" width="20" height="20" opacity=".55"/>
+  <rect x="60" y="20" width="20" height="20" opacity=".55"/>
+  <rect x="20" y="60" width="20" height="20" opacity=".55"/>
+  <rect x="60" y="60" width="20" height="20" opacity=".55"/></g>
+</svg></div><div class="lbl"><b>gingham-tile</b><br>preppy-2000s</div></div>
+<div class="cell"><div class="shapebox" style="color:#1e3a67"><svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 L92 18 V60 C92 88 74 106 50 114 C26 106 8 88 8 60 V18 Z"
+        fill="none" stroke="currentColor" stroke-width="5"/>
+  <path d="M50 16 L84 26 V60 C84 82 70 96 50 104 C30 96 16 82 16 60 V26 Z"
+        fill="currentColor" opacity=".2"/>
+  <path d="M22 44 L50 62 L78 44" fill="none" stroke="currentColor" stroke-width="5"/>
+</svg></div><div class="lbl"><b>crest-shield</b><br>preppy-2000s</div></div>
+<div class="cell"><div class="shapebox" style="color:#1e3a67"><svg viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 12 H140 V38 H20 Z" fill="currentColor" opacity=".9"/>
+  <path d="M20 12 L2 25 L20 38 Z M140 12 L158 25 L140 38 Z" fill="currentColor" opacity=".6"/>
+  <path d="M26 18 H134 M26 32 H134" stroke="#fff" stroke-width="1.5" opacity=".7"/>
+</svg></div><div class="lbl"><b>ribbon-banner</b><br>preppy-2000s</div></div>
+<div class="cell"><div class="shapebox" style="color:#257dbc"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor"><circle cx="40" cy="60" r="30" opacity=".35"/>
+  <circle cx="84" cy="34" r="18" opacity=".5"/><circle cx="100" cy="72" r="10" opacity=".4"/>
+  <circle cx="20" cy="22" r="8" opacity=".55"/></g>
+  <g fill="#fff"><ellipse cx="30" cy="46" rx="12" ry="7" opacity=".8"/>
+  <ellipse cx="78" cy="26" rx="7" ry="4" opacity=".85"/>
+  <ellipse cx="97" cy="67" rx="4" ry="2.5" opacity=".8"/></g>
+</svg></div><div class="lbl"><b>aqua-bubbles</b><br>frutiger-aero</div></div>
+<div class="cell"><div class="shapebox" style="color:#257dbc"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="44" fill="currentColor"/>
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#fff" stroke-width="1.5" opacity=".6"/>
+  <ellipse cx="50" cy="30" rx="30" ry="17" fill="#fff" opacity=".55"/>
+  <ellipse cx="50" cy="76" rx="22" ry="9" fill="#fff" opacity=".18"/>
+</svg></div><div class="lbl"><b>gloss-orb</b><br>frutiger-aero</div></div>
+<div class="cell"><div class="shapebox" style="color:#257dbc"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 44 C40 28 90 30 160 18 V60 H0 Z" fill="currentColor" opacity=".85"/>
+  <path d="M0 50 C50 38 100 40 160 30 V60 H0 Z" fill="currentColor" opacity=".55"/>
+  <path d="M0 40 C40 26 90 28 160 16" fill="none" stroke="#fff"
+        stroke-width="2" opacity=".5"/>
+</svg></div><div class="lbl"><b>grass-swoosh</b><br>frutiger-aero</div></div>
+<div class="cell"><div class="shapebox" style="color:#2e5fd0"><svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 8 C92 6 112 28 108 52 C104 76 84 94 56 92 C28 90 8 72 12 46 C16 22 34 10 60 8Z"
+        fill="currentColor" opacity=".85"/>
+  <path d="M58 20 C80 18 96 32 93 50 C90 66 76 80 56 78 C36 76 24 62 27 44 C30 28 42 21 58 20Z"
+        fill="#fff" opacity=".25"/>
+  <ellipse cx="46" cy="34" rx="18" ry="9" fill="#fff" opacity=".7"/>
+</svg></div><div class="lbl"><b>chrome-blob</b><br>y2k-chrome</div></div>
+<div class="cell"><div class="shapebox" style="color:#2e5fd0"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 4 L64 52 L112 60 L64 68 L60 116 L56 68 L8 60 L56 52 Z"
+        fill="currentColor" opacity=".9"/>
+  <circle cx="60" cy="60" r="7" fill="#fff"/>
+  <circle cx="60" cy="60" r="20" fill="none" stroke="currentColor"
+          stroke-width="1" opacity=".4"/>
+</svg></div><div class="lbl"><b>lens-flare</b><br>y2k-chrome</div></div>
+<div class="cell"><div class="shapebox" style="color:#2e5fd0"><svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor">
+    <ellipse cx="70" cy="50" rx="64" ry="22" stroke-width="2"
+             transform="rotate(-18 70 50)"/>
+    <ellipse cx="70" cy="50" rx="46" ry="14" stroke-width="1" opacity=".5"
+             transform="rotate(-18 70 50)"/>
+  </g>
+  <circle cx="118" cy="30" r="5" fill="currentColor"/>
+</svg></div><div class="lbl"><b>orbit-rings</b><br>y2k-chrome</div></div>
+<div class="cell"><div class="shapebox" style="color:#b08d4f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 6 C64 4 78 10 86 22 C94 34 96 50 88 64 C80 78 66 94 48 92
+           C30 90 14 78 10 60 C6 42 12 26 24 16 C32 9 40 7 50 6Z"
+        fill="currentColor" opacity=".9"/>
+  <circle cx="50" cy="50" r="26" fill="none" stroke="#fff"
+          stroke-width="2" opacity=".5"/>
+  <path d="M40 60 V38 L50 50 L60 38 V60" fill="none" stroke="#fff"
+        stroke-width="3" opacity=".75"/>
+</svg></div><div class="lbl"><b>wax-seal</b><br>dark-academia</div></div>
+<div class="cell"><div class="shapebox" style="color:#b08d4f"><svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78 C84 68 110 68 128 74 V12
+           C110 6 84 6 70 16Z" fill="currentColor" opacity=".25"/>
+  <path d="M70 16 V78 M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78
+           M70 16 C84 6 110 6 128 12 V74 C110 68 84 68 70 78"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M24 26 C38 22 54 23 62 28 M24 40 C38 36 54 37 62 42
+           M78 28 C86 23 102 22 116 26 M78 42 C86 37 102 36 116 40"
+        fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+</svg></div><div class="lbl"><b>open-book</b><br>dark-academia</div></div>
+<div class="cell"><div class="shapebox" style="color:#b08d4f"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 90 C10 58 22 26 52 12" fill="none" stroke="currentColor"
+        stroke-width="3"/>
+  <g fill="currentColor">
+    <ellipse cx="20" cy="72" rx="11" ry="5" transform="rotate(-58 20 72)"/>
+    <ellipse cx="26" cy="52" rx="11" ry="5" transform="rotate(-46 26 52)"/>
+    <ellipse cx="36" cy="34" rx="11" ry="5" transform="rotate(-32 36 34)"/>
+    <ellipse cx="50" cy="20" rx="11" ry="5" transform="rotate(-16 50 20)"/>
+    <ellipse cx="34" cy="76" rx="11" ry="5" transform="rotate(-72 34 76)" opacity=".6"/>
+    <ellipse cx="42" cy="56" rx="11" ry="5" transform="rotate(-58 42 56)" opacity=".6"/>
+    <ellipse cx="54" cy="38" rx="11" ry="5" transform="rotate(-40 54 38)" opacity=".6"/>
+  </g>
+</svg></div><div class="lbl"><b>laurel-corner</b><br>dark-academia</div></div>
+<div class="cell"><div class="shapebox" style="color:#d0021b"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1">
+    <path d="M40 4 V116 M80 4 V116 M4 40 H116 M4 80 H116" opacity=".35"/>
+    <path d="M4 12 H20 M12 4 V20 M116 12 H100 M108 4 V20
+             M4 108 H20 M12 116 V100 M116 108 H100 M108 116 V100"/>
+  </g>
+</svg></div><div class="lbl"><b>grid-marks</b><br>swiss-international</div></div>
+<div class="cell"><div class="shapebox" style="color:#d0021b"><svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="currentColor" stroke-width="1" opacity=".4">
+    <path d="M8 12 H152 M8 28 H120 M8 44 H136"/>
+  </g>
+  <circle cx="140" cy="28" r="12" fill="currentColor"/>
+</svg></div><div class="lbl"><b>signal-dot</b><br>swiss-international</div></div>
+<div class="cell"><div class="shapebox" style="color:#d0021b"><svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 30 H112" stroke="currentColor" stroke-width="8"/>
+  <path d="M96 8 L132 30 L96 52 Z" fill="currentColor"/>
+</svg></div><div class="lbl"><b>crossbar-arrow</b><br>swiss-international</div></div>
+<div class="cell"><div class="shapebox" style="color:#d9b453"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="46" fill="currentColor" opacity=".9"/>
+  <g fill="none" stroke="#fff">
+    <circle cx="50" cy="50" r="38" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="30" stroke-width="1.5" opacity=".55"/>
+    <circle cx="50" cy="50" r="22" stroke-width="1" opacity=".4"/>
+    <circle cx="50" cy="50" r="14" stroke-width="1.5" opacity=".55"/>
+  </g>
+  <circle cx="50" cy="50" r="6" fill="#0a0a12"/>
+  <circle cx="50" cy="50" r="6" fill="none" stroke="#fff" opacity=".8"/>
+</svg></div><div class="lbl"><b>gold-disk</b><br>golden-archive</div></div>
+<div class="cell"><div class="shapebox" style="color:#d9b453"><svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 70 L52 30 L96 52 L146 16" fill="none" stroke="currentColor"
+        stroke-width="1.5" stroke-dasharray="3 6"/>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="14" cy="70" r="4"/><circle cx="52" cy="30" r="4"/>
+    <circle cx="96" cy="52" r="4"/><circle cx="146" cy="16" r="4"/>
+  </g>
+  <g fill="currentColor"><circle cx="34" cy="14" r="1.5"/><circle cx="76" cy="76" r="1.5"/>
+  <circle cx="120" cy="34" r="1.5"/><circle cx="142" cy="66" r="1"/></g>
+</svg></div><div class="lbl"><b>constellation-path</b><br>golden-archive</div></div>
+<div class="cell"><div class="shapebox" style="color:#b08d4f"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="A candlelit reading room with Gothic windows, shelves, a shaded lamp and an open book"><defs><radialGradient id="study-light"><stop stop-color="#665038"/><stop offset="1" stop-color="#201812"/></radialGradient><linearGradient id="study-window" x2="0" y2="1"><stop stop-color="#65716b"/><stop offset="1" stop-color="#292e29"/></linearGradient></defs><rect width="720" height="840" fill="url(#study-light)"/><path d="M35 700V100Q360-75 685 100V700" fill="none" stroke="#806744" stroke-width="2"/><path d="M60 700V120Q360-30 660 120V700" fill="none" stroke="#806744"/><path d="M275 460V140Q360-18 445 140V460Z" fill="url(#study-window)" stroke="#96876f" stroke-width="7"/><path d="M360 45V460M275 260H445M275 375H445M290 150Q360 30 430 150M297 190Q360 60 423 190" fill="none" stroke="#96876f" stroke-width="3"/><rect x="72" y="136" width="13" height="74" rx="1" fill="#3e4a36"/><path d="M74 145h9M74 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="88" y="119" width="13" height="91" rx="1" fill="#8c3838"/><path d="M90 128h9M90 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="104" y="102" width="13" height="108" rx="1" fill="#49372a"/><path d="M106 111h9M106 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="120" y="129" width="13" height="81" rx="1" fill="#62503b"/><path d="M122 138h9M122 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="136" y="112" width="13" height="98" rx="1" fill="#3e4a36"/><path d="M138 121h9M138 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="152" y="95" width="13" height="115" rx="1" fill="#8c3838"/><path d="M154 104h9M154 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="168" y="122" width="13" height="88" rx="1" fill="#49372a"/><path d="M170 131h9M170 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="184" y="105" width="13" height="105" rx="1" fill="#62503b"/><path d="M186 114h9M186 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="200" y="132" width="13" height="78" rx="1" fill="#3e4a36"/><path d="M202 141h9M202 201h9" stroke="#b08d4f" stroke-width="1"/><path d="M62 213h166" stroke="#8e7149" stroke-width="6"/><rect x="72" y="263" width="13" height="87" rx="1" fill="#3e4a36"/><path d="M74 272h9M74 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="88" y="246" width="13" height="104" rx="1" fill="#8c3838"/><path d="M90 255h9M90 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="104" y="273" width="13" height="77" rx="1" fill="#49372a"/><path d="M106 282h9M106 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="120" y="256" width="13" height="94" rx="1" fill="#62503b"/><path d="M122 265h9M122 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="136" y="239" width="13" height="111" rx="1" fill="#3e4a36"/><path d="M138 248h9M138 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="152" y="266" width="13" height="84" rx="1" fill="#8c3838"/><path d="M154 275h9M154 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="168" y="249" width="13" height="101" rx="1" fill="#49372a"/><path d="M170 258h9M170 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="184" y="276" width="13" height="74" rx="1" fill="#62503b"/><path d="M186 285h9M186 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="200" y="259" width="13" height="91" rx="1" fill="#3e4a36"/><path d="M202 268h9M202 341h9" stroke="#b08d4f" stroke-width="1"/><path d="M62 353h166" stroke="#8e7149" stroke-width="6"/><rect x="72" y="390" width="13" height="100" rx="1" fill="#3e4a36"/><path d="M74 399h9M74 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="88" y="373" width="13" height="117" rx="1" fill="#8c3838"/><path d="M90 382h9M90 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="104" y="400" width="13" height="90" rx="1" fill="#49372a"/><path d="M106 409h9M106 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="120" y="383" width="13" height="107" rx="1" fill="#62503b"/><path d="M122 392h9M122 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="136" y="410" width="13" height="80" rx="1" fill="#3e4a36"/><path d="M138 419h9M138 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="152" y="393" width="13" height="97" rx="1" fill="#8c3838"/><path d="M154 402h9M154 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="168" y="376" width="13" height="114" rx="1" fill="#49372a"/><path d="M170 385h9M170 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="184" y="403" width="13" height="87" rx="1" fill="#62503b"/><path d="M186 412h9M186 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="200" y="386" width="13" height="104" rx="1" fill="#3e4a36"/><path d="M202 395h9M202 481h9" stroke="#b08d4f" stroke-width="1"/><path d="M62 493h166" stroke="#8e7149" stroke-width="6"/><rect x="500" y="136" width="13" height="74" rx="1" fill="#3e4a36"/><path d="M502 145h9M502 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="516" y="119" width="13" height="91" rx="1" fill="#8c3838"/><path d="M518 128h9M518 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="532" y="102" width="13" height="108" rx="1" fill="#49372a"/><path d="M534 111h9M534 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="548" y="129" width="13" height="81" rx="1" fill="#62503b"/><path d="M550 138h9M550 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="564" y="112" width="13" height="98" rx="1" fill="#3e4a36"/><path d="M566 121h9M566 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="580" y="95" width="13" height="115" rx="1" fill="#8c3838"/><path d="M582 104h9M582 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="596" y="122" width="13" height="88" rx="1" fill="#49372a"/><path d="M598 131h9M598 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="612" y="105" width="13" height="105" rx="1" fill="#62503b"/><path d="M614 114h9M614 201h9" stroke="#b08d4f" stroke-width="1"/><rect x="628" y="132" width="13" height="78" rx="1" fill="#3e4a36"/><path d="M630 141h9M630 201h9" stroke="#b08d4f" stroke-width="1"/><path d="M490 213h166" stroke="#8e7149" stroke-width="6"/><rect x="500" y="263" width="13" height="87" rx="1" fill="#3e4a36"/><path d="M502 272h9M502 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="516" y="246" width="13" height="104" rx="1" fill="#8c3838"/><path d="M518 255h9M518 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="532" y="273" width="13" height="77" rx="1" fill="#49372a"/><path d="M534 282h9M534 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="548" y="256" width="13" height="94" rx="1" fill="#62503b"/><path d="M550 265h9M550 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="564" y="239" width="13" height="111" rx="1" fill="#3e4a36"/><path d="M566 248h9M566 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="580" y="266" width="13" height="84" rx="1" fill="#8c3838"/><path d="M582 275h9M582 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="596" y="249" width="13" height="101" rx="1" fill="#49372a"/><path d="M598 258h9M598 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="612" y="276" width="13" height="74" rx="1" fill="#62503b"/><path d="M614 285h9M614 341h9" stroke="#b08d4f" stroke-width="1"/><rect x="628" y="259" width="13" height="91" rx="1" fill="#3e4a36"/><path d="M630 268h9M630 341h9" stroke="#b08d4f" stroke-width="1"/><path d="M490 353h166" stroke="#8e7149" stroke-width="6"/><rect x="500" y="390" width="13" height="100" rx="1" fill="#3e4a36"/><path d="M502 399h9M502 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="516" y="373" width="13" height="117" rx="1" fill="#8c3838"/><path d="M518 382h9M518 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="532" y="400" width="13" height="90" rx="1" fill="#49372a"/><path d="M534 409h9M534 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="548" y="383" width="13" height="107" rx="1" fill="#62503b"/><path d="M550 392h9M550 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="564" y="410" width="13" height="80" rx="1" fill="#3e4a36"/><path d="M566 419h9M566 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="580" y="393" width="13" height="97" rx="1" fill="#8c3838"/><path d="M582 402h9M582 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="596" y="376" width="13" height="114" rx="1" fill="#49372a"/><path d="M598 385h9M598 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="612" y="403" width="13" height="87" rx="1" fill="#62503b"/><path d="M614 412h9M614 481h9" stroke="#b08d4f" stroke-width="1"/><rect x="628" y="386" width="13" height="104" rx="1" fill="#3e4a36"/><path d="M630 395h9M630 481h9" stroke="#b08d4f" stroke-width="1"/><path d="M490 493h166" stroke="#8e7149" stroke-width="6"/><path d="M0 650L720 618V840H0Z" fill="#2c221a"/><path d="M0 650L720 618" stroke="#b08d4f" stroke-width="3"/><ellipse cx="360" cy="730" rx="180" ry="42" fill="#201812"/><path d="M220 667Q295 641 360 671Q425 642 504 660L490 760Q420 740 360 773Q292 745 232 770Z" fill="#e9ddc8" stroke="#b08d4f" stroke-width="2"/><path d="M360 672V770M248 687Q300 670 342 690M250 705Q302 690 343 707M253 724Q302 710 342 726M379 691Q425 675 477 682M379 710Q425 694 475 700M379 730Q423 715 471 720" fill="none" stroke="#96876f" stroke-width="2"/><path d="M562 476V658M534 662H591" stroke="#b08d4f" stroke-width="7"/><path d="M508 480Q560 420 614 480L601 519H521Z" fill="#3e4a36" stroke="#b08d4f" stroke-width="3"/><ellipse cx="561" cy="518" rx="40" ry="7" fill="#c1ac77"/><path d="M99 595L169 582L175 628L105 640Z" fill="#8c3838" stroke="#b08d4f"/><path d="M120 607l39-7" stroke="#b08d4f"/><path d="M0 815H720" stroke="#b08d4f"/><text x="42" y="807" fill="#b08d4f" font-family="serif" font-size="14" letter-spacing="4">THE READING ROOM / PLATE I</text></svg></div><div class="lbl"><b>reading-room</b><br>dark-academia</div></div>
+<div class="cell"><div class="shapebox" style="color:#05d9e8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="A dense retrofitted night city with emissive signage, rain, cables and a diagnostic overlay"><rect width="720" height="840" fill="#0d0221"/><circle cx="560" cy="190" r="126" fill="#ff2a6d" opacity=".1"/><path d="M0 110H720M0 320H720M0 530H720M180 0V840M360 0V840M540 0V840" stroke="#194d65" stroke-width="1"/><path d="M20 700V360l29.0-25H107V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="55" y="380" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="78" y="380" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="32" y="413" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="55" y="413" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="32" y="446" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="78" y="446" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="55" y="479" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="78" y="479" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="32" y="512" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="55" y="512" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="32" y="545" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="78" y="545" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="55" y="578" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="78" y="578" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="32" y="611" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="55" y="611" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="32" y="644" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="78" y="644" width="8" height="13" fill="#ff2a6d" opacity=".5"/><path d="M110 700V205l26.666666666666668-25H190V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="122" y="225" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="225" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="122" y="258" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="168" y="258" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="291" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="168" y="291" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="122" y="324" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="324" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="122" y="357" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="168" y="357" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="390" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="168" y="390" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="122" y="423" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="423" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="122" y="456" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="168" y="456" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="489" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="168" y="489" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="122" y="522" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="522" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="122" y="555" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="168" y="555" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="588" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="168" y="588" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="122" y="621" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="145" y="621" width="8" height="13" fill="#ff2a6d" opacity=".5"/><path d="M205 700V135l38.333333333333336-25H320V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="217" y="155" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="263" y="155" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="286" y="155" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="240" y="188" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="263" y="188" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="217" y="221" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="240" y="221" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="286" y="221" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="217" y="254" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="263" y="254" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="286" y="254" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="240" y="287" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="263" y="287" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="217" y="320" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="240" y="320" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="286" y="320" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="217" y="353" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="263" y="353" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="286" y="353" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="240" y="386" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="263" y="386" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="217" y="419" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="240" y="419" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="286" y="419" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="217" y="452" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="263" y="452" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="286" y="452" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="240" y="485" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="263" y="485" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="217" y="518" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="240" y="518" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="286" y="518" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="217" y="551" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="263" y="551" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="286" y="551" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="240" y="584" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="263" y="584" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="217" y="617" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="240" y="617" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="286" y="617" width="8" height="13" fill="#05d9e8" opacity=".5"/><path d="M330 700V285l28.0-25H414V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="365" y="305" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="388" y="305" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="342" y="338" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="338" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="342" y="371" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="388" y="371" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="404" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="388" y="404" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="342" y="437" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="437" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="342" y="470" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="388" y="470" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="503" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="388" y="503" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="342" y="536" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="536" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="342" y="569" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="388" y="569" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="602" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="388" y="602" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="342" y="635" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="365" y="635" width="8" height="13" fill="#ff2a6d" opacity=".5"/><path d="M425 700V75l36.666666666666664-25H535V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="437" y="95" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="95" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="95" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="128" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="128" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="128" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="460" y="161" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="483" y="161" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="437" y="194" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="194" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="194" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="227" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="227" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="227" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="460" y="260" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="483" y="260" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="437" y="293" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="293" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="293" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="326" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="326" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="326" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="460" y="359" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="483" y="359" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="437" y="392" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="392" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="392" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="425" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="425" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="425" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="460" y="458" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="483" y="458" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="437" y="491" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="491" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="491" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="524" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="524" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="524" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="460" y="557" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="483" y="557" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="437" y="590" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="460" y="590" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="506" y="590" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="437" y="623" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="483" y="623" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="506" y="623" width="8" height="13" fill="#05d9e8" opacity=".5"/><path d="M550 700V235l25.0-25H625V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="562" y="255" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="608" y="255" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="288" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="608" y="288" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="562" y="321" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="321" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="562" y="354" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="608" y="354" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="387" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="608" y="387" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="562" y="420" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="420" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="562" y="453" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="608" y="453" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="486" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="608" y="486" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="562" y="519" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="519" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="562" y="552" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="608" y="552" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="585" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="608" y="585" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="562" y="618" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="585" y="618" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="562" y="651" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="608" y="651" width="8" height="13" fill="#05d9e8" opacity=".5"/><path d="M635 700V155l26.666666666666668-25H715V700Z" fill="#01012b" stroke="#194d65" stroke-width="2"/><rect x="670" y="175" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="693" y="175" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="647" y="208" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="208" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="647" y="241" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="693" y="241" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="274" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="693" y="274" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="647" y="307" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="307" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="647" y="340" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="693" y="340" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="373" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="693" y="373" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="647" y="406" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="406" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="647" y="439" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="693" y="439" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="472" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="693" y="472" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="647" y="505" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="505" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="647" y="538" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="693" y="538" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="571" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="693" y="571" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="647" y="604" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="670" y="604" width="8" height="13" fill="#05d9e8" opacity=".5"/><rect x="647" y="637" width="8" height="13" fill="#ff2a6d" opacity=".5"/><rect x="693" y="637" width="8" height="13" fill="#ff2a6d" opacity=".5"/><path d="M0 706L720 690V840H0Z" fill="#01012b"/><path d="M0 790L430 690M300 840L470 690M720 780L530 690" stroke="#05d9e8" opacity=".35"/><g stroke="#194d65" stroke-width="5" fill="none"><path d="M0 140Q350 350 720 70M0 225Q370 400 720 245"/></g><path d="M465 155h48v208h-48Z" fill="#ff2a6d"/><text x="489" y="189" fill="#0d0221" font-family="monospace" font-weight="bold" font-size="25" text-anchor="middle"><tspan x="489">N</tspan><tspan x="489" dy="33">E</tspan><tspan x="489" dy="33">T</tspan><tspan x="489" dy="33">0</tspan><tspan x="489" dy="33">7</tspan></text><rect x="80" y="390" width="195" height="48" fill="#05d9e8"/><text x="94" y="423" fill="#01012b" font-family="monospace" font-size="28" font-weight="bold">AFTER HOURS</text><g stroke="#d1f7ff" stroke-width="1" opacity=".18"><path d="M0 0l-16 52"/><path d="M83 119l-16 52"/><path d="M166 238l-16 52"/><path d="M249 357l-16 52"/><path d="M332 476l-16 52"/><path d="M415 595l-16 52"/><path d="M498 714l-16 52"/><path d="M581 833l-16 52"/><path d="M664 112l-16 52"/><path d="M27 231l-16 52"/><path d="M110 350l-16 52"/><path d="M193 469l-16 52"/><path d="M276 588l-16 52"/><path d="M359 707l-16 52"/><path d="M442 826l-16 52"/><path d="M525 105l-16 52"/><path d="M608 224l-16 52"/><path d="M691 343l-16 52"/><path d="M54 462l-16 52"/><path d="M137 581l-16 52"/><path d="M220 700l-16 52"/><path d="M303 819l-16 52"/><path d="M386 98l-16 52"/><path d="M469 217l-16 52"/><path d="M552 336l-16 52"/><path d="M635 455l-16 52"/><path d="M718 574l-16 52"/><path d="M81 693l-16 52"/><path d="M164 812l-16 52"/><path d="M247 91l-16 52"/><path d="M330 210l-16 52"/><path d="M413 329l-16 52"/><path d="M496 448l-16 52"/><path d="M579 567l-16 52"/><path d="M662 686l-16 52"/><path d="M25 805l-16 52"/></g><path d="M32 32h55M32 32v55M688 32h-55M688 32v55M32 808h55M32 808v-55M688 808h-55M688 808v-55" fill="none" stroke="#05d9e8" stroke-width="3"/><g fill="#d1f7ff" font-family="monospace" font-size="14"><text x="48" y="64">SECTOR_07 / OPTICAL FEED</text><text x="48" y="775">LINK 98.4% // ENCRYPTED</text></g><path d="M44 745H676" stroke="#ff2a6d"/><path d="M535 658v60m-30-30h60" stroke="#05d9e8" stroke-width="2"/></svg></div><div class="lbl"><b>night-city-feed</b><br>cyberpunk</div></div>
+<div class="cell"><div class="shapebox" style="color:#141414"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="Original monochrome fashion illustration of a sculptural coat, staged as a campaign plate"><rect width="720" height="840" fill="#dedbd5"/><path d="M505 0H720V840H132Z" fill="#c8c6c0"/><path d="M555 0H720V840H335Z" fill="#b4b2ac"/><path d="M0 765H720" stroke="#8e8a82"/><ellipse cx="355" cy="765" rx="176" ry="13" fill="#8d8a83"/><path d="M341 122q-20-62 17-78q45-10 52 35q-1 34-32 46l5 48-54 6Z" fill="#b4a284"/><path d="M340 97q-24-39-1-63q18-23 50-6q25 8 24 43l-17-9-7 18-22-7-6 28Z" fill="#141414"/><path d="M330 150L278 184L247 359L213 640L290 657L318 441L360 641L458 633L417 349L424 191L381 154L358 227Z" fill="#141414"/><path d="M278 185L233 220L172 445L202 465L283 316M422 193L453 220L503 431L477 450L411 322" fill="#292828"/><path d="M331 153L358 228L302 292L317 214ZM380 154L358 228L399 292L397 210Z" fill="#f7f4ee"/><path d="M358 228L359 620M278 337L313 320M398 320L424 337" stroke="#7e7b75" stroke-width="2"/><path d="M302 651L293 766L311 772L343 655M382 641L421 764L441 758L418 636" fill="#b4a284"/><path d="M293 756L277 780L319 780L313 761M421 752L417 780L461 780L438 750" fill="#141414"/><path d="M173 444l-8 24q12 22 25 3l12-17M479 443l6 26q20 14 24-9l-7-30" fill="#b4a284"/><path d="M50 55H90M50 55V95M670 785H630M670 785V745" stroke="#f7f4ee" fill="none"/><text x="54" y="818" fill="#141414" font-family="serif" font-size="14" letter-spacing="5">SILHOUETTE / ORIGINAL FASHION PLATE</text></svg></div><div class="lbl"><b>couture-silhouette</b><br>high-fashion</div></div>
+<div class="cell"><div class="shapebox" style="color:#88c0d0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="A quiet daylight interior with an original timber chair, layered pendant lamp and matte ceramic vessel"><rect width="720" height="840" fill="#eceff4"/><path d="M0 590H720V840H0Z" fill="#d3c6ac"/><path d="M0 590L720 584M0 674H720M0 760H720M110 590L80 840M365 590L369 840M615 590L660 840" stroke="#b8a58a"/><path d="M70 60H310V430H70Z" fill="#d8e2e8"/><path d="M190 60V430M70 243H310" stroke="#f8fafb" stroke-width="10"/><path d="M70 430L310 430L600 700L140 700Z" fill="#f2eee4" opacity=".6"/><path d="M488 0V197" stroke="#4c566a" stroke-width="3"/><path d="M422 198Q488 138 554 198Z" fill="#f8fafb" stroke="#b8c1c7"/><path d="M404 217Q488 162 572 217Z" fill="#f8fafb" stroke="#b8c1c7"/><path d="M430 237Q488 195 546 237Z" fill="#f8fafb" stroke="#b8c1c7"/><path d="M195 540Q180 450 211 422L355 405Q402 423 380 532Z" fill="#bda17c"/><path d="M207 435Q293 470 372 423M207 463Q293 492 374 454M210 489Q293 513 373 482" fill="none" stroke="#d7c3a3" stroke-width="4"/><path d="M196 540L375 531L395 576L183 588Z" fill="#88a39e"/><path d="M205 582L176 745M366 576L409 730M220 548L242 707M349 548L332 701" stroke="#a78a65" stroke-width="12"/><ellipse cx="550" cy="601" rx="87" ry="20" fill="#d8dee9"/><path d="M472 601v15q80 38 156-4v-11Z" fill="#aeb8bb"/><path d="M498 617L486 742M603 617L618 742" stroke="#4c566a" stroke-width="5"/><path d="M524 525Q510 550 525 591Q548 608 570 589Q585 551 570 525Z" fill="#e6dfd0"/><ellipse cx="547" cy="525" rx="23" ry="6" fill="#b8ad98"/><path d="M548 525Q532 471 559 411M548 501Q578 490 584 465M548 474Q525 463 519 442" fill="none" stroke="#758364" stroke-width="3"/><text x="42" y="802" fill="#4c566a" font-family="sans-serif" font-size="14" letter-spacing="3">OBJECTS FOR EVERYDAY LIFE / 01</text></svg></div><div class="lbl"><b>daylight-objects</b><br>nordic</div></div>
+<div class="cell"><div class="shapebox" style="color:#b42e23"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="An original asymmetrical workshop study in geometric form and measured colour"><rect width="720" height="840" fill="#e8e1d2"/><path d="M60 60H660V780H60Z" fill="none" stroke="#191919"/><circle cx="421" cy="276" r="178" fill="#b42e23"/><path d="M100 470L363 128L363 470Z" fill="#23539b"/><path d="M250 433H592V690H250Z" fill="#e1af32"/><circle cx="250" cy="562" r="129" fill="#191919"/><path d="M60 690H660M592 60V780M60 433H660" stroke="#191919" stroke-width="2"/><g font-family="sans-serif" fill="#191919"><text x="83" y="111" font-size="23">FORM / MATERIAL</text><text x="83" y="750" font-size="21">STUDY 01 — WORKSHOP EDITION</text></g></svg></div><div class="lbl"><b>workshop-study</b><br>bauhaus</div></div>
+<div class="cell"><div class="shapebox" style="color:#405840"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-label="An original iris botanical plate with a continuous whiplash border"><rect width="720" height="840" fill="#f2e9d5"/><path d="M48 800V130Q48 40 140 40H580Q672 40 672 130V800Z" fill="none" stroke="#887957" stroke-width="2"/><circle cx="360" cy="278" r="198" fill="#e3d5b8"/><circle cx="360" cy="278" r="180" fill="none" stroke="#887957"/><g fill="none" stroke="#405840" stroke-width="4"><path d="M80 800C125 535 20 610 110 370S140 110 82 40M640 800C595 535 700 610 610 370S580 110 638 40M96 800C170 590 49 600 140 367S190 128 103 40M624 800C550 590 671 600 580 367S530 128 617 40"/><path d="M325 800Q378 572 360 275M354 687Q232 640 219 474M358 570Q458 480 497 335M328 762Q441 704 465 570"/></g><g fill="#405840"><path d="M326 797Q228 646 243 548Q325 665 326 797M348 738Q465 618 481 489Q377 575 348 738M360 621Q289 532 292 417Q358 500 360 621"/></g><g fill="#914d37" stroke="#887957" stroke-width="2"><path d="M360 289Q254 278 275 203Q319 178 351 246Q324 152 362 132Q402 155 377 245Q423 163 458 208Q467 271 378 289Q422 309 391 346Q357 329 360 289Q325 352 299 317Q296 283 360 289Z"/><path d="M497 345Q444 323 455 278Q486 264 495 314Q495 252 524 257Q553 285 520 328Q563 308 565 339Q543 367 511 352Z"/></g><g fill="#887957"><circle cx="360" cy="284" r="12"/><circle cx="507" cy="339" r="8"/></g><path d="M160 785Q360 745 560 785" fill="none" stroke="#887957" stroke-width="2"/></svg></div><div class="lbl"><b>iris-whiplash</b><br>art-nouveau</div></div>
+</div>
+<h2 id="fonts">Fonts <small>33 vendored faces</small></h2>
+<div class="fontrow"><div class="name">Inter 400<br><span style="font-size:10.5px">neutral / body text everywhere</span></div><div class="sample" style="font-family:'Inter';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Inter 700<br><span style="font-size:10.5px">neutral / bold headings</span></div><div class="sample" style="font-family:'Inter';font-weight:700">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Space Grotesk 400<br><span style="font-size:10.5px">mono / vaporwave body</span></div><div class="sample" style="font-family:'Space Grotesk';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Space Grotesk 600<br><span style="font-size:10.5px">neutral display</span></div><div class="sample" style="font-family:'Space Grotesk';font-weight:600">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">DM Sans 400<br><span style="font-size:10.5px">ember body</span></div><div class="sample" style="font-family:'DM Sans';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Fraunces 400<br><span style="font-size:10.5px">jewel body</span></div><div class="sample" style="font-family:'Fraunces';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Quicksand 400<br><span style="font-size:10.5px">pastel body</span></div><div class="sample" style="font-family:'Quicksand';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Space Grotesk 500<br><span style="font-size:10.5px">modern display headings</span></div><div class="sample" style="font-family:'Space Grotesk';font-weight:500">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">JetBrains Mono 400<br><span style="font-size:10.5px">code / cyberpunk mono</span></div><div class="sample" style="font-family:'JetBrains Mono';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Orbitron 700<br><span style="font-size:10.5px">cyberpunk / sci-fi headings</span></div><div class="sample" style="font-family:'Orbitron';font-weight:700">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">VT323 400<br><span style="font-size:10.5px">retro CRT terminal</span></div><div class="sample" style="font-family:'VT323';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Press Start 2P 400<br><span style="font-size:10.5px">Y2K / 8-bit arcade</span></div><div class="sample" style="font-family:'Press Start 2P';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Quicksand 500<br><span style="font-size:10.5px">rounded / friendly / pastel body</span></div><div class="sample" style="font-family:'Quicksand';font-weight:500">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Poppins 600<br><span style="font-size:10.5px">geometric / friendly headings</span></div><div class="sample" style="font-family:'Poppins';font-weight:600">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Playfair Display 700<br><span style="font-size:10.5px">elegant serif display / editorial</span></div><div class="sample" style="font-family:'Playfair Display';font-weight:700">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Lora 400<br><span style="font-size:10.5px">readable serif body / editorial</span></div><div class="sample" style="font-family:'Lora';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Fraunces 600<br><span style="font-size:10.5px">fancy serif display / jewel</span></div><div class="sample" style="font-family:'Fraunces';font-weight:600">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">DM Sans 500<br><span style="font-size:10.5px">clean geometric sans / neutral</span></div><div class="sample" style="font-family:'DM Sans';font-weight:500">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Bebas Neue 400<br><span style="font-size:10.5px">condensed bold headline</span></div><div class="sample" style="font-family:'Bebas Neue';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Sora 600<br><span style="font-size:10.5px">modern display / tech</span></div><div class="sample" style="font-family:'Sora';font-weight:600">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Archivo Black 400<br><span style="font-size:10.5px">heavy display / brutalist</span></div><div class="sample" style="font-family:'Archivo Black';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Caveat 400<br><span style="font-size:10.5px">handwriting / playful accent</span></div><div class="sample" style="font-family:'Caveat';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Fira Code 400<br><span style="font-size:10.5px">mono w/ ligatures / code</span></div><div class="sample" style="font-family:'Fira Code';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Righteous 400<br><span style="font-size:10.5px">retro rounded display / Y2K</span></div><div class="sample" style="font-family:'Righteous';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Shrikhand 400<br><span style="font-size:10.5px">avant-basic / groovy bubble display</span></div><div class="sample" style="font-family:'Shrikhand';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Fredoka 500<br><span style="font-size:10.5px">avant-basic body / frutiger-metro display</span></div><div class="sample" style="font-family:'Fredoka';font-weight:500">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Bodoni Moda 700<br><span style="font-size:10.5px">high-fashion Didone masthead</span></div><div class="sample" style="font-family:'Bodoni Moda';font-weight:700">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Permanent Marker 400<br><span style="font-size:10.5px">skate hand-marker accent</span></div><div class="sample" style="font-family:'Permanent Marker';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Bangers 400<br><span style="font-size:10.5px">skate/pop loud display</span></div><div class="sample" style="font-family:'Bangers';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Poiret One 400<br><span style="font-size:10.5px">art-deco tall geometric display</span></div><div class="sample" style="font-family:'Poiret One';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Cinzel 600<br><span style="font-size:10.5px">art-deco/mosaic engraved roman</span></div><div class="sample" style="font-family:'Cinzel';font-weight:600">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Alfa Slab One 400<br><span style="font-size:10.5px">2000s-preppy varsity slab</span></div><div class="sample" style="font-family:'Alfa Slab One';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<div class="fontrow"><div class="name">Pacifico 400<br><span style="font-size:10.5px">preppy script accent</span></div><div class="sample" style="font-family:'Pacifico';font-weight:400">The quick brown fox jumps over 13 lazy dogs — 0123456789</div></div>
+<footer>Generated by <code>assets sync</code> on 2026-10-21 15:46 — this page is rebuilt from the vault data on every sync, so anything added to the vault appears here automatically. Open anytime: <code>ultra assets demo</code></footer></main></body></html>

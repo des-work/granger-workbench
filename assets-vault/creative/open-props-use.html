@@ -1,0 +1,12 @@
+<!-- open-props-use — Use Open Props — a huge ready set of CSS variables (shadows, easings, gradients, sizes) so you never hand-tune those again.  [tokens]  lib: open-props.min.css -->
+<link rel="stylesheet" href="../libraries/open-props.min.css">
+<style>
+.card {
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-4);
+  background: var(--gradient-8);          /* 30+ ready gradients */
+  transition: transform 0.4s var(--ease-elastic-3);
+  padding: var(--size-4);
+}
+.card:hover { transform: scale(1.03); }
+</style>

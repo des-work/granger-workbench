@@ -1,0 +1,10 @@
+/* badge-pill — Accent-tinted pill badge (auto-colors from --accent).  [style: neutral] */
+.badge {
+  display: inline-flex; align-items: center; gap: 0.35em;
+  padding: 0.25em 0.7em; font-size: var(--size-sm, 0.8rem);
+  border-radius: max(var(--radius, 999px), 0.2em);
+  font-weight: var(--weight-strong, 600);
+  text-transform: var(--case, none); letter-spacing: var(--tracking, 0);
+  background: color-mix(in srgb, var(--accent, #2b8fd6) 15%, transparent);
+  color: var(--accent, #2b8fd6);
+}

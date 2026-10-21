@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "pack": "botanical-exhibition",
+  "style": "art-nouveau",
+  "layout": "botanical-plate",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    }
+  },
+  "copy": {
+    "title": "The line comes to life.",
+    "eyebrow": "BOTANICAL ARTS / EXHIBITION 01",
+    "description": "An exhibition of growing forms, sinuous lines and the art of looking closely."
+  }
+}

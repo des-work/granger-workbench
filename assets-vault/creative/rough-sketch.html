@@ -1,0 +1,9 @@
+<!-- rough-sketch — Hand-drawn / sketchy shapes (Rough.js) — the literal opposite of clean AI-generic. Great for playful, editorial, or zine looks.  [generative]  lib: rough.js -->
+<canvas id="rc" width="440" height="300"></canvas>
+<script src="../libraries/rough.js"></script>
+<script>
+const rc = rough.canvas(document.getElementById('rc'));
+rc.rectangle(20, 20, 180, 110, { fill: '#2b8fd6', fillStyle: 'hachure', roughness: 2 });
+rc.circle(320, 120, 130, { stroke: '#ff2a6d', strokeWidth: 2, roughness: 1.6 });
+rc.line(20, 200, 420, 240, { stroke: '#96cd6e', roughness: 2.5 });
+</script>

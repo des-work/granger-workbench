@@ -1,0 +1,43 @@
+:root {  /* Hi-Contrast */
+  /* --- type ------------------------------------------------ */
+  --font: 'Inter', 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Archivo Black', 'Inter', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 18px;
+  --ratio: 1.5;
+  --leading: 1.504;
+  --tracking: 0em;
+  --measure: 60ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 2.531rem;
+  --size-1: 1.688rem;
+  --size-2: 1.125rem;
+  --size-sm: 1.0rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #000000;
+  --bg2: #0d0d0d;
+  --surface: #101010;
+  --surface-glass: rgba(255,255,255,0.06);
+  --accent: #ffe600;
+  --accent2: #ffffff;
+  --text: #ffffff;
+  --muted: #c7c7c7;
+  --border: #ffffff;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 4px;
+  --border-width: 2px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 0 0 0 1px #ffffff;
+  /* --- motion ---------------------------------------------- */
+  --dur: 100ms;
+  --ease: linear;
+  --travel: 0px;
+}

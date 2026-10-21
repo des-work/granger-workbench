@@ -1,0 +1,22 @@
+{
+  "id": "signal-contrast",
+  "style": "hi-contrast",
+  "name": "Hi-Contrast \u2014 Signal",
+  "tags": [
+    "contrast",
+    "accessibility",
+    "black",
+    "yellow",
+    "aaa",
+    "bold"
+  ],
+  "colors": [
+    "#000000",
+    "#0d0d0d",
+    "#101010",
+    "#ffe600",
+    "#c7c7c7",
+    "#ffffff"
+  ],
+  "notes": "Black/white with one signal yellow and a neutral ramp. White and yellow carry text on black; check each actual foreground and background pair before using the intermediate greys."
+}

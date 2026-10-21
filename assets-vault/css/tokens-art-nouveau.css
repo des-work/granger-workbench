@@ -1,0 +1,44 @@
+:root {  /* Art Nouveau / Botanical Line */
+  /* --- type ------------------------------------------------ */
+  --font: 'Lora', 'Lora',serif;
+  --font-display: 'Fraunces', 'Lora',serif;
+  --mono: 'JetBrains Mono',monospace;
+  --base: 18px;
+  --ratio: 1.414;
+  --leading: 1.472;
+  --tracking: 0.01em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: small-caps;
+  --size-0: 3.181rem;
+  --size-1: 2.249rem;
+  --size-2: 1.591rem;
+  --size-3: 1.125rem;
+  --size-sm: 0.796rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #f2e9d5;
+  --bg2: #e3d5b8;
+  --surface: #faf3e2;
+  --accent: #405840;
+  --accent2: #914d37;
+  --text: #27382c;
+  --muted: #5b5947;
+  --border: #887957;
+  --surface-glass: #faf3e2;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 32px;
+  --align: center;
+  /* --- material -------------------------------------------- */
+  --radius: 2px;
+  --border-width: 1px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: none;
+  /* --- motion ---------------------------------------------- */
+  --dur: 420ms;
+  --ease: cubic-bezier(.25,.8,.3,1);
+  --travel: 8px;
+}

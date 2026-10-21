@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "pack": "museum-scroll",
+  "style": "golden-archive",
+  "layout": "story-rail",
+  "effects": {
+    "noise-film": {
+      "opacity": 0.055
+    },
+    "scroll-depth": {
+      "distance": 35
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "media-lightbox": {},
+    "scroll-progress": {},
+    "scrollspy": {}
+  },
+  "copy": {
+    "title": "A collection worth keeping.",
+    "eyebrow": "Golden Archive \u00b7 artifacts preserved locally",
+    "description": "A quiet passage through objects, ideas, and discoveries. Framed in gold; connected by curiosity."
+  }
+}

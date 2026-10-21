@@ -1,0 +1,7 @@
+/* scroll-scrub-sequence — Scrub a hero animation to scroll position (zoom/pan a background as you scroll) — scroll-timeline, no JS.  [motion] */
+@keyframes zoom { to { transform: scale(1.35); opacity: .35; } }
+.hero__img {
+  animation: zoom linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 70vh;
+}

@@ -1,0 +1,15 @@
+<!-- matter-physics — Draggable 2D physics playground (Matter.js) — bouncy, tactile UI toys.  [generative]  lib: matter.min.js -->
+<div id="world"></div>
+<script src="../libraries/matter.min.js"></script>
+<script>
+const { Engine, Render, Runner, Bodies, Composite, Mouse, MouseConstraint } = Matter;
+const e = Engine.create();
+const r = Render.create({ element: document.getElementById('world'), engine: e,
+  options: { width: 600, height: 400, wireframes: false, background: '#0d0221' } });
+const ground = Bodies.rectangle(300, 395, 600, 20, { isStatic: true });
+const balls = Array.from({ length: 12 }, (_, i) =>
+  Bodies.circle(80 + i*40, 40, 18, { restitution: .7, render: { fillStyle: '#05d9e8' } }));
+Composite.add(e.world, [ground, ...balls,
+  MouseConstraint.create(e, { mouse: Mouse.create(r.canvas) })]);
+Render.run(r); Runner.run(Runner.create(), e);
+</script>

@@ -1,0 +1,16 @@
+/* hero-centered — Centered hero section with fluid headline.  [style: neutral] */
+.hero {
+  min-height: 70vh; display: grid; place-items: center;
+  text-align: center; padding: 4rem 1.5rem; gap: 1rem;
+}
+.hero h1 {
+  font-size: clamp(var(--size-1, 2rem), 6vw, var(--size-0, 4rem));
+  line-height: calc(var(--leading, 1.5) - 0.4);
+  letter-spacing: var(--tracking, -0.02em);
+  text-transform: var(--case, none);
+}
+.hero p {
+  max-width: min(var(--measure, 52ch), 100%); margin: 0 auto;
+  color: var(--muted); font-size: var(--base, 1.1rem);
+}
+.hero .cta { display: flex; gap: 0.8rem; justify-content: center; margin-top: 0.6rem; }

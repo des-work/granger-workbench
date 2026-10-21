@@ -1,0 +1,9 @@
+/* blend-duotone-bg — Layer color over imagery with blend modes (multiply/overlay/screen) for editorial compositing instead of flat overlays.  [filter] */
+.blend {
+  position: relative; background: url(photo.jpg) center/cover;
+}
+.blend::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(45deg, var(--accent), var(--accent2));
+  mix-blend-mode: overlay;      /* try: multiply, screen, color, difference */
+}

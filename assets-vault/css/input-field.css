@@ -1,0 +1,13 @@
+/* input-field — Text input with an accent focus ring. Uses your tokens.  [style: neutral] */
+.field {
+  width: 100%; padding: 0.7rem 1rem;
+  border-radius: var(--radius, 10px);
+  border: var(--border-width, 1px) solid var(--border, #d1d5db);
+  background: var(--surface, #fff); color: inherit; font: inherit;
+  transition: border-color var(--dur, 150ms) var(--ease, ease),
+              box-shadow var(--dur, 150ms) var(--ease, ease);
+}
+.field:focus {
+  outline: none; border-color: var(--accent, #2b8fd6);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, #2b8fd6) 25%, transparent);
+}

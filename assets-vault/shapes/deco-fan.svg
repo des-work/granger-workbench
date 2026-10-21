@@ -1,0 +1,7 @@
+<svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M10 66 A50 50 0 0 1 110 66"/><path d="M22 66 A38 38 0 0 1 98 66"/>
+    <path d="M34 66 A26 26 0 0 1 86 66"/><path d="M46 66 A14 14 0 0 1 74 66"/>
+    <path d="M60 66 V16 M60 66 L28 26 M60 66 L92 26"/>
+  </g>
+</svg>

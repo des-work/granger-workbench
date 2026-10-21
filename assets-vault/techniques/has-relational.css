@@ -1,0 +1,6 @@
+/* has-relational — Style a parent from its children/state with :has() — quantity queries, form validity, active card, all with no JS.  [interaction] */
+.card:has(input:checked) { border-color: var(--accent);
+                           background: color-mix(in srgb, var(--accent) 6%, transparent); }
+label:has(+ input:focus) { color: var(--accent); }
+form:has(:invalid) button[type="submit"] { opacity: .5; pointer-events: none; }
+.grid:has(> :nth-child(6)) { gap: .5rem; }   /* quantity query */

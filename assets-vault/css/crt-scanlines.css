@@ -1,0 +1,13 @@
+/* crt-scanlines — CRT scanline + flicker overlay. Put over any container.  [style: cyberpunk] */
+.crt {
+  position: relative;
+}
+.crt::before {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom, rgba(0,0,0,0.18) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+  animation: crt-flicker 3s infinite steps(60);
+}
+@keyframes crt-flicker { 0%,97%{opacity:1;} 98%{opacity:0.85;} 100%{opacity:1;} }

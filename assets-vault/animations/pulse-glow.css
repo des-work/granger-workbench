@@ -1,0 +1,6 @@
+/* pulse-glow — Breathing glow to draw attention to a button/badge.  [style: cyberpunk] */
+.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+@keyframes pulse-glow {
+  0%,100% { box-shadow: 0 0 6px currentColor; }
+  50% { box-shadow: 0 0 20px currentColor, 0 0 36px currentColor; }
+}

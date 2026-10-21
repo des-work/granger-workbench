@@ -1,0 +1,9 @@
+/* scroll-mask-wipe — A mask that wipes open as the element scrolls into view (no JS).  [shape] */
+@keyframes wipe { from { -webkit-mask-size: 0 100%; mask-size: 0 100%; }
+                  to   { -webkit-mask-size: 100% 100%; mask-size: 100% 100%; } }
+.wipe {
+  -webkit-mask: linear-gradient(#000,#000) left/0 100% no-repeat;
+          mask: linear-gradient(#000,#000) left/0 100% no-repeat;
+  animation: wipe linear both; animation-timeline: view();
+  animation-range: entry 10% cover 45%;
+}

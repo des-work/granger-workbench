@@ -1,0 +1,7 @@
+/* light-dark-fn — Automatic light/dark values with the light-dark() function — one declaration, both modes, no media query.  [color] */
+:root { color-scheme: light dark; }
+body {
+  background: light-dark(#f8fafc, #0d0221);
+  color:      light-dark(#0b3c5d, #d1f7ff);
+}
+.card { border: 1px solid light-dark(#e2e8f0, #1e293b); }

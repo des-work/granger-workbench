@@ -1,0 +1,21 @@
+{
+  "id": "warm-sand",
+  "style": "neutral",
+  "name": "Neutral \u2014 Warm Sand",
+  "tags": [
+    "neutral",
+    "warm",
+    "paper",
+    "cozy"
+  ],
+  "colors": [
+    "#1c1917",
+    "#44403c",
+    "#78716c",
+    "#d6d3d1",
+    "#f5f5f4",
+    "#fafaf9",
+    "#ffffff"
+  ],
+  "notes": "Warm stone neutrals \u2014 softer than pure grey for cozy/editorial UIs."
+}

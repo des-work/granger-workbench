@@ -1,0 +1,9 @@
+/* sheen-sweep — A light sheen that sweeps across a card/button on hover (glossy).  [motion] */
+.sheen { position: relative; overflow: hidden; }
+.sheen::after {
+  content: ""; position: absolute; inset: 0; transform: translateX(-120%);
+  background: linear-gradient(105deg, transparent 40%,
+              rgba(255,255,255,.4) 50%, transparent 60%);
+  transition: transform .6s;
+}
+.sheen:hover::after { transform: translateX(120%); }

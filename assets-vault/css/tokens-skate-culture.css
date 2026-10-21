@@ -1,0 +1,44 @@
+:root {  /* Skate Culture */
+  /* --- type ------------------------------------------------ */
+  --font: 'Inter', 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Bangers', 'Inter', 'Segoe UI', sans-serif;
+  --mono: 'Fira Code', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.5;
+  --leading: 1.568;
+  --tracking: -0.02em;
+  --measure: 64ch;
+  --weight-body: 400;
+  --weight-strong: 800;
+  --case: upper;
+  --size-0: 3.375rem;
+  --size-1: 2.25rem;
+  --size-2: 1.5rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.667rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #141518;
+  --bg2: #1f2125;
+  --surface: #1b1d21;
+  --surface-glass: rgba(255,92,31,0.07);
+  --accent: #ff5c1f;
+  --accent2: #ffd23f;
+  --text: #f1efe8;
+  --muted: #989fa8;
+  --border: #383b41;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 16px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 8px;
+  --border-width: 3px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 5px 5px 0 0 #f1efe8;
+  /* --- motion ---------------------------------------------- */
+  --dur: 140ms;
+  --ease: steps(2,end);
+  --travel: 6px;
+}

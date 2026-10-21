@@ -1,0 +1,7 @@
+<!-- motion-spring — Motion One spring physics — natural, bouncy entrances (tiny lib).  [motion]  lib: motion.min.js -->
+<script src="../libraries/motion.min.js"></script>
+<script>
+const { animate, spring } = Motion;
+animate('.card', { y: [40, 0], opacity: [0, 1] },
+  { delay: 0.1, easing: spring({ stiffness: 200, damping: 18 }) });
+</script>

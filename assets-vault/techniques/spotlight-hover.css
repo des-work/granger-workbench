@@ -1,0 +1,14 @@
+/* spotlight-hover — Radial glow that follows the cursor across a card (CSS + 4 lines JS).  [depth] */
+.spot { position: relative; overflow: hidden; }
+.spot::before {
+  content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity .3s;
+  background: radial-gradient(220px circle at var(--mx,50%) var(--my,50%),
+              color-mix(in srgb, var(--accent) 25%, transparent), transparent 65%);
+}
+.spot:hover::before { opacity: 1; }
+/* JS:
+document.querySelectorAll('.spot').forEach(el => el.addEventListener('mousemove', e => {
+  const r = el.getBoundingClientRect();
+  el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+})); */

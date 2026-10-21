@@ -1,0 +1,9 @@
+/* halftone-dots — Comic/print halftone dot texture over a fill (blend a dot grid).  [filter] */
+.halftone {
+  /* hard-stop dots (30% -> 31%) are an edge, not a blend — this is a
+     printing screen, and it inherits the page's own ink and field. */
+  background:
+    radial-gradient(currentColor 30%, transparent 31%) 0 0 / 8px 8px,
+    var(--bg2, #fff);
+  background-blend-mode: multiply;
+}

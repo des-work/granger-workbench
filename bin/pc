@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
+export PYTHONPATH="$root${PYTHONPATH:+:$PYTHONPATH}"
+if [[ -x "$root/.venv/bin/python" ]]; then
+  exec "$root/.venv/bin/python" -m pcstudio.easy "$@"
+fi
+exec "${PCSTUDIO_PYTHON:-python3}" -m pcstudio.easy "$@"

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "pack": "signal-publication",
+  "style": "swiss-international",
+  "layout": "fluid-magazine",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "scroll-progress": {},
+    "sticky-morph": {},
+    "hover-preview": {}
+  },
+  "copy": {
+    "title": "Ideas, clearly expressed.",
+    "eyebrow": "Swiss International \u00b7 form follows information",
+    "description": "A rigorous grid, direct typography, and deliberate transitions. Information takes the lead."
+  }
+}

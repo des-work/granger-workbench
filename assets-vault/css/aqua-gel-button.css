@@ -1,0 +1,27 @@
+/* aqua-gel-button — Glossy Frutiger-Aero gel button with top highlight sheen.  [style: frutiger-aero] */
+.aqua-btn {
+  position: relative;
+  padding: 0.7rem 1.6rem;
+  /* The gel is the accent lit from above: a lighter crown, the accent at
+     the waist, a darker base — all derived, so any style can wear it. */
+  --gel-lo: color-mix(in srgb, var(--accent) 72%, #000);
+  --gel-hi: color-mix(in srgb, var(--accent) 65%, #fff);
+  border: 1px solid var(--gel-lo);
+  border-radius: 999px;
+  color: #fff;
+  font-weight: var(--weight-strong, 600);
+  cursor: pointer;
+  background: linear-gradient(var(--gel-hi) 0%, var(--accent) 50%, var(--gel-lo) 100%);
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--gel-lo) 40%, transparent),
+              inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  transition: filter 0.15s, transform 0.05s;
+}
+.aqua-btn::before {           /* top-half glass sheen */
+  content: "";
+  position: absolute; inset: 0 0 50% 0;
+  background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.1));
+  border-radius: 999px 999px 40% 40%;
+}
+.aqua-btn:hover { filter: brightness(1.08); }
+.aqua-btn:active { transform: translateY(1px); }

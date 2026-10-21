@@ -1,0 +1,44 @@
+:root {  /* Mosaic */
+  /* --- type ------------------------------------------------ */
+  --font: 'Lora', 'Lora', 'Georgia', serif;
+  --font-display: 'Cinzel', 'Lora', 'Georgia', serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.333;
+  --leading: 1.488;
+  --tracking: 0em;
+  --measure: 64ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 2.369rem;
+  --size-1: 1.777rem;
+  --size-2: 1.333rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.75rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #f1ece0;
+  --bg2: #e6ddca;
+  --surface: #faf7ee;
+  --surface-glass: rgba(22,105,122,0.06);
+  --accent: #16697a;
+  --accent2: #a8442c;
+  --text: #2b2721;
+  --muted: #656052;
+  --border: #d6cdb6;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 12px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 6px;
+  --border-width: 2px;
+  --gloss: 1;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  --shadow: 0 0 0 1px #d6cdb6;
+  /* --- motion ---------------------------------------------- */
+  --dur: 260ms;
+  --ease: cubic-bezier(.3,.7,.3,1);
+  --travel: 8px;
+}

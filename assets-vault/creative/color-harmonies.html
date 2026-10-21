@@ -1,0 +1,10 @@
+<!-- color-harmonies — Derive complementary / triadic / analogous palettes from one hue.  [color]  lib: chroma.min.js -->
+<script src="../libraries/chroma.min.js"></script>
+<script>
+const base = chroma('#2b8fd6'), h = base.get('hsl.h');
+const rot = d => base.set('hsl.h', (h + d + 360) % 360).hex();
+const complementary = rot(180);
+const triadic  = [0, 120, 240].map(rot);
+const analogous = [-30, 0, 30].map(rot);
+const splitComp = [0, 150, 210].map(rot);
+</script>

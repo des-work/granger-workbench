@@ -1,0 +1,6 @@
+/* chromatic-aberration — RGB-split chromatic aberration on hover — subtle digital-glitch edge.  [filter] */
+.chroma { transition: text-shadow .2s, transform .2s; }
+.chroma:hover {
+  text-shadow: -2px 0 rgba(255,0,90,.8), 2px 0 rgba(0,220,255,.8);
+  transform: translateX(0.5px);
+}

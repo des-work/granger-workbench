@@ -1,0 +1,21 @@
+{
+  "id": "swiss-minimal",
+  "style": "editorial",
+  "name": "Editorial \u2014 Swiss Minimal",
+  "tags": [
+    "swiss",
+    "grid",
+    "minimal",
+    "bold",
+    "functional"
+  ],
+  "colors": [
+    "#000000",
+    "#ffffff",
+    "#ff3b30",
+    "#0a84ff",
+    "#f2f2f7",
+    "#8e8e93"
+  ],
+  "notes": "Black/white with one red + one blue \u2014 International Typographic Style. Let whitespace and type do the work."
+}

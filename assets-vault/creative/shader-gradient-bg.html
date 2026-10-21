@@ -1,0 +1,30 @@
+<!-- shader-gradient-bg — Full-screen animated GLSL fragment-shader background (GPU). Swap the fragment for aurora/plasma/noise — this is the un-templatey hero backdrop CSS can't do.  [shader]  lib: (none — raw WebGL) -->
+<canvas id="glcanvas" style="position:fixed;inset:0;z-index:-1"></canvas>
+<script type="x-shader/x-fragment" id="frag">
+precision highp float;
+uniform vec2 u_res; uniform float u_time;
+void main(){
+  vec2 uv = gl_FragCoord.xy / u_res;
+  float t = u_time * 0.25;
+  vec3 col = 0.5 + 0.5 * cos(t + uv.xyx * 3.0 + vec3(0.0, 2.0, 4.0));
+  col = mix(vec3(0.05,0.01,0.12), col, smoothstep(0.0, 1.0, uv.y));
+  gl_FragColor = vec4(col, 1.0);
+}
+</script>
+<script>
+const c = document.getElementById('glcanvas'), gl = c.getContext('webgl');
+const rs = () => { c.width = innerWidth; c.height = innerHeight; };
+rs(); addEventListener('resize', rs);
+const sh = (t, s) => { const o = gl.createShader(t); gl.shaderSource(o, s); gl.compileShader(o); return o; };
+const p = gl.createProgram();
+gl.attachShader(p, sh(gl.VERTEX_SHADER, 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}'));
+gl.attachShader(p, sh(gl.FRAGMENT_SHADER, document.getElementById('frag').textContent));
+gl.linkProgram(p); gl.useProgram(p);
+const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,3,-1,-1,3]), gl.STATIC_DRAW);
+const loc = gl.getAttribLocation(p, 'p'); gl.enableVertexAttribArray(loc);
+gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+const uR = gl.getUniformLocation(p,'u_res'), uT = gl.getUniformLocation(p,'u_time');
+(function loop(t){ gl.uniform2f(uR,c.width,c.height); gl.uniform1f(uT,t*0.001);
+  gl.drawArrays(gl.TRIANGLES,0,3); requestAnimationFrame(loop); })(0);
+</script>

@@ -1,0 +1,25 @@
+/* neon-glow — Neon glow for text and outlined buttons (uses currentColor).  [style: cyberpunk] */
+.neon {
+  color: var(--accent);
+  text-shadow: 0 0 4px currentColor, 0 0 12px currentColor,
+               0 0 28px currentColor;
+}
+.neon-btn {
+  color: var(--accent);
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 0 8px var(--accent),
+              inset 0 0 8px color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: box-shadow 0.2s, color 0.2s;
+}
+.neon-btn:hover {
+  color: #fff;
+  box-shadow: 0 0 14px var(--accent), 0 0 28px var(--accent),
+              inset 0 0 14px color-mix(in srgb, var(--accent) 60%, transparent);
+}

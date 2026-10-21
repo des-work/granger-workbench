@@ -1,0 +1,19 @@
+/* editorial-float — Boxless floating text section — a glowing spine rule + ghost stroke-word backdrop + a larger lede paragraph instead of wrapping prose in yet another rounded card. Use for manifesto/about/narrative sections, especially near the top of the page.  [layout] */
+.flow { position: relative; max-width: 760px; margin: 0 auto; padding-left: 2.2rem; }
+.flow::before {            /* glowing spine instead of a box */
+  content: ""; position: absolute; left: 0; top: .4rem; bottom: .4rem; width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--accent2) 55%, transparent);
+  box-shadow: 0 0 calc(14px * var(--gloss, 1)) var(--accent);
+}
+.flow::after {             /* ghost stroke word floating behind — set per section */
+  content: "MINDSET"; position: absolute; z-index: -1; right: -14rem; top: -3.2rem;
+  font-weight: 700; font-size: clamp(6rem, 16vw, 11rem); letter-spacing: .04em;
+  color: transparent;
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--text) 13%, transparent);
+  pointer-events: none; user-select: none;
+}
+.flow p { max-width: 62ch; }
+.flow p:first-of-type {    /* the lede — bigger, brighter */
+  font-size: 1.28rem; line-height: 1.55; font-weight: 500;
+}
+/* parent section needs overflow: hidden so the ghost word doesn't cause scroll */

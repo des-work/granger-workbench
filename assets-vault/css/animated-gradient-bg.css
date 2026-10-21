@@ -1,0 +1,12 @@
+/* animated-gradient-bg — Slowly-shifting multi-color gradient background.  [style: neutral] */
+.gradient-bg {
+  background: linear-gradient(-45deg, var(--accent), var(--accent2),
+              color-mix(in srgb, var(--accent), var(--accent2)), var(--accent));
+  background-size: 400% 400%;
+  animation: gradient-shift 16s ease infinite;
+}
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

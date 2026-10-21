@@ -1,0 +1,3 @@
+# Core image operations and graph analysis. Voice is installed separately.
+Pillow>=10,<14
+networkx>=3.2

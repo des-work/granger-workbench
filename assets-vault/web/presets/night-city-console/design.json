@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "pack": "night-city-console",
+  "style": "cyberpunk",
+  "layout": "signal-console",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "command-menu": {}
+  },
+  "copy": {
+    "title": "The city never disconnects.",
+    "eyebrow": "NIGHT RELAY / SECTOR_07",
+    "description": "Independent signals from the lower district. Open a channel. Read the network. Leave no trace."
+  }
+}

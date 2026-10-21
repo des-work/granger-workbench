@@ -1,0 +1,20 @@
+{
+  "id": "neon-terminal",
+  "style": "cyberpunk",
+  "name": "Neon \u2014 Terminal Green",
+  "tags": [
+    "matrix",
+    "crt",
+    "mono",
+    "hacker"
+  ],
+  "colors": [
+    "#000000",
+    "#0a1a0a",
+    "#00ff41",
+    "#00d4aa",
+    "#39ff14",
+    "#0affef"
+  ],
+  "notes": "Classic phosphor-green terminal. Use with a monospace font and a subtle scanline overlay."
+}

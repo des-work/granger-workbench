@@ -1,0 +1,8 @@
+<!-- topographic — Concentric contour lines — subtle map-like texture. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+     style="opacity:0.15; color:#3b2f2a">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="100" cy="100" r="20"/><circle cx="100" cy="100" r="42"/>
+    <circle cx="100" cy="100" r="66"/><circle cx="100" cy="100" r="92"/>
+  </g>
+</svg>  <!-- tile as a repeating background, or place as a decorative layer -->

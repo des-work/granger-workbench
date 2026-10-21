@@ -1,0 +1,1 @@
+.uv-edge-fade{overflow:auto;padding:24px;display:flex;gap:24px;scroll-snap-type:x mandatory;}.uv-edge-fade>.uv-card{min-width:min(320px,82vw);scroll-snap-align:center;}@supports(mask-image:linear-gradient(black,transparent)){.uv-edge-fade{mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}}

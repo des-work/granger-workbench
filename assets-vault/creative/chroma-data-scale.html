@@ -1,0 +1,9 @@
+<!-- chroma-data-scale — Map data values to colors with a perceptual (lab) scale — proper heatmaps/choropleths, not a rainbow.  [color]  lib: chroma.min.js -->
+<script src="../libraries/chroma.min.js"></script>
+<script>
+const scale = chroma.scale(['#f8fafc', '#2b8fd6', '#0b3c5d'])
+  .mode('lab').domain([0, 100]);
+const colorFor = v => scale(v).hex();   // v in 0..100
+// diverging scale (e.g. -100..100):
+const diverging = chroma.scale(['#ff2a6d', '#f8fafc', '#05d9e8']).mode('lab').domain([-100, 0, 100]);
+</script>

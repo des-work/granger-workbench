@@ -1,0 +1,11 @@
+/* elevation-shadows — A 5-step soft shadow elevation scale (utility classes).  [style: neutral] */
+/* Soft, layered elevation — cheaper on the eyes than one hard shadow.
+   Tinted from the style's own ink, so the ramp sits on the page instead of
+   washing every palette with the same blue-grey. */
+:root { --e-soft: color-mix(in srgb, var(--text) 7%, transparent);
+        --e-deep: color-mix(in srgb, var(--text) 13%, transparent); }
+.e1 { box-shadow: 0 1px 2px var(--e-soft), 0 1px 3px var(--e-deep); }
+.e2 { box-shadow: 0 2px 4px var(--e-soft), 0 4px 8px var(--e-deep); }
+.e3 { box-shadow: 0 4px 8px var(--e-soft), 0 8px 16px var(--e-deep); }
+.e4 { box-shadow: 0 8px 16px var(--e-soft), 0 16px 32px var(--e-deep); }
+.e5 { box-shadow: 0 16px 32px var(--e-soft), 0 24px 48px var(--e-deep); }

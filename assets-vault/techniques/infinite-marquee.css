@@ -1,0 +1,9 @@
+/* infinite-marquee — Seamless infinite marquee (duplicate the track for the loop).  [motion] */
+.marquee { overflow: hidden; }
+.marquee__track {
+  display: inline-flex; gap: 3rem; white-space: nowrap;
+  animation: marquee 22s linear infinite;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+/* duplicate the content twice inside .marquee__track */

@@ -1,0 +1,6 @@
+/* container-query — Style a component by ITS OWN width, not the viewport — real reusable responsive components.  [layout] */
+.card-wrap { container-type: inline-size; }
+.card { display: grid; gap: 1rem; }
+@container (min-width: 420px) {
+  .card { grid-template-columns: 140px 1fr; align-items: center; }
+}

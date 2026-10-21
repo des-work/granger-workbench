@@ -1,0 +1,1250 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "reveal-stagger",
+      "category": "motion",
+      "description": "Sequenced entrances with an observer fallback and no hidden content before JS.",
+      "files": {
+        "css": "web/effects/reveal-stagger.css",
+        "js": "web/effects/reveal-stagger.js"
+      },
+      "markup": "web/snippets/reveal-stagger.html",
+      "knobs": {
+        "distance": 28,
+        "duration": 650,
+        "stagger": 100
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "distance": {
+          "default": 28,
+          "min": 0,
+          "max": 80,
+          "unit": "",
+          "css": null
+        },
+        "duration": {
+          "default": 650,
+          "min": 100,
+          "max": 1600,
+          "unit": "",
+          "css": null
+        },
+        "stagger": {
+          "default": 100,
+          "min": 0,
+          "max": 300,
+          "unit": "",
+          "css": null
+        }
+      },
+      "sources": [],
+      "bytes": 1157
+    },
+    {
+      "id": "scroll-progress",
+      "category": "motion",
+      "description": "A reading-progress rail driven by native scroll timelines, with a measured fallback.",
+      "files": {
+        "css": "web/effects/scroll-progress.css",
+        "js": "web/effects/scroll-progress.js"
+      },
+      "markup": "web/snippets/scroll-progress.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations"
+      ],
+      "bytes": 1516
+    },
+    {
+      "id": "scroll-depth",
+      "category": "motion",
+      "description": "A restrained depth shift with a scroll-linked timeline and JS fallback.",
+      "files": {
+        "css": "web/effects/scroll-depth.css",
+        "js": "web/effects/scroll-depth.js"
+      },
+      "markup": "web/snippets/scroll-depth.html",
+      "knobs": {
+        "distance": 35
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "distance": {
+          "default": 35,
+          "min": 0,
+          "max": 90,
+          "unit": "px",
+          "css": "--uv-depth-distance"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations"
+      ],
+      "bytes": 1636
+    },
+    {
+      "id": "magnetic-button",
+      "category": "motion",
+      "description": "A pointer-responsive CTA with bounded travel and a still keyboard/touch state.",
+      "files": {
+        "css": "web/effects/magnetic-button.css",
+        "js": "web/effects/magnetic-button.js"
+      },
+      "markup": "web/snippets/magnetic-button.html",
+      "knobs": {
+        "strength": 0.14
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "strength": {
+          "default": 0.14,
+          "min": 0,
+          "max": 0.3,
+          "unit": "",
+          "css": null
+        }
+      },
+      "sources": [],
+      "bytes": 850
+    },
+    {
+      "id": "tilt-card",
+      "category": "motion",
+      "description": "A shallow, bounded 3D tilt that follows a fine pointer.",
+      "files": {
+        "css": "web/effects/tilt-card.css",
+        "js": "web/effects/tilt-card.js"
+      },
+      "markup": "web/snippets/tilt-card.html",
+      "knobs": {
+        "angle": 7
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "angle": {
+          "default": 7,
+          "min": 0,
+          "max": 14,
+          "unit": "",
+          "css": null
+        }
+      },
+      "sources": [],
+      "bytes": 1001
+    },
+    {
+      "id": "shared-transition",
+      "category": "motion",
+      "description": "Shared-element transitions between two real content states, with immediate fallback.",
+      "files": {
+        "css": "web/effects/shared-transition.css",
+        "js": "web/effects/shared-transition.js"
+      },
+      "markup": "web/snippets/shared-transition.html",
+      "knobs": {},
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using"
+      ],
+      "bytes": 957
+    },
+    {
+      "id": "split-lines",
+      "category": "motion",
+      "description": "A clipped headline entrance with a single accessible label and readable static text.",
+      "files": {
+        "css": "web/effects/split-lines.css",
+        "js": "web/effects/split-lines.js"
+      },
+      "markup": "web/snippets/split-lines.html",
+      "knobs": {
+        "duration": 900
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "duration": {
+          "default": 900,
+          "min": 200,
+          "max": 1800,
+          "unit": "",
+          "css": null
+        }
+      },
+      "sources": [],
+      "bytes": 606
+    },
+    {
+      "id": "ambient-marquee",
+      "category": "motion",
+      "description": "A looping text band with pause controls; duplicates are hidden from assistive technology.",
+      "files": {
+        "css": "web/effects/ambient-marquee.css",
+        "js": "web/effects/ambient-marquee.js"
+      },
+      "markup": "web/snippets/ambient-marquee.html",
+      "knobs": {
+        "speed": 1
+      },
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "speed": {
+          "default": 1,
+          "min": 0.3,
+          "max": 2,
+          "unit": "",
+          "css": "--uv-speed"
+        }
+      },
+      "sources": [],
+      "bytes": 1283
+    },
+    {
+      "id": "flip-grid",
+      "category": "motion",
+      "description": "Animated grid reordering using measured first/last positions rather than layout thrashing.",
+      "files": {
+        "css": "web/effects/flip-grid.css",
+        "js": "web/effects/flip-grid.js"
+      },
+      "markup": "web/snippets/flip-grid.html",
+      "knobs": {},
+      "flags": [
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1103
+    },
+    {
+      "id": "sticky-morph",
+      "category": "motion",
+      "description": "A navigation band that condenses while scrolling; scroll-state styling enhances a JS fallback.",
+      "files": {
+        "css": "web/effects/sticky-morph.css",
+        "js": "web/effects/sticky-morph.js"
+      },
+      "markup": "web/snippets/sticky-morph.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Conditional_rules/Container_scroll-state_queries"
+      ],
+      "bytes": 1535
+    },
+    {
+      "id": "aurora-field",
+      "category": "color",
+      "description": "Three drifting light fields behind an opaque text plane; no animated blur repaint.",
+      "files": {
+        "css": "web/effects/aurora-field.css",
+        "js": "web/effects/aurora-field.js"
+      },
+      "markup": "web/snippets/aurora-field.html",
+      "knobs": {
+        "speed": 1,
+        "intensity": 1
+      },
+      "flags": [
+        "gradient",
+        "motion",
+        "organic"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "speed": {
+          "default": 1,
+          "min": 0.2,
+          "max": 2,
+          "unit": "",
+          "css": "--uv-speed"
+        },
+        "intensity": {
+          "default": 1,
+          "min": 0.2,
+          "max": 1.4,
+          "unit": "",
+          "css": "--uv-intensity"
+        }
+      },
+      "sources": [],
+      "bytes": 1263
+    },
+    {
+      "id": "prism-border",
+      "category": "color",
+      "description": "A moving conic edge around a solid surface, with a static border fallback.",
+      "files": {
+        "css": "web/effects/prism-border.css",
+        "js": "web/effects/prism-border.js"
+      },
+      "markup": "web/snippets/prism-border.html",
+      "knobs": {
+        "speed": 1
+      },
+      "flags": [
+        "gradient",
+        "motion"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "speed": {
+          "default": 1,
+          "min": 0.2,
+          "max": 2,
+          "unit": "",
+          "css": "--uv-speed"
+        }
+      },
+      "sources": [],
+      "bytes": 886
+    },
+    {
+      "id": "iridescent-surface",
+      "category": "color",
+      "description": "A pointer-lit foil surface with a bounded, decorative sheen.",
+      "files": {
+        "css": "web/effects/iridescent-surface.css",
+        "js": "web/effects/iridescent-surface.js"
+      },
+      "markup": "web/snippets/iridescent-surface.html",
+      "knobs": {},
+      "flags": [
+        "gradient",
+        "glass"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1241
+    },
+    {
+      "id": "gradient-type",
+      "category": "color",
+      "description": "Perceptual gradient display type with solid readable fallback.",
+      "files": {
+        "css": "web/effects/gradient-type.css",
+        "js": "web/effects/gradient-type.js"
+      },
+      "markup": "web/snippets/gradient-type.html",
+      "knobs": {},
+      "flags": [
+        "gradient"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
+      ],
+      "bytes": 537
+    },
+    {
+      "id": "blend-spotlights",
+      "category": "color",
+      "description": "Local colored spotlights that follow a pointer behind an isolated content plane.",
+      "files": {
+        "css": "web/effects/blend-spotlights.css",
+        "js": "web/effects/blend-spotlights.js"
+      },
+      "markup": "web/snippets/blend-spotlights.html",
+      "knobs": {},
+      "flags": [
+        "gradient"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1074
+    },
+    {
+      "id": "shader-flow",
+      "category": "color",
+      "description": "A small original WebGL light-flow background with capped pixel density and no texture downloads.",
+      "files": {
+        "css": "web/effects/shader-flow.css",
+        "js": "web/effects/shader-flow.js"
+      },
+      "markup": "web/snippets/shader-flow.html",
+      "knobs": {
+        "speed": 0.6,
+        "intensity": 1
+      },
+      "flags": [
+        "gradient",
+        "organic",
+        "motion"
+      ],
+      "cost": "high",
+      "fallback": "A solid profile background; one still frame for reduced motion.",
+      "controls": {
+        "speed": {
+          "default": 0.6,
+          "min": 0.1,
+          "max": 1.5,
+          "unit": "",
+          "css": null
+        },
+        "intensity": {
+          "default": 1,
+          "min": 0.1,
+          "max": 1,
+          "unit": "",
+          "css": "--uv-intensity"
+        }
+      },
+      "sources": [],
+      "bytes": 3197
+    },
+    {
+      "id": "noise-film",
+      "category": "color",
+      "description": "A static, low-opacity film texture with an opaque fallback and no repeating paint loop.",
+      "files": {
+        "css": "web/effects/noise-film.css",
+        "js": "web/effects/noise-film.js"
+      },
+      "markup": "web/snippets/noise-film.html",
+      "knobs": {
+        "opacity": 0.055
+      },
+      "flags": [
+        "texture"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "opacity": {
+          "default": 0.055,
+          "min": 0,
+          "max": 0.16,
+          "unit": "",
+          "css": "--uv-noise"
+        }
+      },
+      "sources": [],
+      "bytes": 805
+    },
+    {
+      "id": "duotone-art",
+      "category": "color",
+      "description": "A two-color art treatment using profile accents and a composited SVG motif.",
+      "files": {
+        "css": "web/effects/duotone-art.css",
+        "js": "web/effects/duotone-art.js"
+      },
+      "markup": "web/snippets/duotone-art.html",
+      "knobs": {},
+      "flags": [
+        "gradient"
+      ],
+      "cost": "low",
+      "fallback": "Two solid profile colors; no external image is required.",
+      "controls": {},
+      "sources": [],
+      "bytes": 539
+    },
+    {
+      "id": "oklch-ramp",
+      "category": "color",
+      "description": "A perceptual accent ramp that upgrades from sRGB only when supported.",
+      "files": {
+        "css": "web/effects/oklch-ramp.css",
+        "js": "web/effects/oklch-ramp.js"
+      },
+      "markup": "web/snippets/oklch-ramp.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
+      ],
+      "bytes": 761
+    },
+    {
+      "id": "glass-panel",
+      "category": "transparency",
+      "description": "A real frosted surface with readable inner text and a solid fallback.",
+      "files": {
+        "css": "web/effects/glass-panel.css",
+        "js": "web/effects/glass-panel.js"
+      },
+      "markup": "web/snippets/glass-panel.html",
+      "knobs": {
+        "opacity": 0.8,
+        "blur": 20
+      },
+      "flags": [
+        "glass"
+      ],
+      "cost": "medium",
+      "fallback": "Opaque profile surface when blur or transparency is unavailable.",
+      "controls": {
+        "opacity": {
+          "default": 0.8,
+          "min": 0.56,
+          "max": 0.98,
+          "unit": "",
+          "css": "--uv-alpha"
+        },
+        "blur": {
+          "default": 20,
+          "min": 0,
+          "max": 32,
+          "unit": "px",
+          "css": "--uv-blur"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+      ],
+      "bytes": 1050
+    },
+    {
+      "id": "glass-dock",
+      "category": "transparency",
+      "description": "A compact, floating navigation dock with actual backdrop blur and explicit focus states.",
+      "files": {
+        "css": "web/effects/glass-dock.css",
+        "js": "web/effects/glass-dock.js"
+      },
+      "markup": "web/snippets/glass-dock.html",
+      "knobs": {
+        "opacity": 0.8,
+        "blur": 20
+      },
+      "flags": [
+        "glass"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "opacity": {
+          "default": 0.8,
+          "min": 0.56,
+          "max": 0.98,
+          "unit": "",
+          "css": "--uv-alpha"
+        },
+        "blur": {
+          "default": 20,
+          "min": 0,
+          "max": 32,
+          "unit": "px",
+          "css": "--uv-blur"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+      ],
+      "bytes": 2045
+    },
+    {
+      "id": "acrylic-card",
+      "category": "transparency",
+      "description": "Tinted acrylic, a thin specular edge, and a solid text scrim.",
+      "files": {
+        "css": "web/effects/acrylic-card.css",
+        "js": "web/effects/acrylic-card.js"
+      },
+      "markup": "web/snippets/acrylic-card.html",
+      "knobs": {
+        "opacity": 0.8,
+        "blur": 20
+      },
+      "flags": [
+        "glass",
+        "gradient"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "opacity": {
+          "default": 0.8,
+          "min": 0.56,
+          "max": 0.98,
+          "unit": "",
+          "css": "--uv-alpha"
+        },
+        "blur": {
+          "default": 20,
+          "min": 0,
+          "max": 32,
+          "unit": "px",
+          "css": "--uv-blur"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+      ],
+      "bytes": 1274
+    },
+    {
+      "id": "glass-stack",
+      "category": "transparency",
+      "description": "Three offset translucent sheets with one live blur layer to bound rendering cost.",
+      "files": {
+        "css": "web/effects/glass-stack.css",
+        "js": "web/effects/glass-stack.js"
+      },
+      "markup": "web/snippets/glass-stack.html",
+      "knobs": {
+        "opacity": 0.8,
+        "blur": 20
+      },
+      "flags": [
+        "glass"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "opacity": {
+          "default": 0.8,
+          "min": 0.56,
+          "max": 0.98,
+          "unit": "",
+          "css": "--uv-alpha"
+        },
+        "blur": {
+          "default": 20,
+          "min": 0,
+          "max": 32,
+          "unit": "px",
+          "css": "--uv-blur"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+      ],
+      "bytes": 1416
+    },
+    {
+      "id": "glass-popover",
+      "category": "transparency",
+      "description": "A frosted popover that opens by click or keyboard and closes with Escape.",
+      "files": {
+        "css": "web/effects/glass-popover.css",
+        "js": "web/effects/glass-popover.js"
+      },
+      "markup": "web/snippets/glass-popover.html",
+      "knobs": {
+        "opacity": 0.8,
+        "blur": 20
+      },
+      "flags": [
+        "glass"
+      ],
+      "cost": "medium",
+      "fallback": "Static, readable content remains available.",
+      "controls": {
+        "opacity": {
+          "default": 0.8,
+          "min": 0.56,
+          "max": 0.98,
+          "unit": "",
+          "css": "--uv-alpha"
+        },
+        "blur": {
+          "default": 20,
+          "min": 0,
+          "max": 32,
+          "unit": "px",
+          "css": "--uv-blur"
+        }
+      },
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter",
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@starting-style"
+      ],
+      "bytes": 2146
+    },
+    {
+      "id": "edge-fade",
+      "category": "transparency",
+      "description": "A content rail with soft masked edges and a non-masked fallback.",
+      "files": {
+        "css": "web/effects/edge-fade.css",
+        "js": "web/effects/edge-fade.js"
+      },
+      "markup": "web/snippets/edge-fade.html",
+      "knobs": {},
+      "flags": [
+        "gradient"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+      ],
+      "bytes": 1388
+    },
+    {
+      "id": "product-bento",
+      "category": "layout",
+      "description": "An asymmetric product hero and responsive bento collection with container-aware tiles.",
+      "files": {
+        "css": "web/effects/product-bento.css",
+        "js": "web/effects/product-bento.js"
+      },
+      "markup": "web/snippets/product-bento.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2213
+    },
+    {
+      "id": "editorial-split",
+      "category": "layout",
+      "description": "Large editorial typography, an offset motif and a boxless numbered reading sequence.",
+      "files": {
+        "css": "web/effects/editorial-split.css",
+        "js": "web/effects/editorial-split.js"
+      },
+      "markup": "web/snippets/editorial-split.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2790
+    },
+    {
+      "id": "story-rail",
+      "category": "layout",
+      "description": "A pinned exhibit opposite a long, numbered chapter rail; folds into a normal reading flow on mobile.",
+      "files": {
+        "css": "web/effects/story-rail.css",
+        "js": "web/effects/story-rail.js"
+      },
+      "markup": "web/snippets/story-rail.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2322
+    },
+    {
+      "id": "overlap-gallery",
+      "category": "layout",
+      "description": "A dimensional hero followed by a horizontally snapped gallery that remains keyboard-scrollable.",
+      "files": {
+        "css": "web/effects/overlap-gallery.css",
+        "js": "web/effects/overlap-gallery.js"
+      },
+      "markup": "web/snippets/overlap-gallery.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2314
+    },
+    {
+      "id": "product-focus",
+      "category": "layout",
+      "description": "One large product artifact, a sticky specification panel and clear comparison details.",
+      "files": {
+        "css": "web/effects/product-focus.css",
+        "js": "web/effects/product-focus.js"
+      },
+      "markup": "web/snippets/product-focus.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2243
+    },
+    {
+      "id": "app-panels",
+      "category": "layout",
+      "description": "A useful application shell with a sticky navigation column, compact hero and adaptive workspace tiles.",
+      "files": {
+        "css": "web/effects/app-panels.css",
+        "js": "web/effects/app-panels.js"
+      },
+      "markup": "web/snippets/app-panels.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2723
+    },
+    {
+      "id": "canvas-hero",
+      "category": "layout",
+      "description": "An immersive, centered canvas hero followed by an offset feature grid.",
+      "files": {
+        "css": "web/effects/canvas-hero.css",
+        "js": "web/effects/canvas-hero.js"
+      },
+      "markup": "web/snippets/canvas-hero.html",
+      "knobs": {},
+      "flags": [
+        "center"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2392
+    },
+    {
+      "id": "fluid-magazine",
+      "category": "layout",
+      "description": "An information-led magazine composition with a wide lead and aligned supporting columns.",
+      "files": {
+        "css": "web/effects/fluid-magazine.css",
+        "js": "web/effects/fluid-magazine.js"
+      },
+      "markup": "web/snippets/fluid-magazine.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2382
+    },
+    {
+      "id": "command-menu",
+      "category": "interaction",
+      "description": "A searchable command dialog with arrow keys, Enter, Escape and a scoped \u2318/Ctrl-K shortcut.",
+      "files": {
+        "css": "web/effects/command-menu.css",
+        "js": "web/effects/command-menu.js"
+      },
+      "markup": "web/snippets/command-menu.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2981
+    },
+    {
+      "id": "morph-tabs",
+      "category": "interaction",
+      "description": "Keyboard-accessible tabs with measured content transitions and stable panel IDs.",
+      "files": {
+        "css": "web/effects/morph-tabs.css",
+        "js": "web/effects/morph-tabs.js"
+      },
+      "markup": "web/snippets/morph-tabs.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using"
+      ],
+      "bytes": 1717
+    },
+    {
+      "id": "hover-preview",
+      "category": "interaction",
+      "description": "A work list with a pointer/focus preview and click-to-select support for touch.",
+      "files": {
+        "css": "web/effects/hover-preview.css",
+        "js": "web/effects/hover-preview.js"
+      },
+      "markup": "web/snippets/hover-preview.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1440
+    },
+    {
+      "id": "scrollspy",
+      "category": "interaction",
+      "description": "A section index that follows visible chapters and preserves normal anchor navigation.",
+      "files": {
+        "css": "web/effects/scrollspy.css",
+        "js": "web/effects/scrollspy.js"
+      },
+      "markup": "web/snippets/scrollspy.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2022
+    },
+    {
+      "id": "media-lightbox",
+      "category": "interaction",
+      "description": "An artifact lightbox with native modal focus management, Escape and a no-JS inline artifact.",
+      "files": {
+        "css": "web/effects/media-lightbox.css",
+        "js": "web/effects/media-lightbox.js"
+      },
+      "markup": "web/snippets/media-lightbox.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [
+        "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@starting-style"
+      ],
+      "bytes": 1359
+    },
+    {
+      "id": "anchor-tip",
+      "category": "interaction",
+      "description": "An anchored contextual tip with focus, pointer and Escape paths, bounded inside the viewport.",
+      "files": {
+        "css": "web/effects/anchor-tip.css",
+        "js": "web/effects/anchor-tip.js"
+      },
+      "markup": "web/snippets/anchor-tip.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1441
+    },
+    {
+      "id": "spotlight-grid",
+      "category": "interaction",
+      "description": "A soft pointer-following highlight across a responsive card grid.",
+      "files": {
+        "css": "web/effects/spotlight-grid.css",
+        "js": "web/effects/spotlight-grid.js"
+      },
+      "markup": "web/snippets/spotlight-grid.html",
+      "knobs": {},
+      "flags": [
+        "gradient"
+      ],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 1548
+    },
+    {
+      "id": "scholar-folio",
+      "category": "layout",
+      "description": "A candlelit library frontispiece, annotated manuscript and double-ruled reading index.",
+      "files": {
+        "css": "web/effects/scholar-folio.css",
+        "js": "web/effects/scholar-folio.js"
+      },
+      "markup": "web/snippets/scholar-folio.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 3333
+    },
+    {
+      "id": "signal-console",
+      "category": "layout",
+      "description": "A chamfered city-feed console with status rail, live-signal readouts and dense sector index.",
+      "files": {
+        "css": "web/effects/signal-console.css",
+        "js": "web/effects/signal-console.js"
+      },
+      "markup": "web/snippets/signal-console.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 3724
+    },
+    {
+      "id": "atelier-spread",
+      "category": "layout",
+      "description": "A fashion campaign spread with monumental Didone type, a portrait plate and minimal look index.",
+      "files": {
+        "css": "web/effects/atelier-spread.css",
+        "js": "web/effects/atelier-spread.js"
+      },
+      "markup": "web/snippets/atelier-spread.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2841
+    },
+    {
+      "id": "nordic-catalog",
+      "category": "layout",
+      "description": "A daylight object catalogue, horizontal material index and practical product notes; polar-night mode remains available.",
+      "files": {
+        "css": "web/effects/nordic-catalog.css",
+        "js": "web/effects/nordic-catalog.js"
+      },
+      "markup": "web/snippets/nordic-catalog.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2370
+    },
+    {
+      "id": "geometric-poster",
+      "category": "layout",
+      "description": "An asymmetric workshop poster with large functional numerals and a measured colour study.",
+      "files": {
+        "css": "web/effects/geometric-poster.css",
+        "js": "web/effects/geometric-poster.js"
+      },
+      "markup": "web/snippets/geometric-poster.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2599
+    },
+    {
+      "id": "botanical-plate",
+      "category": "layout",
+      "description": "A framed botanical exhibition poster whose border and lettering share a continuous organic line.",
+      "files": {
+        "css": "web/effects/botanical-plate.css",
+        "js": "web/effects/botanical-plate.js"
+      },
+      "markup": "web/snippets/botanical-plate.html",
+      "knobs": {},
+      "flags": [],
+      "cost": "low",
+      "fallback": "Static, readable content remains available.",
+      "controls": {},
+      "sources": [],
+      "bytes": 2790
+    }
+  ],
+  "packs": {
+    "luminous-product": {
+      "style": "ultraviolet",
+      "layout": "product-bento",
+      "effects": [
+        "aurora-field",
+        "prism-border",
+        "gradient-type",
+        "reveal-stagger",
+        "magnetic-button",
+        "tilt-card",
+        "glass-panel",
+        "scroll-progress",
+        "command-menu"
+      ]
+    },
+    "glass-command": {
+      "style": "y2k-chrome",
+      "layout": "app-panels",
+      "effects": [
+        "glass-dock",
+        "acrylic-card",
+        "iridescent-surface",
+        "reveal-stagger",
+        "morph-tabs",
+        "command-menu",
+        "anchor-tip"
+      ]
+    },
+    "aero-showcase": {
+      "style": "frutiger-aero",
+      "layout": "overlap-gallery",
+      "effects": [
+        "glass-panel",
+        "glass-dock",
+        "scroll-depth",
+        "reveal-stagger",
+        "magnetic-button",
+        "media-lightbox",
+        "edge-fade"
+      ]
+    },
+    "kinetic-editorial": {
+      "style": "high-fashion",
+      "layout": "atelier-spread",
+      "effects": [
+        "reveal-stagger",
+        "scroll-progress"
+      ]
+    },
+    "museum-scroll": {
+      "style": "golden-archive",
+      "layout": "story-rail",
+      "effects": [
+        "noise-film",
+        "scroll-depth",
+        "reveal-stagger",
+        "media-lightbox",
+        "scroll-progress",
+        "scrollspy"
+      ]
+    },
+    "precision-saas": {
+      "style": "neutral",
+      "layout": "product-bento",
+      "effects": [
+        "reveal-stagger",
+        "morph-tabs",
+        "command-menu",
+        "sticky-morph",
+        "anchor-tip"
+      ]
+    },
+    "chromatic-lab": {
+      "style": "vaporwave",
+      "layout": "canvas-hero",
+      "effects": [
+        "shader-flow",
+        "gradient-type",
+        "iridescent-surface",
+        "prism-border",
+        "ambient-marquee",
+        "magnetic-button",
+        "reveal-stagger"
+      ]
+    },
+    "signal-publication": {
+      "style": "swiss-international",
+      "layout": "fluid-magazine",
+      "effects": [
+        "reveal-stagger",
+        "scroll-progress",
+        "sticky-morph",
+        "hover-preview"
+      ]
+    },
+    "organic-studio": {
+      "style": "organic-tech",
+      "layout": "overlap-gallery",
+      "effects": [
+        "aurora-field",
+        "reveal-stagger",
+        "magnetic-button",
+        "tilt-card",
+        "morph-tabs"
+      ]
+    },
+    "jewel-product": {
+      "style": "jewel",
+      "layout": "product-focus",
+      "effects": [
+        "prism-border",
+        "reveal-stagger",
+        "media-lightbox",
+        "shared-transition",
+        "magnetic-button"
+      ]
+    },
+    "candlelit-library": {
+      "style": "dark-academia",
+      "layout": "scholar-folio",
+      "effects": [
+        "noise-film",
+        "reveal-stagger",
+        "scroll-progress"
+      ]
+    },
+    "night-city-console": {
+      "style": "cyberpunk",
+      "layout": "signal-console",
+      "effects": [
+        "reveal-stagger",
+        "command-menu"
+      ]
+    },
+    "nordic-daylight": {
+      "style": "nordic",
+      "layout": "nordic-catalog",
+      "effects": [
+        "reveal-stagger"
+      ]
+    },
+    "workshop-modern": {
+      "style": "bauhaus",
+      "layout": "geometric-poster",
+      "effects": [
+        "reveal-stagger"
+      ]
+    },
+    "botanical-exhibition": {
+      "style": "art-nouveau",
+      "layout": "botanical-plate",
+      "effects": [
+        "reveal-stagger"
+      ]
+    }
+  }
+}

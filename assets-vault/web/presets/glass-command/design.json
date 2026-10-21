@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "pack": "glass-command",
+  "style": "y2k-chrome",
+  "layout": "app-panels",
+  "effects": {
+    "glass-dock": {
+      "opacity": 0.8,
+      "blur": 20
+    },
+    "acrylic-card": {
+      "opacity": 0.8,
+      "blur": 20
+    },
+    "iridescent-surface": {},
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "morph-tabs": {},
+    "command-menu": {},
+    "anchor-tip": {}
+  },
+  "copy": {
+    "title": "A clearer kind of workspace.",
+    "eyebrow": "Y2K Chrome \u00b7 precision in layers",
+    "description": "Translucent controls, chrome highlights, and an application shell that makes the work feel immediate."
+  }
+}

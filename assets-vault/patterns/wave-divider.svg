@@ -1,0 +1,6 @@
+<!-- wave-divider — Wave section divider. Set a color via `fill`/currentColor; place at the bottom of a section. -->
+<svg viewBox="0 0 1440 120" preserveAspectRatio="none"
+     style="display:block; width:100%; height:80px; color:#2b8fd6">
+  <path fill="currentColor"
+    d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,72 L1440,120 L0,120 Z"/>
+</svg>

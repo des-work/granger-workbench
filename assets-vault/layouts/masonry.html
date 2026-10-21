@@ -1,0 +1,13 @@
+<!-- masonry — Uneven-height items packed in balanced columns (CSS columns).  (best for: image walls, Pinterest-style feeds) -->
+<style>
+  .l-masonry { column-count: 3; column-gap: 1rem; max-width: 1100px; margin: 0 auto;
+               padding: 2rem 1.25rem; }
+  .l-masonry .item { break-inside: avoid; margin: 0 0 1rem; border-radius: 12px;
+                     background: var(--surface,#1e293b); border:1px solid var(--border,#334155); }
+  @media (max-width:900px){ .l-masonry{ column-count:2 } }
+  @media (max-width:560px){ .l-masonry{ column-count:1 } }
+</style>
+<div class="l-masonry">
+  <div class="item" style="height:160px"></div><div class="item" style="height:230px"></div>
+  <div class="item" style="height:120px"></div><div class="item" style="height:200px"></div>
+</div>

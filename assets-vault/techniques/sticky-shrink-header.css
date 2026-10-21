@@ -1,0 +1,11 @@
+/* sticky-shrink-header — Header that condenses + frosts as you scroll — driven by scroll progress, not a JS scroll listener.  [motion] */
+@keyframes condense {
+  to { padding-block: .4rem;
+       background: color-mix(in srgb, var(--bg) 85%, transparent);
+       backdrop-filter: blur(10px); }
+}
+.site-header {
+  position: sticky; top: 0; padding-block: 1.2rem;
+  animation: condense linear both;
+  animation-timeline: scroll(root); animation-range: 0 140px;
+}

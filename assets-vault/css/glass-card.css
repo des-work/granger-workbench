@@ -1,0 +1,13 @@
+/* glass-card — Frosted-glass panel with blur, inner sheen, and soft border.  [style: frutiger-aero] */
+.glass-card {
+  /* The pane picks up the style's own glass tint. A fixed white panel is a
+     bright slab on any dark palette, which is the opposite of frosted. */
+  background: var(--surface-glass, rgba(255, 255, 255, 0.45));
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--text) 25%, transparent),
+              inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  padding: 1.5rem;
+}

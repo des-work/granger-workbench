@@ -1,0 +1,11 @@
+/* neumorphism — Soft-UI dual light/dark shadow so elements extrude from the bg.  [depth] */
+.neu {
+  /* Both shadows are the surface itself, pushed darker and lighter — which
+     is what makes the shape look extruded from the page it sits on. */
+  --neu-dark: color-mix(in srgb, var(--surface) 78%, #000);
+  --neu-lite: color-mix(in srgb, var(--surface) 78%, #fff);
+  background: var(--bg2); border-radius: var(--radius);
+  box-shadow: 8px 8px 16px var(--neu-dark), -8px -8px 16px var(--neu-lite);
+}
+.neu-inset { box-shadow: inset 6px 6px 12px var(--neu-dark),
+                         inset -6px -6px 12px var(--neu-lite); }

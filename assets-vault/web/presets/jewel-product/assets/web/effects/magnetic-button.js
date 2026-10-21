@@ -1,0 +1,3 @@
+UltraWeb.register("magnetic-button",{"strength":{"default":0.14,"min":0,"max":0.3,"unit":"","css":null}},function(el,o,api){
+if(!api.motion||!matchMedia('(pointer:fine)').matches)return;const move=api.frame(e=>{const r=el.getBoundingClientRect();el.style.setProperty('--uv-mx',((e.clientX-r.left-r.width/2)*o.strength)+'px');el.style.setProperty('--uv-my',((e.clientY-r.top-r.height/2)*o.strength)+'px');});const reset=()=>{el.style.removeProperty('--uv-mx');el.style.removeProperty('--uv-my');};api.listen(el,'pointermove',move);api.listen(el,'pointerleave',reset);api.listen(el,'blur',reset);return reset;
+});

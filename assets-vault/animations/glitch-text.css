@@ -1,0 +1,18 @@
+/* glitch-text — RGB-split glitch on text. Set data-text to the same string.  [style: cyberpunk] */
+.glitch {
+  position: relative;
+  color: var(--text);
+  font-weight: 800;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute; left: 0; top: 0; width: 100%;
+  clip-path: inset(0 0 0 0);
+}
+.glitch::before { color: var(--accent); animation: glitch-x 2s infinite linear alternate; }
+.glitch::after  { color: var(--accent2); animation: glitch-x 1.4s infinite linear alternate-reverse; }
+@keyframes glitch-x {
+  0% { transform: translate(0); } 20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); } 60% { transform: translate(-1px, 0); }
+  80% { transform: translate(1px, 1px); } 100% { transform: translate(0); }
+}

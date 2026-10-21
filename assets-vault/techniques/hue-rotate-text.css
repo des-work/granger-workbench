@@ -1,0 +1,8 @@
+/* hue-rotate-text — Smoothly cycle a heading's hue with an animated custom property.  [color] */
+@property --hue { syntax: "<number>"; initial-value: 0; inherits: false; }
+.hue-text {
+  color: hsl(var(--hue) 90% 62%);
+  text-shadow: 0 0 18px hsl(var(--hue) 90% 62% / 0.5);
+  animation: hue-cycle 6s linear infinite;
+}
+@keyframes hue-cycle { to { --hue: 360; } }

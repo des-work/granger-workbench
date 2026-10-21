@@ -1,0 +1,9 @@
+/* text-on-path — Flow text along a curved SVG path — badges, seals, kinetic headers.  [type] */
+<svg viewBox="0 0 300 130" width="300">
+  <path id="curve" fill="none" d="M12,95 Q150,5 288,95"/>
+  <text font-size="22" font-weight="700" fill="currentColor" style="color: var(--accent)">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      curved kinetic type
+    </textPath>
+  </text>
+</svg>

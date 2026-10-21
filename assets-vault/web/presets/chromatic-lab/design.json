@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "pack": "chromatic-lab",
+  "style": "vaporwave",
+  "layout": "canvas-hero",
+  "effects": {
+    "shader-flow": {
+      "speed": 0.6,
+      "intensity": 1
+    },
+    "gradient-type": {},
+    "iridescent-surface": {},
+    "prism-border": {
+      "speed": 1
+    },
+    "ambient-marquee": {
+      "speed": 1
+    },
+    "magnetic-button": {
+      "strength": 0.14
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    }
+  },
+  "copy": {
+    "title": "Build outside the ordinary.",
+    "eyebrow": "Vaporwave \u00b7 a field of experiments",
+    "description": "An immersive canvas of color, reflective material, and movement. All powered by assets stored here."
+  }
+}

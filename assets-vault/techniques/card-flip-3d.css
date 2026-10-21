@@ -1,0 +1,8 @@
+/* card-flip-3d — 3D flip card (front/back) on hover.  [motion] */
+.flip { perspective: 1000px; }
+.flip__inner { position: relative; transition: transform .6s; transform-style: preserve-3d; }
+.flip:hover .flip__inner { transform: rotateY(180deg); }
+.flip__front, .flip__back {
+  position: absolute; inset: 0; backface-visibility: hidden; border-radius: 16px;
+}
+.flip__back { transform: rotateY(180deg); }

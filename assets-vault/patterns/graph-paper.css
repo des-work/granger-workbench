@@ -1,0 +1,10 @@
+/* graph-paper — Layered minor+major grid (graph paper). */
+.bg-graph {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.10) 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+}

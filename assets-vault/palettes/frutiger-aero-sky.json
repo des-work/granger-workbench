@@ -1,0 +1,23 @@
+{
+  "id": "frutiger-aero-sky",
+  "style": "frutiger-aero",
+  "name": "Frutiger Aero \u2014 Sky",
+  "tags": [
+    "aqua",
+    "glossy",
+    "nature",
+    "optimistic",
+    "clean"
+  ],
+  "colors": [
+    "#2b8fd6",
+    "#60b2f0",
+    "#ceecff",
+    "#eaf6ff",
+    "#ffffff",
+    "#96cd6e",
+    "#4e9638",
+    "#0b3c5d"
+  ],
+  "notes": "Glossy sky-blue + green-hills palette. Deep blue (#0b3c5d) for text, white/glass for surfaces, aqua for accents."
+}

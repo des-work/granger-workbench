@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "pack": "jewel-product",
+  "style": "jewel",
+  "layout": "product-focus",
+  "effects": {
+    "prism-border": {
+      "speed": 1
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "media-lightbox": {},
+    "shared-transition": {},
+    "magnetic-button": {
+      "strength": 0.14
+    }
+  },
+  "copy": {
+    "title": "A closer look changes everything.",
+    "eyebrow": "Jewel \u00b7 objects with presence",
+    "description": "Deep color, fine details, and room around the object. An intentional stage for a distinctive collection."
+  }
+}

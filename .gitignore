@@ -1,0 +1,49 @@
+# ---- machine-specific / sensitive ----
+# (NOTE: no trailing comments on pattern lines — git treats the whole line as
+#  the pattern, which is why these never matched before.)
+# PC diagnostic reports include hostname + username
+Reports/
+# runtime config with local paths
+ultra_config.json
+# personal search feedback
+_ratings.jsonl
+# generated context capsules
+context.md
+
+# ---- large vendored binaries (fetched at first run) ----
+# ffmpeg, kiwix-serve, etc.
+/tools/*
+!/tools/vendor_design_assets.py
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# ---- caches / temp ----
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# ---- private runtime and external data ----
+/Knowledge
+/models/
+/output/
+/.build/
+/optional/
+*.zim
+*.sqlite
+*.sqlite3
+*.db
+*.log
+/integrations/diagnostic-*.txt
+/integrations/hermes-live-*
+
+# disposable native-preview renders (assets native preview <style>)
+native-*.png

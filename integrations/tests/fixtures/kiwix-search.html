@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+
+    
+    <style type="text/css">
+      body{
+      color: #000000;
+      font: small/normal Arial,Helvetica,Sans-Serif;
+      margin-top: 0.5em;
+      font-size: 90%;
+      }
+
+      a{
+      color: #04c;
+      }
+
+      a:visited {
+      color: #639
+      }
+
+      a:hover {
+      text-decoration: underline
+      }
+
+      .header {
+      font-size: 120%;
+      }
+
+      ul {
+      margin:0;
+      padding:0
+      }
+
+      .results {
+      font-size: 110%;
+      }
+
+      .results li {
+      list-style-type:none;
+      margin-top: 0.5em;
+      }
+
+      .results a {
+      font-size: 110%;
+      text-decoration: underline
+      }
+
+      cite {
+      font-style:normal;
+      word-wrap:break-word;
+      display: block;
+      font-size: 100%;
+      }
+
+      .informations {
+      color: #388222;
+      font-size: 100%;
+      }
+
+      .book-title {
+      color: #662200;
+      font-size: 100%;
+      }
+
+      .footer {
+      padding: 0;
+      margin-top: 1em;
+      width: 100%;
+      float: left
+      }
+
+      .footer a, .footer span {
+      display: block;
+      padding: .3em .7em;
+      margin: 0 .38em 0 0;
+      text-align:center;
+      text-decoration: none;
+      }
+
+      .footer a:hover {
+      background: #ededed;
+      }
+
+      .footer ul, .footer li {
+      list-style:none;
+      margin: 0;
+      padding: 0;
+      }
+
+      .footer li {
+      float: left;
+      }
+
+      .selected {
+      background: #ededed;
+      }
+
+    </style>
+    <title>Search: git rebase</title>
+  </head>
+  <body bgcolor="white">
+    <div class="header">
+        Results
+        <b>
+          1-5
+        </b> of <b>
+          600
+        </b> for <b>
+          "git rebase"
+        </b>
+      
+    </div>
+
+    <div class="results">
+      <ul>
+          <li>
+            <a href="/content/devdocs_en_git_2026-04/git-rebase">
+              git rebase
+            </a>
+              <cite><b>git</b>-rebase Name <b>git</b>-rebase - Reapply commits on top of another base tip Synopsis <b>git</b> rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt; | --keep-base] [&lt;upstream&gt; [&lt;branch&gt;]] <b>git</b> rebase [-i | --interactive] [&lt;options&gt;] [--exec &lt;cmd&gt;] [--onto &lt;newbase&gt;] --root [&lt;branch&gt;] <b>git</b> rebase (--continue|--skip|--abort|--quit|--edit-todo|--show-current-patch) Description Transplant a series of commits onto a different starting point. You can also use <b>git</b> rebase to reorder or combine......</cite>
+              <div class="book-title">from Git Docs</div>
+              <div class="informations">8,705 words</div>
+          </li>
+          <li>
+            <a href="/content/unix.stackexchange.com_en_all_2026-02/questions/308641/what-is-return-code-1-for-git-rebase-what-are-other-values-it-could-return">
+              What is return code 1 for git-rebase? What are other values it could return?
+            </a>
+              <cite>...<b>git</b> rev-parse --abbrev-ref HEAD + current=master + <b>git</b> fetch --all + [[ 0 -eq 0 ]] ++ <b>git</b> branch -vv ++ grep -v ': gone]' ++ awk '{print $1}' + for branch in '$(<b>git</b> branch -vv | grep -v ": gone]" | awk '\''{print $1}'\'')' + '[' -e detsig ']' + echo 'Merging detsig' Merging detsig + <b>git</b> checkout detsig + [[ 0 -ne 0 ]] + <b>git</b> rebase origin/detsig + [[ 1 -ne 0 ]] + echo 'Rebase failed for detsig' Rebase failed for detsig + ret_code=1 + continue + for branch in '$(<b>git</b> branch -vv | grep -v ": gone]"......</cite>
+              <div class="book-title">from Unix &amp; Linux Q&amp;A</div>
+              <div class="informations">684 words</div>
+          </li>
+          <li>
+            <a href="/content/superuser.com_en_all_2026-02/questions/667146/rebasing-a-branch-which-is-public">
+              Rebasing a branch which is public
+            </a>
+              <cite>...<b>git</b> init Then add a file foo $ echo "hello world" &gt; foo which is then added and committed: $ <b>git</b> add foo $ <b>git</b> commit -m "Added foo" Next, I started a remote repository. In ~/tmp/bare.<b>git</b> I ran $ <b>git</b> init --bare In order to link repo to bare.<b>git</b> I ran $ <b>git</b> remote add origin ../bare.<b>git</b>/ $ <b>git</b> push --set-upstream origin master Next, lets branch, add a file and set an upstream for the new branch b1: $ <b>git</b> checkout -b b1 $ echo "bar" &gt; foo2 $ <b>git</b> add foo2 $ <b>git</b> commit -m "add foo2 in b1" $ <b>git</b>......</cite>
+              <div class="book-title">from Super User</div>
+              <div class="informations">1,771 words</div>
+          </li>
+          <li>
+            <a href="/content/unix.stackexchange.com_en_all_2026-02/questions/471398/allow-automated-script-to-incorporate-git-rebase">
+              Allow automated script to incorporate git rebase
+            </a>
+              <cite>...<b>git</b> checkout --no-track -b "$new_branch"; <b>git</b> rebase "$base"; on occasion, there are conflicts of course, and what happens is that <b>git</b> rebase exits with 1, and so the script aborts/exits early. So my automated script doesn't work if there are conflicts, which is frequent enough that it defeats the purpose. My question is, is there some way to suspend the script upon a non-zero exit code, and then resume the script upon a signal or something? Something like this: <b>git</b> rebase "$base" || suspend......</cite>
+              <div class="book-title">from Unix &amp; Linux Q&amp;A</div>
+              <div class="informations">466 words</div>
+          </li>
+          <li>
+            <a href="/content/superuser.com_en_all_2026-02/questions/224085/git-merge-master-into-a-branch">
+              GIT merge master into a branch
+            </a>
+              <cite>...<b>git</b> merge master or <b>git</b> rebase master. If the branch has not been distributed to other people, in this case i would prefer <b>git</b> rebase. Because <b>git</b> rebase makes it as if the changes on the feature branch were made on top of the changes on the master branch, which makes the version graph simpler. Rebase Taking the example from the <b>git</b> rebase manual, <b>git</b> rebase master in branch feature: A---B---C feature A'--B'--C' feature / --rebase--&gt; / D---E---F---G master D---E---F---G master However, <b>git</b>......</cite>
+              <div class="book-title">from Super User</div>
+              <div class="informations">766 words</div>
+          </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>
+              <a class="selected"
+                 href="/search?pattern=git%20rebase&&start=0&pageLength=5">
+                1
+              </a>
+            </li>
+            <li>
+              <a 
+                 href="/search?pattern=git%20rebase&&start=5&pageLength=5">
+                2
+              </a>
+            </li>
+            <li>
+              <a 
+                 href="/search?pattern=git%20rebase&&start=10&pageLength=5">
+                3
+              </a>
+            </li>
+            <li>
+              <a 
+                 href="/search?pattern=git%20rebase&&start=15&pageLength=5">
+                4
+              </a>
+            </li>
+            <li>
+              <a 
+                 href="/search?pattern=git%20rebase&&start=20&pageLength=5">
+                5
+              </a>
+            </li>
+            <li>
+              <a 
+                 href="/search?pattern=git%20rebase&&start=595&pageLength=5">
+                ▶
+              </a>
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>

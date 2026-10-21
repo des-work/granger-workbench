@@ -1,0 +1,21 @@
+{
+  "id": "ink-and-glass",
+  "style": "neutral",
+  "name": "Neutral \u2014 Ink & Glass",
+  "tags": [
+    "neutral",
+    "ui",
+    "slate",
+    "readable"
+  ],
+  "colors": [
+    "#0f172a",
+    "#1e293b",
+    "#334155",
+    "#94a3b8",
+    "#e2e8f0",
+    "#f8fafc",
+    "#ffffff"
+  ],
+  "notes": "Slate neutral ramp for text, surfaces, and borders on any theme."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "editorial-ink",
+  "style": "editorial",
+  "name": "Editorial \u2014 Ink on Paper",
+  "tags": [
+    "minimal",
+    "editorial",
+    "monochrome",
+    "magazine",
+    "clean"
+  ],
+  "colors": [
+    "#111111",
+    "#2b2b2b",
+    "#6b6b6b",
+    "#cfcfcf",
+    "#f2f2f2",
+    "#ffffff",
+    "#e11d2a"
+  ],
+  "notes": "Ink-black type on paper-white with a single red accent. Restrained, magazine-grade \u2014 the anti-vaporwave."
+}

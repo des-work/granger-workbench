@@ -1,0 +1,1 @@
+.uv-tilt{transform:perspective(900px) rotateX(var(--uv-rx,0deg)) rotateY(var(--uv-ry,0deg));transition:transform .18s;transform-style:preserve-3d;}.uv-tilt .uv-card-art{transform:translateZ(24px);}

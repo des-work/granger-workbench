@@ -1,0 +1,4 @@
+/* elastic-ease — Springy overshoot with the new linear() easing — bouncy motion without a physics lib.  [motion] */
+.pop { transition: transform .5s linear(
+  0, .38 12%, .82 24%, 1.05 40%, 1.02 52%, .99 68%, 1); }
+.pop:hover { transform: scale(1.14); }

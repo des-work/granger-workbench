@@ -1,0 +1,9 @@
+/* text-3d-extrude — Extruded 3D text via a stack of offset shadows.  [depth] */
+.text-3d {
+  --ext: color-mix(in srgb, var(--accent) 55%, #000);
+  --ext-deep: color-mix(in srgb, var(--accent) 32%, #000);
+  color: var(--accent); font-weight: 800;
+  text-shadow: 1px 1px 0 var(--ext), 2px 2px 0 var(--ext), 3px 3px 0 var(--ext),
+               4px 4px 0 var(--ext), 5px 5px 0 var(--ext-deep),
+               7px 7px 10px rgba(0,0,0,.35);
+}

@@ -1,0 +1,44 @@
+:root {  /* Art Deco */
+  /* --- type ------------------------------------------------ */
+  --font: 'Poppins', 'Poppins', 'Segoe UI', sans-serif;
+  --font-display: 'Poiret One', 'Poppins', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.618;
+  --leading: 1.568;
+  --tracking: 0.08em;
+  --measure: 64ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: upper;
+  --size-0: 4.501rem;
+  --size-1: 2.782rem;
+  --size-2: 1.719rem;
+  --size-3: 1.062rem;
+  --size-sm: 0.657rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #12100c;
+  --bg2: #1e1a12;
+  --surface: #171410;
+  --surface-glass: rgba(212,175,55,0.07);
+  --accent: #d4af37;
+  --accent2: #2f9e77;
+  --text: #f0e7d0;
+  --muted: #99907a;
+  --border: #6e5c2e;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 28px;
+  --align: center;
+  /* --- material -------------------------------------------- */
+  --radius: 2px;
+  --border-width: 2px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 4px 4px 0 0 #f0e7d0;
+  /* --- motion ---------------------------------------------- */
+  --dur: 380ms;
+  --ease: cubic-bezier(.2,.9,.3,1);
+  --travel: 10px;
+}

@@ -1,0 +1,7 @@
+/* wave-text — Per-letter bobbing wave. Wrap each letter in <span> and set delays.  [style: neutral] */
+.wave span {
+  display: inline-block;
+  animation: wave 1.6s ease-in-out infinite;
+}
+/* stagger: .wave span:nth-child(n) { animation-delay: calc(n * 0.08s); } */
+@keyframes wave { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-0.35em); } }

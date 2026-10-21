@@ -1,0 +1,10 @@
+/* glass-layered — Proper frosted glass: blur+saturate, a top sheen, and a light inner border — not just a translucent white box.  [depth] */
+.glass {
+  background: var(--surface-glass, rgba(255,255,255,.08));
+  background-image: var(--sheen, linear-gradient(rgba(255,255,255,.14),
+                                                 rgba(255,255,255,.04)));
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  border: 1px solid rgba(255,255,255,.25); border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.35);
+}

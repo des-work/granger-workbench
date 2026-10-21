@@ -1,0 +1,9 @@
+/* gradient-border-mask — A REAL gradient border (any radius) via mask-composite — no padding-box hack, content keeps its own background.  [depth] */
+.g-border { position: relative; border-radius: 16px; }
+.g-border::before {
+  content: ""; position: absolute; inset: 0; padding: 2px; border-radius: inherit;
+  background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+}

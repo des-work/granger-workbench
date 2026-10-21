@@ -1,0 +1,6 @@
+# Optional retrieval acceleration. Select a PyTorch build for your hardware
+# using the official PyTorch installation instructions; CPU also works.
+# Initial model loading may download weights. Standard TLS verification stays on.
+torch
+numpy
+sentence-transformers

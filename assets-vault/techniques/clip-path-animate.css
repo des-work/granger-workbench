@@ -1,0 +1,8 @@
+/* clip-path-animate — Animate clip-path to wipe/morph a reveal (transition or keyframes).  [shape] */
+.reveal-clip {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path .6s cubic-bezier(.22,1,.36,1);
+}
+.reveal-clip.in { clip-path: inset(0 0 0 0); }
+/* or a shape morph: */
+@keyframes morph { to { clip-path: polygon(0 0,100% 0,100% 100%,0 85%); } }

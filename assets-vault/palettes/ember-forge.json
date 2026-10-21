@@ -1,0 +1,23 @@
+{
+  "id": "ember-forge",
+  "style": "ember",
+  "name": "Ember \u2014 Forge",
+  "tags": [
+    "orange",
+    "warm",
+    "dark",
+    "fire",
+    "complement",
+    "charcoal"
+  ],
+  "colors": [
+    "#140d0a",
+    "#241511",
+    "#2a1a14",
+    "#4d2e1f",
+    "#ff6b35",
+    "#ffc15e",
+    "#ffefe2"
+  ],
+  "notes": "Charcoal + burnt orange + amber \u2014 the warm complement of frutiger-aero's cool blue. Forge-glow energy for dark tools."
+}

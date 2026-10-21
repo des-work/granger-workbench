@@ -1,0 +1,1 @@
+.uv-shared-art{view-transition-name:uv-selected-art;}.uv-shared-expanded .uv-shared-art{max-width:540px;margin-inline:auto;}::view-transition-old(uv-selected-art),::view-transition-new(uv-selected-art){animation-duration:.5s;}

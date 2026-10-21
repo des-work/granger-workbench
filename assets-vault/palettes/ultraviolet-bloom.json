@@ -1,0 +1,23 @@
+{
+  "id": "ultraviolet-bloom",
+  "style": "ultraviolet",
+  "name": "Ultraviolet \u2014 Bloom",
+  "tags": [
+    "violet",
+    "indigo",
+    "electric",
+    "dark",
+    "complement",
+    "neon"
+  ],
+  "colors": [
+    "#0a0618",
+    "#150e2e",
+    "#1a1238",
+    "#3c2f6e",
+    "#8a70ff",
+    "#c77dff",
+    "#ece7ff"
+  ],
+  "notes": "The color-wheel complement of Golden Archive's gold: deep indigo with electric violet. Pair them across a two-app workflow and they sing."
+}

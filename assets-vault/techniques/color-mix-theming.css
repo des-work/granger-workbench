@@ -1,0 +1,6 @@
+/* color-mix-theming — Derive hovers, tints, and borders from ONE brand var with color-mix() — no separate shade tokens to maintain.  [color] */
+:root { --brand: var(--accent, #2b8fd6); }
+.btn        { background: var(--brand); }
+.btn:hover  { background: color-mix(in oklab, var(--brand), #000 14%); }
+.tint       { background: color-mix(in srgb, var(--brand) 12%, transparent); }
+.soft-border{ border: 1px solid color-mix(in srgb, var(--brand) 40%, transparent); }

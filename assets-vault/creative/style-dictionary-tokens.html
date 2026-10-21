@@ -1,0 +1,9 @@
+<!-- style-dictionary-tokens — Single source of design tokens (JSON) → build to CSS vars / JS / iOS / Android. The pro way to keep one theme across platforms.  [tokens]  lib: (Node: style-dictionary) -->
+// tokens.json
+{ "color": { "brand": { "value": "#2b8fd6" }, "text": { "value": "#0b3c5d" } },
+  "space": { "sm": { "value": "8px" }, "md": { "value": "16px" } } }
+
+// config.json   ->   npx style-dictionary build
+{ "source": ["tokens.json"],
+  "platforms": { "css": { "transformGroup": "css", "buildPath": "build/",
+    "files": [{ "destination": "tokens.css", "format": "css/variables" }] } } }

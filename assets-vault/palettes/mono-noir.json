@@ -1,0 +1,22 @@
+{
+  "id": "mono-noir",
+  "style": "mono",
+  "name": "Mono \u2014 Noir",
+  "tags": [
+    "monochrome",
+    "brutalist",
+    "high-contrast",
+    "dark",
+    "stark"
+  ],
+  "colors": [
+    "#0a0a0a",
+    "#262626",
+    "#525252",
+    "#a3a3a3",
+    "#d4d4d4",
+    "#f5f5f5",
+    "#ffffff"
+  ],
+  "notes": "Pure grayscale ramp for stark, brutalist, type-driven dark UIs."
+}

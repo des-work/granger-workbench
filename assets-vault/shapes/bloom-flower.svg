@@ -1,0 +1,8 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path d="M50 50 C50 20 66 8 82 12 C86 30 72 46 50 50Z"/>
+    <path d="M50 50 C80 50 92 66 88 82 C70 86 54 72 50 50Z" opacity=".7"/>
+    <path d="M50 50 C50 80 34 92 18 88 C14 70 28 54 50 50Z" opacity=".55"/>
+    <path d="M50 50 C20 50 8 34 12 18 C30 14 46 28 50 50Z" opacity=".4"/>
+  </g><circle cx="50" cy="50" r="7" fill="currentColor"/>
+</svg>

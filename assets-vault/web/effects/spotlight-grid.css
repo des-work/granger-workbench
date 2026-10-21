@@ -1,0 +1,1 @@
+.uv-spot-grid .uv-card{isolation:isolate;overflow:hidden;}.uv-spot-grid .uv-card::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:var(--uv-spot-opacity,0);background:radial-gradient(240px circle at var(--uv-spot-x,50%) var(--uv-spot-y,50%),color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%);transition:opacity .2s;}

@@ -1,0 +1,4 @@
+/* oklch-gradients — Interpolate gradients in oklch so the midpoint stays vivid — no muddy gray middle you get from sRGB blends.  [color] */
+.oklch-bg { background: linear-gradient(90deg in oklch, var(--accent), var(--accent2)); }
+/* perceptually-even ramp (great for data viz / heatmaps): */
+.ramp { background: linear-gradient(in oklch, oklch(72% .17 250), oklch(72% .17 20)); }

@@ -1,0 +1,9 @@
+/* tilt-3d — Perspective tilt on hover — pairs with the spotlight-hover JS.  [depth] */
+.tilt {
+  transform-style: preserve-3d;
+  transition: transform .25s cubic-bezier(.22,1,.36,1);
+}
+.tilt:hover {
+  transform: perspective(900px) rotateX(6deg) rotateY(-8deg) translateZ(12px);
+}
+.tilt > * { transform: translateZ(30px); }

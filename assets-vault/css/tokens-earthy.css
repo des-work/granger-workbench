@@ -1,0 +1,44 @@
+:root {  /* Earthy */
+  /* --- type ------------------------------------------------ */
+  --font: 'Lora', 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', 'Inter', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.25;
+  --leading: 1.5;
+  --tracking: 0em;
+  --measure: 66ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 2.075rem;
+  --size-1: 1.66rem;
+  --size-2: 1.328rem;
+  --size-3: 1.062rem;
+  --size-sm: 0.85rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #f5efe6;
+  --bg2: #ece3d4;
+  --surface: #fffdf9;
+  --surface-glass: rgba(255,253,249,0.6);
+  --accent: #c1440e;
+  --accent2: #7d8c5c;
+  --text: #3b2f2a;
+  --muted: #706257;
+  --border: #e3d7c5;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 8px;
+  --border-width: 1px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 300ms;
+  --ease: cubic-bezier(.3,.7,.3,1);
+  --travel: 10px;
+}

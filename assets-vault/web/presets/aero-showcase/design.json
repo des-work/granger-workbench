@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "pack": "aero-showcase",
+  "style": "frutiger-aero",
+  "layout": "overlap-gallery",
+  "effects": {
+    "glass-panel": {
+      "opacity": 0.8,
+      "blur": 20
+    },
+    "glass-dock": {
+      "opacity": 0.8,
+      "blur": 20
+    },
+    "scroll-depth": {
+      "distance": 35
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "magnetic-button": {
+      "strength": 0.14
+    },
+    "media-lightbox": {},
+    "edge-fade": {}
+  },
+  "copy": {
+    "title": "A brighter view of possibility.",
+    "eyebrow": "Frutiger Aero \u00b7 nature meets technology",
+    "description": "Air, light, and transparent layers. An optimistic collection grounded in sky and grass."
+  }
+}

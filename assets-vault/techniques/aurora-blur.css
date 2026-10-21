@@ -1,0 +1,16 @@
+/* aurora-blur — Soft drifting aurora — 3 blurred color blobs behind content. Replaces the flat one-gradient hero.  [color] */
+.aurora { position: relative; overflow: hidden; background: var(--bg); }
+.aurora::before {
+  content: ""; position: absolute; inset: -40%; z-index: 0;
+  background:
+    radial-gradient(closest-side, var(--accent), transparent) 0% 0% / 55% 55%,
+    radial-gradient(closest-side, var(--accent2), transparent) 100% 0% / 50% 50%,
+    radial-gradient(closest-side, color-mix(in srgb, var(--accent), var(--accent2)),
+                    transparent) 50% 100% / 60% 60%;
+  background-repeat: no-repeat; filter: blur(60px);
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+.aurora > * { position: relative; z-index: 1; }
+@keyframes aurora-drift {
+  to { background-position: 100% 100%, 0% 60%, 40% 0%; }
+}

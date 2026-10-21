@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "pack": "organic-studio",
+  "style": "organic-tech",
+  "layout": "overlap-gallery",
+  "effects": {
+    "aurora-field": {
+      "speed": 1,
+      "intensity": 1
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "magnetic-button": {
+      "strength": 0.14
+    },
+    "tilt-card": {
+      "angle": 7
+    },
+    "morph-tabs": {}
+  },
+  "copy": {
+    "title": "Something with a life of its own.",
+    "eyebrow": "Organic Tech \u00b7 living forms, useful tools",
+    "description": "Biomorphic shapes, softened edges, and calm color. A studio that feels connected to the world around it."
+  }
+}

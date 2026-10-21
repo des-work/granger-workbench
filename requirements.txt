@@ -1,0 +1,8 @@
+# Ultra-PC — all already installed on this machine.
+# The app runs on stdlib alone if these are missing (tools degrade gracefully).
+psutil>=5.9      # diagnostics: cpu/mem/disk/net inventory
+Pillow>=9.0      # media: image inspect / convert / integrity
+numpy>=1.23      # math: (optional, reserved for matrix tools)
+
+# Optional external tool (not pip): ffmpeg/ffprobe for audio/video metadata
+#   winget install Gyan.FFmpeg

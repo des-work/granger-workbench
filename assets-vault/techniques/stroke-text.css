@@ -1,0 +1,6 @@
+/* stroke-text — Outlined (hollow) display type — huge headings without a fill.  [type] */
+.stroke {
+  -webkit-text-stroke: 2px var(--accent); color: transparent;
+  font-weight: 900; font-size: clamp(var(--size-0, 3rem), 12vw, 9rem);
+}
+.stroke-fill:hover { color: var(--accent); -webkit-text-stroke-color: transparent; }

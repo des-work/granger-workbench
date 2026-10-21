@@ -1,0 +1,44 @@
+:root {  /* Jewel */
+  /* --- type ------------------------------------------------ */
+  --font: 'Fraunces', 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', 'Space Grotesk', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.414;
+  --leading: 1.58;
+  --tracking: 0.01em;
+  --measure: 66ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 3.004rem;
+  --size-1: 2.124rem;
+  --size-2: 1.502rem;
+  --size-3: 1.062rem;
+  --size-sm: 0.751rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #14213d;
+  --bg2: #1b2a4a;
+  --surface: #1f2f52;
+  --surface-glass: rgba(212,175,55,0.06);
+  --accent: #d4af37;
+  --accent2: #7c3aed;
+  --text: #f8f4e8;
+  --muted: #9aa6c4;
+  --border: #2e4370;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 28px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 12px;
+  --border-width: 1px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 400ms;
+  --ease: cubic-bezier(.22,1,.36,1);
+  --travel: 10px;
+}

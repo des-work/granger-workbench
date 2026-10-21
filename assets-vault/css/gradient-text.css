@@ -1,0 +1,9 @@
+/* gradient-text — Gradient-filled heading text (clip to text).  [style: vaporwave] */
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), var(--accent2),
+              color-mix(in srgb, var(--accent), var(--accent2)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}

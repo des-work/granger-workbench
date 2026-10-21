@@ -1,0 +1,44 @@
+:root {  /* Golden Archive */
+  /* --- type ------------------------------------------------ */
+  --font: 'Fraunces', 'Fraunces', 'Georgia', serif;
+  --font-display: 'Playfair Display', 'Fraunces', 'Georgia', serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.618;
+  --leading: 1.58;
+  --tracking: 0.06em;
+  --measure: 66ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: small-caps;
+  --size-0: 4.501rem;
+  --size-1: 2.782rem;
+  --size-2: 1.719rem;
+  --size-3: 1.062rem;
+  --size-sm: 0.657rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #04070f;
+  --bg2: #0a1224;
+  --surface: #0b101f;
+  --surface-glass: rgba(217,180,83,0.06);
+  --accent: #d9b453;
+  --accent2: #f2dc9b;
+  --text: #e8e2d0;
+  --muted: #77809a;
+  --border: #5a4b2c;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 32px;
+  --align: center;
+  /* --- material -------------------------------------------- */
+  --radius: 6px;
+  --border-width: 1px;
+  --gloss: 1;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  --shadow: 0 0 24px rgba(217,180,83,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 700ms;
+  --ease: cubic-bezier(.22,1,.36,1);
+  --travel: 8px;
+}

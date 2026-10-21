@@ -1,0 +1,44 @@
+:root {  /* Avant Basic */
+  /* --- type ------------------------------------------------ */
+  --font: 'Fredoka', 'Fredoka', 'Segoe UI', sans-serif;
+  --font-display: 'Shrikhand', 'Fredoka', 'Segoe UI', sans-serif;
+  --mono: 'Fira Code', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.618;
+  --leading: 1.452;
+  --tracking: 0.01em;
+  --measure: 58ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 4.501rem;
+  --size-1: 2.782rem;
+  --size-2: 1.719rem;
+  --size-3: 1.062rem;
+  --size-sm: 0.657rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #f6e7ee;
+  --bg2: #efd9e6;
+  --surface: #fffaf5;
+  --surface-glass: rgba(216,27,122,0.06);
+  --accent: #d81b7a;
+  --accent2: #5438dc;
+  --text: #3a2038;
+  --muted: #725975;
+  --border: #e6c8d8;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 20px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 20px;
+  --border-width: 3px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 5px 5px 0 0 #3a2038;
+  /* --- motion ---------------------------------------------- */
+  --dur: 450ms;
+  --ease: cubic-bezier(.34,1.56,.64,1);
+  --travel: 20px;
+}

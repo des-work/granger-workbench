@@ -1,0 +1,43 @@
+:root {  /* Swiss International */
+  /* --- type ------------------------------------------------ */
+  --font: 'Inter', 'Inter', 'Helvetica', sans-serif;
+  --font-display: 'Inter', 'Inter', 'Helvetica', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 17px;
+  --ratio: 1.5;
+  --leading: 1.5;
+  --tracking: -0.011em;
+  --measure: 66ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: none;
+  --size-0: 2.391rem;
+  --size-1: 1.594rem;
+  --size-2: 1.062rem;
+  --size-sm: 0.708rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #ffffff;
+  --bg2: #f2f2f2;
+  --surface: #ffffff;
+  --surface-glass: rgba(0,0,0,0.03);
+  --accent: #d0021b;
+  --accent2: #1a1a1a;
+  --text: #111111;
+  --muted: #595959;
+  --border: #d9d9d9;
+  --on-accent: #ffffff;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 0px;
+  --border-width: 1px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: none;
+  /* --- motion ---------------------------------------------- */
+  --dur: 120ms;
+  --ease: linear;
+  --travel: 0px;
+}

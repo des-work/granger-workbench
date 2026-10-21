@@ -1,0 +1,20 @@
+{
+  "id": "synthwave-grid",
+  "style": "cyberpunk",
+  "name": "Neon \u2014 Synthwave Grid",
+  "tags": [
+    "synthwave",
+    "grid",
+    "sunset",
+    "outrun"
+  ],
+  "colors": [
+    "#ff006e",
+    "#fb5607",
+    "#ffbe0b",
+    "#8338ec",
+    "#3a86ff",
+    "#12002b"
+  ],
+  "notes": "Outrun sunset ramp (pink\u2192orange\u2192yellow) over violet, plus a blue for the perspective grid floor."
+}

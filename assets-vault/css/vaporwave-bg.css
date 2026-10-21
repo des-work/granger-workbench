@@ -1,0 +1,18 @@
+/* vaporwave-bg — Vaporwave hero: sunset gradient with a perspective grid floor.  [style: vaporwave] */
+.vapor-bg {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #2d1b4e 0%, #ff2e97 60%, #ffcf40 100%);
+  overflow: hidden;
+}
+.vapor-bg::after {            /* perspective neon grid floor */
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 45%;
+  background-image:
+    linear-gradient(rgba(1, 205, 254, 0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(1, 205, 254, 0.6) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: perspective(300px) rotateX(60deg);
+  transform-origin: bottom;
+  mask-image: linear-gradient(transparent, #000 40%);
+}

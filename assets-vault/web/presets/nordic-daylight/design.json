@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "pack": "nordic-daylight",
+  "style": "nordic",
+  "layout": "nordic-catalog",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    }
+  },
+  "copy": {
+    "title": "A little more room to live.",
+    "eyebrow": "FORM / EVERYDAY OBJECTS",
+    "description": "Considered objects for ordinary days. Honest materials, gentle light, and comfort that lasts."
+  }
+}

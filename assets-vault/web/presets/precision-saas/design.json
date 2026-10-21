@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "pack": "precision-saas",
+  "style": "neutral",
+  "layout": "product-bento",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "morph-tabs": {},
+    "command-menu": {},
+    "sticky-morph": {},
+    "anchor-tip": {}
+  },
+  "copy": {
+    "title": "Less friction. More forward.",
+    "eyebrow": "Neutral \u00b7 clarity as a product decision",
+    "description": "A clear product narrative with useful interactions, responsive structure, and a single action language."
+  }
+}

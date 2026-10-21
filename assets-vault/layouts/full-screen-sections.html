@@ -1,0 +1,9 @@
+<!-- full-screen-sections — Scroll-snap sections that each fill the viewport.  (best for: storytelling scroll sites, product tours) -->
+<style>
+  .l-fs { height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory; }
+  .l-fs section { height: 100vh; scroll-snap-align: start; display: grid; place-items: center;
+                  font-size: 2rem; }
+  .l-fs section:nth-child(odd){ background: var(--bg,#0f172a); }
+  .l-fs section:nth-child(even){ background: var(--surface,#1e293b); }
+</style>
+<div class="l-fs"><section>One</section><section>Two</section><section>Three</section></div>

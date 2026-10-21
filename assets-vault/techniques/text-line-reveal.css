@@ -1,0 +1,8 @@
+/* text-line-reveal — Reveal a heading line-by-line (each line rises out of a clip) as it enters view.  [motion] */
+.reveal-lines .line { overflow: hidden; }
+.reveal-lines .line > span {
+  display: inline-block; transform: translateY(100%);
+  animation: line-up linear both; animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+@keyframes line-up { to { transform: translateY(0); } }

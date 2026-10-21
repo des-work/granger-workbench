@@ -1,0 +1,6 @@
+/* scroll-parallax — Real parallax bound to scroll progress (no JS, no jank).  [motion] */
+.parallax {
+  animation: para linear both;
+  animation-timeline: scroll(root);
+}
+@keyframes para { to { transform: translateY(-140px); } }

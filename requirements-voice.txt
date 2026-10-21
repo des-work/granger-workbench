@@ -1,0 +1,3 @@
+# Optional microphone/transcription/speech runtime. Models download separately.
+faster-whisper
+piper-tts

@@ -1,0 +1,44 @@
+:root {  /* Nordic */
+  /* --- type ------------------------------------------------ */
+  --font: 'Inter', 'Inter', 'Segoe UI', sans-serif;
+  --font-display: 'Sora', 'Inter', 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.25;
+  --leading: 1.592;
+  --tracking: 0em;
+  --measure: 68ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 1.953rem;
+  --size-1: 1.562rem;
+  --size-2: 1.25rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.8rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #2e3440;
+  --bg2: #3b4252;
+  --surface: #3b4252;
+  --surface-glass: rgba(216,222,233,0.05);
+  --accent: #88c0d0;
+  --accent2: #a3be8c;
+  --text: #eceff4;
+  --muted: #a7b0c1;
+  --border: #4c566a;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 10px;
+  --border-width: 1px;
+  --gloss: 1;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 220ms;
+  --ease: cubic-bezier(.4,0,.2,1);
+  --travel: 8px;
+}

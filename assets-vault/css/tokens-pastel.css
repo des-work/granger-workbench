@@ -1,0 +1,44 @@
+:root {  /* Pastel */
+  /* --- type ------------------------------------------------ */
+  --font: 'Quicksand', 'Quicksand', 'Segoe UI', sans-serif;
+  --font-display: 'Poppins', 'Quicksand', 'Segoe UI', sans-serif;
+  --mono: 'Cascadia Code', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.25;
+  --leading: 1.476;
+  --tracking: 0em;
+  --measure: 62ch;
+  --weight-body: 400;
+  --weight-strong: 600;
+  --case: none;
+  --size-0: 1.953rem;
+  --size-1: 1.562rem;
+  --size-2: 1.25rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.8rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #fff0f6;
+  --bg2: #f3e8ff;
+  --surface: #ffffff;
+  --surface-glass: rgba(255,255,255,0.6);
+  --accent: #d664a0;
+  --accent2: #a78bfa;
+  --text: #5b4a63;
+  --muted: #73647b;
+  --border: #f3d9e8;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 20px;
+  --border-width: 1px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 0 8px 24px rgba(0,0,0,0.18);
+  /* --- motion ---------------------------------------------- */
+  --dur: 300ms;
+  --ease: cubic-bezier(.25,.8,.25,1);
+  --travel: 10px;
+}

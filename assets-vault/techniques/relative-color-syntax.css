@@ -1,0 +1,6 @@
+/* relative-color-syntax — Derive tints/shades/alpha from ONE color with Relative Color Syntax — generate a whole ramp from a single brand var.  [color] */
+:root { --brand: var(--accent, #2b8fd6); }
+.lighter { background: oklch(from var(--brand) calc(l + .12) c h); }
+.darker  { background: oklch(from var(--brand) calc(l - .12) c h); }
+.faded   { background: oklch(from var(--brand) l c h / .15); }
+.comp    { background: oklch(from var(--brand) l c calc(h + 180)); } /* complement */

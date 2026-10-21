@@ -1,0 +1,233 @@
+/* Vendored open fonts (OFL). @import or <link> this file, then use the family names below. */
+
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./alfa-slab-one-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./archivo-black-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./bangers-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./bebas-neue-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./bodoni-moda-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./caveat-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./cinzel-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./dm-sans-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./dm-sans-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fira-code-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fraunces-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fraunces-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fredoka-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./inter-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./inter-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./jetbrains-mono-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./lora-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./orbitron-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./pacifico-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./permanent-marker-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./playfair-display-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./poiret-one-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./poppins-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./press-start-2p-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./quicksand-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./quicksand-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./righteous-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Shrikhand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./shrikhand-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./sora-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./space-grotesk-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./space-grotesk-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./space-grotesk-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./vt323-400.woff2') format('woff2');
+}

@@ -1,0 +1,28 @@
+<!-- hero-grid — Synthwave sun + perspective grid horizon — retro/cyberpunk hero. -->
+<svg viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg"
+     style="width:100%; height:auto">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d1b4e"/><stop offset="1" stop-color="#ff2e97"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffcf40"/><stop offset="1" stop-color="#ff2e97"/>
+    </linearGradient>
+    <clipPath id="sunclip"><circle cx="720" cy="250" r="130"/></clipPath>
+  </defs>
+  <rect width="1440" height="500" fill="url(#sky)"/>
+  <g clip-path="url(#sunclip)">
+    <rect x="590" y="120" width="260" height="260" fill="url(#sun)"/>
+    <g stroke="#2d1b4e" stroke-width="8">
+      <line x1="590" y1="300" x2="850" y2="300"/><line x1="590" y1="330" x2="850" y2="330"/>
+      <line x1="590" y1="360" x2="850" y2="360"/>
+    </g>
+  </g>
+  <g stroke="#01cdfe" stroke-width="1.5" opacity="0.8">
+    <line x1="720" y1="330" x2="-400" y2="500"/><line x1="720" y1="330" x2="200" y2="500"/>
+    <line x1="720" y1="330" x2="600" y2="500"/><line x1="720" y1="330" x2="840" y2="500"/>
+    <line x1="720" y1="330" x2="1240" y2="500"/><line x1="720" y1="330" x2="1840" y2="500"/>
+    <line x1="0" y1="360" x2="1440" y2="360"/><line x1="0" y1="400" x2="1440" y2="400"/>
+    <line x1="0" y1="450" x2="1440" y2="450"/>
+  </g>
+</svg>

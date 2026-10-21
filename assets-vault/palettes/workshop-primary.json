@@ -1,0 +1,20 @@
+{
+  "id": "workshop-primary",
+  "style": "bauhaus",
+  "name": "Bauhaus \u2014 Workshop Study",
+  "colors": [
+    "#f2eee4",
+    "#191919",
+    "#b42e23",
+    "#23539b",
+    "#e1af32",
+    "#57534c"
+  ],
+  "tags": [
+    "bauhaus",
+    "workshop",
+    "geometric",
+    "functional",
+    "poster"
+  ]
+}

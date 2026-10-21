@@ -1,0 +1,10 @@
+<!-- lottie-player — Play a designer-made After Effects animation (Lottie JSON) — pro motion for near-zero effort. Grab .json files from lottiefiles.com.  [motion]  lib: lottie.min.js -->
+<div id="lottie" style="width:320px;height:320px"></div>
+<script src="../libraries/lottie.min.js"></script>
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('lottie'),
+  renderer: 'svg', loop: true, autoplay: true,
+  path: 'animation.json',        // your Lottie file
+});
+</script>

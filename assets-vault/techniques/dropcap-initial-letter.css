@@ -1,0 +1,5 @@
+/* dropcap-initial-letter — Real drop cap with initial-letter — sinks the first letter across N lines like print.  [type] */
+p.article::first-letter {
+  initial-letter: 3;            /* 3 lines tall */
+  font-weight: 800; margin-right: .5rem; color: var(--accent, #c1440e);
+}

@@ -1,0 +1,5 @@
+<!-- divider-tilt — Straight tilted section divider. -->
+<svg viewBox="0 0 1440 100" preserveAspectRatio="none"
+     style="display:block; width:100%; height:70px; color:#ffffff">
+  <path fill="currentColor" d="M0,100 L1440,0 L1440,100 Z"/>
+</svg>

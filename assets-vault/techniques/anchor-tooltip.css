@@ -1,0 +1,7 @@
+/* anchor-tooltip — Tether a tooltip/popover to an element with CSS anchor positioning — no JS positioning math.  [layout] */
+.trigger { anchor-name: --t; }
+.tooltip {
+  position: absolute; position-anchor: --t;
+  top: anchor(bottom); justify-self: anchor-center; translate: 0 8px;
+  /* @supports not (anchor-name: --t) { fall back to position:absolute } */
+}

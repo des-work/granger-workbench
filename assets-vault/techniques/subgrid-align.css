@@ -1,0 +1,4 @@
+/* subgrid-align — Make card internals (title/body/footer) line up ACROSS cards with subgrid.  [layout] */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.card { display: grid; grid-row: span 3; grid-template-rows: subgrid; gap: .5rem; }
+/* every card's title row, body row, and footer row now share a baseline */

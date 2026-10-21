@@ -1,0 +1,44 @@
+:root {  /* Vaporwave / Y2K */
+  /* --- type ------------------------------------------------ */
+  --font: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Righteous', 'Segoe UI', system-ui, sans-serif;
+  --mono: 'Cascadia Code', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.414;
+  --leading: 1.544;
+  --tracking: 0.12em;
+  --measure: 60ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: upper;
+  --size-0: 2.827rem;
+  --size-1: 1.999rem;
+  --size-2: 1.414rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.707rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #1a1a2e;
+  --bg2: #2d1b4e;
+  --surface: #241a44;
+  --surface-glass: rgba(255,113,206,0.10);
+  --accent: #ff71ce;
+  --accent2: #01cdfe;
+  --text: #fdf5ff;
+  --muted: #b39ddb;
+  --border: #b967ff;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 24px;
+  --align: center;
+  /* --- material -------------------------------------------- */
+  --radius: 14px;
+  --border-width: 2px;
+  --gloss: 2;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 60%);
+  --shadow: 0 0 24px rgba(255,113,206,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 600ms;
+  --ease: cubic-bezier(.4,0,.6,1);
+  --travel: 18px;
+}

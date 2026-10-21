@@ -1,0 +1,44 @@
+:root {  /* Neon / Cyberpunk */
+  /* --- type ------------------------------------------------ */
+  --font: 'JetBrains Mono', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Orbitron', 'Segoe UI', system-ui, sans-serif;
+  --mono: 'Cascadia Code', 'JetBrains Mono', monospace;
+  --base: 15px;
+  --ratio: 1.333;
+  --leading: 1.616;
+  --tracking: 0.04em;
+  --measure: 72ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: upper;
+  --size-0: 2.221rem;
+  --size-1: 1.666rem;
+  --size-2: 1.25rem;
+  --size-3: 0.938rem;
+  --size-sm: 0.703rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #0d0221;
+  --bg2: #01012b;
+  --surface: #12082e;
+  --surface-glass: rgba(5,217,232,0.06);
+  --accent: #05d9e8;
+  --accent2: #ff2a6d;
+  --text: #d1f7ff;
+  --muted: #6b7fb3;
+  --border: #05d9e8;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 16px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 0px;
+  --border-width: 1px;
+  --gloss: 1;
+  --sheen: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  --shadow: 0 0 24px rgba(5,217,232,0.45);
+  /* --- motion ---------------------------------------------- */
+  --dur: 90ms;
+  --ease: steps(3,end);
+  --travel: 4px;
+}

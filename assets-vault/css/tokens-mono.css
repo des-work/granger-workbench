@@ -1,0 +1,44 @@
+:root {  /* Mono / Brutalist */
+  /* --- type ------------------------------------------------ */
+  --font: 'Space Grotesk', 'Space Grotesk', system-ui, sans-serif;
+  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --base: 16px;
+  --ratio: 1.333;
+  --leading: 1.616;
+  --tracking: 0em;
+  --measure: 72ch;
+  --weight-body: 400;
+  --weight-strong: 700;
+  --case: upper;
+  --size-0: 2.369rem;
+  --size-1: 1.777rem;
+  --size-2: 1.333rem;
+  --size-3: 1.0rem;
+  --size-sm: 0.75rem;
+  /* --- colour ---------------------------------------------- */
+  --bg: #0a0a0a;
+  --bg2: #161616;
+  --surface: #161616;
+  --surface-glass: rgba(255,255,255,0.04);
+  --accent: #ffffff;
+  --accent2: #a3a3a3;
+  --text: #f5f5f5;
+  --muted: #818181;
+  --border: #2e2e2e;
+  --on-accent: #000000;
+  /* --- grid ------------------------------------------------ */
+  --columns: 12;
+  --gutter: 0px;
+  --align: left;
+  /* --- material -------------------------------------------- */
+  --radius: 0px;
+  --border-width: 2px;
+  --gloss: 0;
+  --sheen: none;
+  --shadow: 4px 4px 0 0 #f5f5f5;
+  /* --- motion ---------------------------------------------- */
+  --dur: 0ms;
+  --ease: steps(1,end);
+  --travel: 0px;
+}

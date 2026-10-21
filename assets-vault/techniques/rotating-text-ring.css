@@ -1,0 +1,9 @@
+/* rotating-text-ring — Circular text badge that slowly rotates (each letter positioned around a ring).  [motion] */
+.ring { position: relative; width: 180px; aspect-ratio: 1;
+  animation: spin 12s linear infinite; }
+.ring span {
+  position: absolute; inset: 0; text-align: center;
+  transform: rotate(calc(var(--i) * 15deg));      /* set --i per letter */
+}
+.ring span b { display: inline-block; transform: translateY(-84px); }
+@keyframes spin { to { transform: rotate(360deg); } }

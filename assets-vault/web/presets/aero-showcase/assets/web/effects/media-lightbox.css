@@ -1,0 +1,1 @@
+.uv-lightbox-launch{display:block;width:100%;padding:20px;color:var(--accent);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);}.uv-lightbox-launch .uv-visual{min-height:240px;}.uv-lightbox-dialog{width:min(900px,calc(100% - 32px));}.uv-lightbox-dialog .uv-visual{max-height:65svh;}

@@ -1,0 +1,10 @@
+/* neon-flicker — Neon sign flicker — irregular blinks then steady glow.  [style: cyberpunk] */
+.flicker {
+  color: var(--accent);
+  text-shadow: 0 0 6px currentColor, 0 0 16px currentColor;
+  animation: flicker 3.5s infinite;
+}
+@keyframes flicker {
+  0%,18%,22%,25%,53%,57%,100% { opacity: 1; }
+  20%,24%,55% { opacity: 0.35; text-shadow: none; }
+}

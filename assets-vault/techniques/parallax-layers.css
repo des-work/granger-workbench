@@ -1,0 +1,4 @@
+/* parallax-layers — Multi-depth parallax — background/mid/foreground move at different speeds, all scroll-driven.  [motion] */
+.layer { animation: shift linear both; animation-timeline: scroll(root block); }
+.layer--bg  { --d: -60px; }  .layer--mid { --d: -140px; }  .layer--fg { --d: -260px; }
+@keyframes shift { to { transform: translateY(var(--d)); } }

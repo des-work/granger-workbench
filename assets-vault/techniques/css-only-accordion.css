@@ -1,0 +1,8 @@
+/* css-only-accordion — Accessible accordion/disclosure with zero JS using <details>.  [interaction] */
+<details class="acc"><summary>Section title</summary>
+  <div class="acc__body">Content…</div>
+</details>
+.acc { border-bottom: 1px solid var(--border, #334155); }
+.acc summary { cursor: pointer; list-style: none; padding: 1rem 0; font-weight: 600; }
+.acc summary::-webkit-details-marker { display: none; }
+.acc[open] summary { color: var(--accent, #05d9e8); }

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "pack": "kinetic-editorial",
+  "style": "high-fashion",
+  "layout": "atelier-spread",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "scroll-progress": {}
+  },
+  "copy": {
+    "title": "The shape of silence.",
+    "eyebrow": "ATELIER / COLLECTION 01",
+    "description": "A study in silhouette. Sculpted volume, deliberate proportion, and nothing without a purpose."
+  }
+}

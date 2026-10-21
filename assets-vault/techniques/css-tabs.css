@@ -1,0 +1,11 @@
+/* css-tabs — Pure-CSS tabs (radio inputs + :has) — no JavaScript.  [interaction] */
+<div class="tabs">
+  <input type="radio" name="t" id="t1" checked><label for="t1">One</label>
+  <input type="radio" name="t" id="t2"><label for="t2">Two</label>
+  <div class="panel p1">First</div><div class="panel p2">Second</div>
+</div>
+.tabs .panel { display: none; }
+.tabs:has(#t1:checked) .p1, .tabs:has(#t2:checked) .p2 { display: block; }
+.tabs label { cursor: pointer; padding: .5rem 1rem; }
+.tabs input { display: none; }
+.tabs:has(#t1:checked) label[for=t1] { border-bottom: 2px solid var(--accent,#05d9e8); }

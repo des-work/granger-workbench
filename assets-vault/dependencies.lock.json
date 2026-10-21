@@ -1,0 +1,790 @@
+{
+  "schema": 1,
+  "packages": [
+    {
+      "name": "@fontsource/inter",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/inter/-/inter-5.3.0.tgz",
+      "integrity": "sha512-RofMylZmjlJEfELXeNHFWBRcSs75rGU/6bV2S2jfnvv/3rPXPGe0LgUJTklcHZ9lM4OZmAVFhcJPnACfb91A3g==",
+      "files": [
+        {
+          "path": "licenses/fontsource-inter/LICENSE",
+          "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+        },
+        {
+          "path": "fonts/inter-400.woff2",
+          "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+        },
+        {
+          "path": "fonts/inter-400.ttf",
+          "sha256": "9351adc4bf24887b437bd341b1f3b55c6c33fe956d977a6410cd6788e51a2570"
+        },
+        {
+          "path": "fonts/inter-700.woff2",
+          "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491"
+        },
+        {
+          "path": "fonts/inter-700.ttf",
+          "sha256": "5a04af55566b2bcf3dec8f1f1f7abb30a34abf84ad397a1e1e8fd85b5398f044"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/space-grotesk",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/space-grotesk/-/space-grotesk-5.3.0.tgz",
+      "integrity": "sha512-ksnGizDPXIDuvqcTYTSrmZ+evx9sDlS8rp7+42BQ7wU+spt3twEoXfbJz672C+5CLg6VeUQwRy5RXshWb67LcQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-space-grotesk/LICENSE",
+          "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+        },
+        {
+          "path": "fonts/space-grotesk-400.woff2",
+          "sha256": "65fd17fcbd2e2f522940b5f67ead3d23329e02891aa5495e74d11a499c0b0673"
+        },
+        {
+          "path": "fonts/space-grotesk-400.ttf",
+          "sha256": "aee6df6523b1d93396f7dfbd7e3dc7a73f502759da328d11d01e0c67cc8f8ecd"
+        },
+        {
+          "path": "fonts/space-grotesk-600.woff2",
+          "sha256": "685bbbf69fa616df1ef81847c85fc76be097ddfb3468ff2257be54511ab3130f"
+        },
+        {
+          "path": "fonts/space-grotesk-600.ttf",
+          "sha256": "2313d20d57687a7629ef67396ab623efeafc8c5dea1adab5e55deafeb66f1cde"
+        },
+        {
+          "path": "fonts/space-grotesk-500.woff2",
+          "sha256": "1b1a8131d9edf975d9decee81e2f2bf504812f7a4f498e5500f28a613e22e64c"
+        },
+        {
+          "path": "fonts/space-grotesk-500.ttf",
+          "sha256": "e0512a6696f8d7b40ccabd71d6521653ade54223e7f740f390305e6fbd6a2f48"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/dm-sans",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/dm-sans/-/dm-sans-5.3.0.tgz",
+      "integrity": "sha512-lYJtMXXO28q1z+yz+z8XKd0s4hXaa9QdkETzkyD760sidCv5heI86weYA0sx0Nc4pAMAQTUuyf4gO44cYKKS9g==",
+      "files": [
+        {
+          "path": "licenses/fontsource-dm-sans/LICENSE",
+          "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+        },
+        {
+          "path": "fonts/dm-sans-400.woff2",
+          "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+        },
+        {
+          "path": "fonts/dm-sans-400.ttf",
+          "sha256": "88da82af1b110f33d3afb6df01da1b411cec9f8135f8910ead76fb0bb0ceba3e"
+        },
+        {
+          "path": "fonts/dm-sans-500.woff2",
+          "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+        },
+        {
+          "path": "fonts/dm-sans-500.ttf",
+          "sha256": "bbdac5ba81223f5eae5188351d59bcc75ab36ef7a57dd2df8de03e468f99d100"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/fraunces",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/fraunces/-/fraunces-5.3.0.tgz",
+      "integrity": "sha512-LEHTOBiZufQzAvnAe2rZ8ZknbDS28Q9kzwb0L+gZJEmjLGr8hhZ/5NuHXwDuHBWhVXYoiGGXmrb0H6Ko/RrHTg==",
+      "files": [
+        {
+          "path": "licenses/fontsource-fraunces/LICENSE",
+          "sha256": "cd3384cafac6f2bddc3955273958a2e029f97027c8037ac539ef5744a77b579e"
+        },
+        {
+          "path": "fonts/fraunces-400.woff2",
+          "sha256": "e558f39453a9c611908be04294b50dea5f21ae6c49b41c6e47f4115e91f90209"
+        },
+        {
+          "path": "fonts/fraunces-400.ttf",
+          "sha256": "53b0d65408476f37d12d10d7ffef6c8d974bbb6dfac323961da0248d1108740b"
+        },
+        {
+          "path": "fonts/fraunces-600.woff2",
+          "sha256": "3a1de7711d147bad4422825045f87597fd77cca72e7c96d3b0a81735d00dda82"
+        },
+        {
+          "path": "fonts/fraunces-600.ttf",
+          "sha256": "ecf29011d9d348610741b5681563dba2904d359db879ab967e591ba8b745b5c5"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/quicksand",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/quicksand/-/quicksand-5.3.0.tgz",
+      "integrity": "sha512-epmMUyXI39f88bZSCyKlHTZqUWg4O7DqrTXOKqsqbVKMLshX9RtIYCUIw+G2nOfEwdIHIjYbeWdwHRcEzRXBRQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-quicksand/LICENSE",
+          "sha256": "f44e4e5dd4655efc07bc9a843a3d2448e45d2e389960b5c44be83d079bb28ae7"
+        },
+        {
+          "path": "fonts/quicksand-400.woff2",
+          "sha256": "fee25690fddfdf52d7c88f8460260998c523b762e1a53fc91561b179835e3316"
+        },
+        {
+          "path": "fonts/quicksand-400.ttf",
+          "sha256": "c7cf96d5164d9e21f9ad825d578a842e231bb7afd70279318a3c894657dddbfb"
+        },
+        {
+          "path": "fonts/quicksand-500.woff2",
+          "sha256": "eb8add2effc4883b14a0470be949cab435ca77b72c762d24a7b12472d34a8aa4"
+        },
+        {
+          "path": "fonts/quicksand-500.ttf",
+          "sha256": "a2b72c6b0d025f302d528d8c52aefce3076783fb29b199688c5e7b388561d1bc"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/jetbrains-mono",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/jetbrains-mono/-/jetbrains-mono-5.3.0.tgz",
+      "integrity": "sha512-fqDfB5I9f1p1TV486aUgB9t8zP84P0O1FtQR5Ol9vjwPy+S+EIGlVYm1cvj2W5shcZMTg2nZFdVMoH5wFu8a1A==",
+      "files": [
+        {
+          "path": "licenses/fontsource-jetbrains-mono/LICENSE",
+          "sha256": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b"
+        },
+        {
+          "path": "fonts/jetbrains-mono-400.woff2",
+          "sha256": "14425ba9c695763c1547f48a206b7aa60350a33ae23de09f0407877f3fcd89eb"
+        },
+        {
+          "path": "fonts/jetbrains-mono-400.ttf",
+          "sha256": "1118eebebd276b972a7b575af5b4e9bf326bc24b496a4a03b3388b8034bf2957"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/orbitron",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/orbitron/-/orbitron-5.3.0.tgz",
+      "integrity": "sha512-+BhPsbUAo/AF7sRcf+TEexm+EWWkgTiR9Zwb7AhYIPkc5oplfvw0C45Oc2xlKPhwVEmxG8hHuA6/Ansbl+Bc6w==",
+      "files": [
+        {
+          "path": "licenses/fontsource-orbitron/LICENSE",
+          "sha256": "075b0137b7a19be521031442001478342ebafc1923f01092b8dc51afc4341041"
+        },
+        {
+          "path": "fonts/orbitron-700.woff2",
+          "sha256": "ee6acc5ad5349018f9ca71fab8118144160e110838931874150a1ac3f97db38d"
+        },
+        {
+          "path": "fonts/orbitron-700.ttf",
+          "sha256": "ee49e82a0d3ef599043891522e281e707b8b0ec1af22795ce96975d28ee20b19"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/vt323",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/vt323/-/vt323-5.3.0.tgz",
+      "integrity": "sha512-3w33Rg/0+R1587HQfz4t7Q7e0GGeCqr3wmzIwqdGInUnrGEwMA5eX39GP4Z9wpTQnwfhVOhYuxuRwRUeIcicbw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-vt323/LICENSE",
+          "sha256": "27d9af34210253e7ca1251fbace86c6f65b40031d6ce1a75493a1b2093631298"
+        },
+        {
+          "path": "fonts/vt323-400.woff2",
+          "sha256": "8ddbebcc1048154132e1d78eb9b1f7850bca1b7d857035ccf1cb4318ebc615b6"
+        },
+        {
+          "path": "fonts/vt323-400.ttf",
+          "sha256": "78ec8f4bc43362f0377b9a04ee276b6036bca0c3a7a7978346e20b7b3a504942"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/press-start-2p",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/press-start-2p/-/press-start-2p-5.3.0.tgz",
+      "integrity": "sha512-gxWFxdeDglPhEYSwEeooomcaFK8kSQYLQwVxfnOJeYRj2sPEHXjpVtFgEaYfqzOjuAJGrIcJOipu2KY5YkbyuQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-press-start-2p/LICENSE",
+          "sha256": "98e451fe911e5ee4a1a45359535dc30ea7df28b8d9a9cd1f741778efab1387ee"
+        },
+        {
+          "path": "fonts/press-start-2p-400.woff2",
+          "sha256": "afec86997fdaf54af1f59358fa2c1e2a0f1d04146edad18e5cd141d0384a7548"
+        },
+        {
+          "path": "fonts/press-start-2p-400.ttf",
+          "sha256": "ab10928320d3ad7e008b7e493fd28c5962f5769fd095bdbad4d19317110517e9"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/poppins",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.3.0.tgz",
+      "integrity": "sha512-cms1nM7U6SN8epIV1WMVOV8VsA645aSm3wHfzIQnkk188U341ThbJGSl2Sv54V29gnDbT2arMPfLzvVIIVCceQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-poppins/LICENSE",
+          "sha256": "5c4a92c8f8ce0ab211f4c72889d82383c9644546115d9ba39a4f2d5b8f37014b"
+        },
+        {
+          "path": "fonts/poppins-600.woff2",
+          "sha256": "f4e80d9dfd374d02989b87a27b5ed4cb78fbb177c27f1478e9a8b0afb7513149"
+        },
+        {
+          "path": "fonts/poppins-600.ttf",
+          "sha256": "ec2dfecd8ebdd617e0a611a26356e14c36366f31ce5a12abfe2b140df21e7970"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/playfair-display",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/playfair-display/-/playfair-display-5.3.0.tgz",
+      "integrity": "sha512-uJSABalvdWc10fEPppQjQocamT21LEyRfzzWfRfqbkPz+sRv+kKpYDKyluBUskvJREkJTos9epj1WjQROGu99Q==",
+      "files": [
+        {
+          "path": "licenses/fontsource-playfair-display/LICENSE",
+          "sha256": "c052aafd2a71e90bcee6e69f475029d430a10d548c08ffcae350171f0e9668b1"
+        },
+        {
+          "path": "fonts/playfair-display-700.woff2",
+          "sha256": "28453852ea165c47b5a941be00e418402e1407002ed87507f062a1e316328fe6"
+        },
+        {
+          "path": "fonts/playfair-display-700.ttf",
+          "sha256": "b164524cd7f8c7579b325c5b834fd65f2a606a426ace277fe615ecf6431d4076"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/lora",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/lora/-/lora-5.3.0.tgz",
+      "integrity": "sha512-OK1g1z01rHVPqO5aw/FOIoDqc46KKYZdgL3NOLkxLWDk6QhDHhdr/h2BV1cke6gTvR1tzpDfdKyUkGsC+sQLeQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-lora/LICENSE",
+          "sha256": "948aed765160f7b974105606c21994715a171f89fca48e57bf1e0a23aca0bef1"
+        },
+        {
+          "path": "fonts/lora-400.woff2",
+          "sha256": "ac079950fd9885261c0f73d9e87233f31b5427333ce0eb20e26c119458493c40"
+        },
+        {
+          "path": "fonts/lora-400.ttf",
+          "sha256": "f478bb7e10812dc006a2ccffc1b09cb5eed08799a466800d62514df3a8821ae8"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/bebas-neue",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/bebas-neue/-/bebas-neue-5.3.0.tgz",
+      "integrity": "sha512-nCxMEb9Bg9sjNWm9TIOsvHKDMLRUfEZPWpLgYu6m9KavZZVSA/WoHzI5wROwqA+eNwEi/PNBAcB5Co7HA3S0Cw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-bebas-neue/LICENSE",
+          "sha256": "66c436339f7490c1a99e4f6a7b8aef5c176676edfd071a31638e7d54c1b0aeda"
+        },
+        {
+          "path": "fonts/bebas-neue-400.woff2",
+          "sha256": "a7c90c89240c134f7fdd33d40c000ec90b79d675ea53e8cc5a6d423c073de412"
+        },
+        {
+          "path": "fonts/bebas-neue-400.ttf",
+          "sha256": "5d8354d12119b844259cdd9b92370151ae2861643ae261dcbded63672531ba00"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/sora",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/sora/-/sora-5.3.0.tgz",
+      "integrity": "sha512-SqW3OpKxxfKvxDLPlbdrWf2KooPfbd+W3jaYn483o+Y/JrmU87vjFPNptDqwP428c3vY+gnranLhjcbRaXB0Jw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-sora/LICENSE",
+          "sha256": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9"
+        },
+        {
+          "path": "fonts/sora-600.woff2",
+          "sha256": "fa9ab76f30510ad92153c6d6d72d0508884b85e9f0148abdfa963231b2a4845a"
+        },
+        {
+          "path": "fonts/sora-600.ttf",
+          "sha256": "13a99fc6525fdcade19bd910dba389887ac8afd5b5fcfba7090cf60441240977"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/archivo-black",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/archivo-black/-/archivo-black-5.3.0.tgz",
+      "integrity": "sha512-7EsTIQ+Blf96ktpzTUpI7msi+u9/AJxM/GZxOSkEubVd1jSTrFSTNxMgfpX/8rQsjZ+19a+qvRbtcTEp5J/72g==",
+      "files": [
+        {
+          "path": "licenses/fontsource-archivo-black/LICENSE",
+          "sha256": "4cafdbbd100af37a23805af09b7068e4daafb4516dc3d6d52436f4a9d7b4c0d3"
+        },
+        {
+          "path": "fonts/archivo-black-400.woff2",
+          "sha256": "25f33e61cf995abd6be62931cf03bf427286259177b43618cc410ee0157cfd30"
+        },
+        {
+          "path": "fonts/archivo-black-400.ttf",
+          "sha256": "c1b79e7642b594c7cc053e6749624bb733e62a40d74e9c2c2b9fbf0ed6449321"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/caveat",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/caveat/-/caveat-5.3.0.tgz",
+      "integrity": "sha512-eHTfzQxFSW9ABERRLNruHoNJmKed2J7pqTUc5lp4a4POMgXGKpxmWj3d9Hz10kmAg6iuTTLe6UagbA4bnsmfQw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-caveat/LICENSE",
+          "sha256": "163a2b400e16916ad3196296c946c526d0efce6baf22a2164269ffc62fb9f671"
+        },
+        {
+          "path": "fonts/caveat-400.woff2",
+          "sha256": "d0b7b931b8980049327e8f8f9ac264617c8200b8422d62e886473d3d9527bad3"
+        },
+        {
+          "path": "fonts/caveat-400.ttf",
+          "sha256": "3561659ed03c1ecf7e7366cee13076602e0e88ef3a664142f7cbb383c270d3dc"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/fira-code",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/fira-code/-/fira-code-5.3.0.tgz",
+      "integrity": "sha512-EJL968RJRkakubAj/coU8pSUaeTE5UNoRjtzAr6kGiSZ3jWuN8/AKWHwym/PFUaQL1q7IL/H+EXs4358YhrTBQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-fira-code/LICENSE",
+          "sha256": "126cd7bf732b86f42885f1fbf682e6aeea456672c7fdb99f2d557ec44e468a28"
+        },
+        {
+          "path": "fonts/fira-code-400.woff2",
+          "sha256": "6dc9da171ccea71d525379ee1cbf51d143e31acac330a251bb71b3d6060e687c"
+        },
+        {
+          "path": "fonts/fira-code-400.ttf",
+          "sha256": "9063b5da43facc63768afcde5913ee32b11ca14b456e66a1d8f3c0eb921df57c"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/righteous",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/righteous/-/righteous-5.3.0.tgz",
+      "integrity": "sha512-xr3w0E1jtc7xoXLfgJrcaKqWjvh5XiAAthVLrl9v9HKC7TfwMy3nARytetfi2GIgo51+aWsEJ51Uyd3XEXbj/A==",
+      "files": [
+        {
+          "path": "licenses/fontsource-righteous/LICENSE",
+          "sha256": "463e9f5e094063efea678dcd70cac0d868a67f52922a71d73706677353d587da"
+        },
+        {
+          "path": "fonts/righteous-400.woff2",
+          "sha256": "17055c538efddf7a754a98bb7db3d15405316dfb4645c287421ed3e7f8769144"
+        },
+        {
+          "path": "fonts/righteous-400.ttf",
+          "sha256": "0fbb1f196afec231fd2c4d32201b1ff87fe00b16e1ace5bdffea0cfb12a86669"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/shrikhand",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/shrikhand/-/shrikhand-5.3.0.tgz",
+      "integrity": "sha512-AWCCj1oNNpMK5hXfFo4JO5KyLhPrdBmpbA0wyIl4IUB05WTU0CGP2UgGX7Lcq/N8nS2+hcxzCPMSQ1R55FuMPg==",
+      "files": [
+        {
+          "path": "licenses/fontsource-shrikhand/LICENSE",
+          "sha256": "96196fe746830c3042ab04ac275f3b7b6f1749faaafa8bf84e5c8ebb3d39b6b8"
+        },
+        {
+          "path": "fonts/shrikhand-400.woff2",
+          "sha256": "ae958e0da508cb9c0094ce2a2cd2ce142756cc434d88ecd3f353c3f80749da9d"
+        },
+        {
+          "path": "fonts/shrikhand-400.ttf",
+          "sha256": "61097d2ca3b7fce38a6a1f4231670c415ce822821f1d28201b93fd534360b008"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/fredoka",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/fredoka/-/fredoka-5.3.0.tgz",
+      "integrity": "sha512-s2IhjQ50wDnKkkaKmjhtL0rxQg6ITsVusiipM3m7zUwVZZbbCKsscNDkngwp28xVzfIt7neWrkgU1qKqyTycQg==",
+      "files": [
+        {
+          "path": "licenses/fontsource-fredoka/LICENSE",
+          "sha256": "9bbd4f5f107895d5a213579b73821fadd05105241cf4360e86050199fcfd6034"
+        },
+        {
+          "path": "fonts/fredoka-500.woff2",
+          "sha256": "7d76e44a94b02894b384fc98c124ccf521d8460bf0e0bbe31c1b6b4be6099620"
+        },
+        {
+          "path": "fonts/fredoka-500.ttf",
+          "sha256": "ce6dbca8f054c28da41dfb7031a9a7e933a7d06ec65be078620a4c92700b7f2b"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/bodoni-moda",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/bodoni-moda/-/bodoni-moda-5.3.0.tgz",
+      "integrity": "sha512-Wt2XBCHivYxkTP3ydq/Ax+7VshwsOh/6ayA5om2t+yClCkGwLPj2Mi6OnyMANjyLcqDUWs4rlOHnc8SBLf6/pA==",
+      "files": [
+        {
+          "path": "licenses/fontsource-bodoni-moda/LICENSE",
+          "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+        },
+        {
+          "path": "fonts/bodoni-moda-700.woff2",
+          "sha256": "595d28347ea02f9adccab277f49a122f04212fd220e972ce0c80fe933c915541"
+        },
+        {
+          "path": "fonts/bodoni-moda-700.ttf",
+          "sha256": "700dc4e35297b690004a9530c514dc69d79430e3f88e151ba4d329465505391f"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/permanent-marker",
+      "version": "5.3.0",
+      "license": "Apache-2.0",
+      "tarball": "https://registry.npmjs.org/@fontsource/permanent-marker/-/permanent-marker-5.3.0.tgz",
+      "integrity": "sha512-ZO/NtYW4SCc/iY8N3dmjWyDITcXJ/vhWZFgnwRcvzwCKKnScMrM/a2/6VHlsjCVuIgmPzNrCFbedEYhv+/jJBg==",
+      "files": [
+        {
+          "path": "licenses/fontsource-permanent-marker/LICENSE",
+          "sha256": "044195cfd809d76ea2aaf1c8e3dd80b9fd9447227efc05e51fc906c4a451d451"
+        },
+        {
+          "path": "fonts/permanent-marker-400.woff2",
+          "sha256": "4884fec2c73aa52a2461073c1b87d1ceb80f400520391b43f97ca7d3c39eeb24"
+        },
+        {
+          "path": "fonts/permanent-marker-400.ttf",
+          "sha256": "c4930f7b52b7922d3261281d15aa12d46193f69a4d5367eb22172b1b4fea5d15"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/bangers",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/bangers/-/bangers-5.3.0.tgz",
+      "integrity": "sha512-tSRpmWwkqrO9PCqo9wjA/99/5sLOIWm5cf51G3ooEHd8qZus8sVSSJoWp/7EvM5rIgZMjKRG6XtY9yeisKxE7g==",
+      "files": [
+        {
+          "path": "licenses/fontsource-bangers/LICENSE",
+          "sha256": "09ef36fcae68a2ba21cc319fd44c09ba40f43163076bcafc14fdfe4cc033e7a2"
+        },
+        {
+          "path": "fonts/bangers-400.woff2",
+          "sha256": "04f54ff42ea2b8fc50b4259c29c60b1e05e606b769c2fb541c98624346c9767c"
+        },
+        {
+          "path": "fonts/bangers-400.ttf",
+          "sha256": "a466b8eb7ddca55e506be7e88bf2c988aa17a29d5ea4381057547e4ec452cee2"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/poiret-one",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/poiret-one/-/poiret-one-5.3.0.tgz",
+      "integrity": "sha512-nCAUIB6f5805lUG7t0ES0W0YhJHcKa2EPlafb7/0AU1W/V4tQvmoSbwNNUnt6nVIagvyStxLG5nzqMptQ3FCgQ==",
+      "files": [
+        {
+          "path": "licenses/fontsource-poiret-one/LICENSE",
+          "sha256": "9323f8b5e780712bd57862857fc51df54aec3ab81b6be88b5d4c1459767d8828"
+        },
+        {
+          "path": "fonts/poiret-one-400.woff2",
+          "sha256": "a6361b9b4bd84cd02407a4674e0158642a51d5f968f0366adf8a19302bec6c0c"
+        },
+        {
+          "path": "fonts/poiret-one-400.ttf",
+          "sha256": "e2e89cf97b30a180697e97e85df11c6447d6f869d30ee5dc11790e54555de1ea"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/cinzel",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/cinzel/-/cinzel-5.3.0.tgz",
+      "integrity": "sha512-KEOYTsrRppW0uRIPWBDPrQgunCS6f8u4nzZxYRBfo9SCknKojLYjK7B0ZoVmJhyVLefz271ZQRF9EOpHZlfhRw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-cinzel/LICENSE",
+          "sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6"
+        },
+        {
+          "path": "fonts/cinzel-600.woff2",
+          "sha256": "61efc27ceb7d08bb841652fa8979c0b6833b92548b7f9544c07968a6c02f28e4"
+        },
+        {
+          "path": "fonts/cinzel-600.ttf",
+          "sha256": "05424d904d84e06fadc63582da7df1ce2a9646ac164cb3dabc0f566063d72452"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/alfa-slab-one",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/alfa-slab-one/-/alfa-slab-one-5.3.0.tgz",
+      "integrity": "sha512-J/ANFZ7S9CbZClr/QhMjmBtpFmmKipVkEXHj20aurR5uqJPCBChVPJn1/kx6vtrwnfnDY0kQaYSTYasSt4GruA==",
+      "files": [
+        {
+          "path": "licenses/fontsource-alfa-slab-one/LICENSE",
+          "sha256": "6cb8a5e3f60a5b23d1e5fff9b6fa860f0e5d4055a67bb262497c1e8d8fc13b05"
+        },
+        {
+          "path": "fonts/alfa-slab-one-400.woff2",
+          "sha256": "48a110c7fda81f9921a6437e1a813dcea56df5a9f52f778c7b2f2151e36e4f2c"
+        },
+        {
+          "path": "fonts/alfa-slab-one-400.ttf",
+          "sha256": "266f213552f4605c6fe2cbb184b5265e37d815cd37769d0cc33be678b67c517d"
+        }
+      ]
+    },
+    {
+      "name": "@fontsource/pacifico",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "tarball": "https://registry.npmjs.org/@fontsource/pacifico/-/pacifico-5.3.0.tgz",
+      "integrity": "sha512-bWv0fHR1n36p7scRn+maaEaVeQCOq9yvfVfjyAeUzKrK4Y/3qiRAEj4hJgfxj/sjgZZGkeHyKPrbWdDaZtpCVw==",
+      "files": [
+        {
+          "path": "licenses/fontsource-pacifico/LICENSE",
+          "sha256": "e1b964e3f56697598c46363a8864f0a7b883c86a0c01a9a6a4e90e6949d60ba2"
+        },
+        {
+          "path": "fonts/pacifico-400.woff2",
+          "sha256": "99ec044ad9040a708e38f90ebd5984ca03fc46afeee26d5c77c4769c66ed89e2"
+        },
+        {
+          "path": "fonts/pacifico-400.ttf",
+          "sha256": "e2329077094f1922924a8b864042bd94569cec55121ab837855df640d17c4dc6"
+        }
+      ]
+    },
+    {
+      "name": "three",
+      "version": "0.160.1",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/three/-/three-0.160.1.tgz",
+      "integrity": "sha512-Bgl2wPJypDOZ1stAxwfWAcJ0WQf7QzlptsxkjYiURPz+n5k4RBDLsq+6f9Y75TYxn6aHLcWz+JNmwTOXWrQTBQ==",
+      "files": [
+        {
+          "path": "licenses/three/LICENSE",
+          "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+        },
+        {
+          "path": "libraries/three.min.js",
+          "sha256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa"
+        }
+      ]
+    },
+    {
+      "name": "lottie-web",
+      "version": "5.12.2",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/lottie-web/-/lottie-web-5.12.2.tgz",
+      "integrity": "sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==",
+      "files": [
+        {
+          "path": "licenses/lottie-web/LICENSE.md",
+          "sha256": "4750849de81eeee983513f7e66c419abf4656146a23283e8e93532075e2c242b"
+        },
+        {
+          "path": "libraries/lottie.min.js",
+          "sha256": "a0757321f974527bda3cc2593bf56cc7ffe4578421249ced6ae49ffb1c529f90"
+        }
+      ]
+    },
+    {
+      "name": "animejs",
+      "version": "3.2.2",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/animejs/-/animejs-3.2.2.tgz",
+      "integrity": "sha512-Ao95qWLpDPXXM+WrmwcKbl6uNlC5tjnowlaRYtuVDHHoygjtIPfDUoK9NthrlZsQSKjZXlmji2TrBUAVbiH0LQ==",
+      "files": [
+        {
+          "path": "licenses/animejs/LICENSE.md",
+          "sha256": "f825f5c75974fda9ae806de442770f3d7686cf86245e78fa0c3c39913184af95"
+        },
+        {
+          "path": "libraries/anime.min.js",
+          "sha256": "b5ce1be3c3f530f192e0f2571d1942846096d66119cbada34bfdc912c4873f35"
+        }
+      ]
+    },
+    {
+      "name": "motion",
+      "version": "10.18.0",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/motion/-/motion-10.18.0.tgz",
+      "integrity": "sha512-MVAZZmwM/cp77BrNe1TxTMldxRPjwBNHheU5aPToqT4rJdZxLiADk58H+a0al5jKLxkB0OdgNq6DiVn11cjvIQ==",
+      "files": [
+        {
+          "path": "licenses/motion/LICENSE",
+          "sha256": "034f2ad4e7743fd60158036b61553182b1510731abff3a6920f70d7e8975b8d5"
+        },
+        {
+          "path": "libraries/motion.min.js",
+          "sha256": "f850f9428bf40bdb140a37225af409224f1cb8f2b7eb3d7e4e9f82888e3b2b6e"
+        }
+      ]
+    },
+    {
+      "name": "p5",
+      "version": "1.9.4",
+      "license": "LGPL-2.1",
+      "tarball": "https://registry.npmjs.org/p5/-/p5-1.9.4.tgz",
+      "integrity": "sha512-dhiZ9mvXx5pm8eRwml34xbeUwce4uS9Q2za0YOHg2p97N9iNAb5hTIHAt77CHKHXAh6A16u/oalz5egRfTyFWw==",
+      "files": [
+        {
+          "path": "licenses/p5/license.txt",
+          "sha256": "eb2f25f8f165d5f20682c1ce7e99ce69144ecfd80fbed8c17dfd327ecd8b6cb6"
+        },
+        {
+          "path": "libraries/p5.min.js",
+          "sha256": "00a532c56e785c68d7c7bb6f9a084e2c856b71527f22c3260aff4a2f582d80c9"
+        }
+      ]
+    },
+    {
+      "name": "roughjs",
+      "version": "4.6.6",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/roughjs/-/roughjs-4.6.6.tgz",
+      "integrity": "sha512-ZUz/69+SYpFN/g/lUlo2FXcIjRkSu3nDarreVdGGndHEBJ6cXPdKguS8JGxwj5HA5xIbVKSmLgr5b3AWxtRfvQ==",
+      "files": [
+        {
+          "path": "licenses/roughjs/LICENSE",
+          "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d"
+        },
+        {
+          "path": "libraries/rough.js",
+          "sha256": "6853af8619532f3939b156cd16824d2e14f31e71d3df306ad5558eeafacab194"
+        }
+      ]
+    },
+    {
+      "name": "matter-js",
+      "version": "0.20.0",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/matter-js/-/matter-js-0.20.0.tgz",
+      "integrity": "sha512-iC9fYR7zVT3HppNnsFsp9XOoQdQN2tUyfaKg4CHLH8bN+j6GT4Gw7IH2rP0tflAebrHFw730RR3DkVSZRX8hwA==",
+      "files": [
+        {
+          "path": "licenses/matter-js/LICENSE",
+          "sha256": "ed182087be5b26734aa6d4789743de3a97417950e8c1e3ff2e3d19c6462720d3"
+        },
+        {
+          "path": "libraries/matter.min.js",
+          "sha256": "72d30be0f579eb02ce1e0b6f9d359a4f392e6837e5a26ba8be5dbee7f88e24ae"
+        }
+      ]
+    },
+    {
+      "name": "chroma-js",
+      "version": "2.4.2",
+      "license": "(BSD-3-Clause AND Apache-2.0)",
+      "tarball": "https://registry.npmjs.org/chroma-js/-/chroma-js-2.4.2.tgz",
+      "integrity": "sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==",
+      "files": [
+        {
+          "path": "licenses/chroma-js/LICENSE",
+          "sha256": "c266032eef15ef0c01e7b0cca314b2944399d357f18d591e6ca72699d667cd23"
+        },
+        {
+          "path": "libraries/chroma.min.js",
+          "sha256": "a19aa0df3b7974028724b2666d8311a226acedc65a90947c7bc56eecb9a367ad"
+        }
+      ]
+    },
+    {
+      "name": "open-props",
+      "version": "1.7.16",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/open-props/-/open-props-1.7.16.tgz",
+      "integrity": "sha512-9dGv6wtah34stwweJytNEcCB0NG9HeV9wVsyr7Bs8RkKgrx2v0qIRi+9LQa5569nPbOpCOFF5nOxCPdKw30RAA==",
+      "files": [
+        {
+          "path": "licenses/open-props/LICENSE",
+          "sha256": "fed3aa342094f6bb33701d09133c159a4c124e509ede255a889dd2c28ec3ab6e"
+        },
+        {
+          "path": "libraries/open-props.min.css",
+          "sha256": "fba240185b1c35dc65aee53d98159a0efff7349bcd76d0656ccaae5fe01b8309"
+        }
+      ]
+    },
+    {
+      "name": "animate.css",
+      "version": "4.1.1",
+      "license": "MIT",
+      "tarball": "https://registry.npmjs.org/animate.css/-/animate.css-4.1.1.tgz",
+      "integrity": "sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==",
+      "files": [
+        {
+          "path": "licenses/animate.css/LICENSE",
+          "sha256": "aa4b4f6ba47ac6a4b3443615b5a18576d4d28ad8b3da8b4cb8cb2bd28fdd54b2"
+        },
+        {
+          "path": "libraries/animate.min.css",
+          "sha256": "5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f"
+        }
+      ]
+    }
+  ]
+}

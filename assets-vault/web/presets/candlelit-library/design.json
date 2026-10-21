@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "pack": "candlelit-library",
+  "style": "dark-academia",
+  "layout": "scholar-folio",
+  "effects": {
+    "noise-film": {
+      "opacity": 0.055
+    },
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    },
+    "scroll-progress": {}
+  },
+  "copy": {
+    "title": "For the love of knowing.",
+    "eyebrow": "THE COMMONPLACE / VOLUME I",
+    "description": "Essays, observations and the quiet pleasure of following an idea a little further."
+  }
+}

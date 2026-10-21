@@ -1,0 +1,10 @@
+<svg viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg">
+  <path d="M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78 C84 68 110 68 128 74 V12
+           C110 6 84 6 70 16Z" fill="currentColor" opacity=".25"/>
+  <path d="M70 16 V78 M70 16 C56 6 30 6 12 12 V74 C30 68 56 68 70 78
+           M70 16 C84 6 110 6 128 12 V74 C110 68 84 68 70 78"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M24 26 C38 22 54 23 62 28 M24 40 C38 36 54 37 62 42
+           M78 28 C86 23 102 22 116 26 M78 42 C86 37 102 36 116 40"
+        fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+</svg>

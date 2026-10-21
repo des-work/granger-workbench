@@ -1,0 +1,3 @@
+-r requirements.txt
+-r requirements-pcstudio.txt
+pytest>=8

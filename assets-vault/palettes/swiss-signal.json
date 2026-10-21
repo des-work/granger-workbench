@@ -1,0 +1,23 @@
+{
+  "id": "swiss-signal",
+  "style": "swiss-international",
+  "name": "Swiss \u2014 Signal Red",
+  "tags": [
+    "swiss",
+    "grid",
+    "helvetica",
+    "red",
+    "objective",
+    "modernist"
+  ],
+  "colors": [
+    "#ffffff",
+    "#f2f2f2",
+    "#d9d9d9",
+    "#595959",
+    "#111111",
+    "#d0021b",
+    "#0a4d8c"
+  ],
+  "notes": "White field, black ink, one signal red. Color is information, never decoration \u2014 if red appears twice it means two things."
+}

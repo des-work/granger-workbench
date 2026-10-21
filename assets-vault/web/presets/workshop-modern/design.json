@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "pack": "workshop-modern",
+  "style": "bauhaus",
+  "layout": "geometric-poster",
+  "effects": {
+    "reveal-stagger": {
+      "distance": 28,
+      "duration": 650,
+      "stagger": 100
+    }
+  },
+  "copy": {
+    "title": "Form follows making.",
+    "eyebrow": "WORKSHOP / FORM + MATERIAL",
+    "description": "A practical study of colour, construction and useful objects. Learn by making."
+  }
+}

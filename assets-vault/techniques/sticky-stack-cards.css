@@ -1,0 +1,6 @@
+/* sticky-stack-cards — Cards that pin and stack under each other as you scroll (the 'deck' effect).  [layout] */
+.stack { display: grid; gap: 2rem; }
+.stack .card {
+  position: sticky; top: 6vh; min-height: 70vh; border-radius: 22px;
+}
+/* each successive card scrolls up and pins over the previous one */

@@ -1,0 +1,10 @@
+/* blob-morph — Organic blob that slowly morphs — great as a decorative mask/backdrop.  [shape] */
+.blob {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  animation: blob 8s ease-in-out infinite;
+}
+@keyframes blob {
+  0%,100% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+  33% { border-radius: 70% 30% 46% 54% / 30% 60% 40% 70%; }
+  66% { border-radius: 34% 66% 60% 40% / 65% 35% 60% 40%; }
+}

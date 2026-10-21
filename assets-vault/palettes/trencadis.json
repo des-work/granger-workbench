@@ -1,0 +1,23 @@
+{
+  "id": "trencadis",
+  "style": "mosaic",
+  "name": "Mosaic \u2014 Trencad\u00eds",
+  "tags": [
+    "mosaic",
+    "terrazzo",
+    "tile",
+    "gaudi",
+    "stained-glass",
+    "fragments"
+  ],
+  "colors": [
+    "#f1ece0",
+    "#16697a",
+    "#a8442c",
+    "#d9a441",
+    "#4a7c59",
+    "#6f6a5b",
+    "#2b2721"
+  ],
+  "notes": "Glazed-tile fragments on plaster: teal, terracotta, ochre, moss with warm grout. Broken-then-recomposed \u2014 every surface is a field of chips."
+}

@@ -1,0 +1,8 @@
+/* view-transitions — Smooth morphing transitions between DOM states (View Transitions API).  [motion] */
+/* CSS */
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .45s; }
+.hero-img { view-transition-name: hero; }   /* shared element morph */
+/* JS */
+if (document.startViewTransition) {
+  document.startViewTransition(() => updateTheDOM());
+} else { updateTheDOM(); }

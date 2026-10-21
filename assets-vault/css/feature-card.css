@@ -1,0 +1,20 @@
+/* feature-card — Lifting feature card with an accent icon chip. Uses your tokens.  [style: neutral] */
+.feature {
+  padding: 1.5rem;
+  border-radius: var(--radius, 16px);
+  background: var(--surface, #fff);
+  background-image: var(--sheen, none);
+  border: var(--border-width, 1px) solid var(--border, #e5e7eb);
+  transition: transform var(--dur, 200ms) var(--ease, ease),
+              box-shadow var(--dur, 200ms) var(--ease, ease);
+}
+.feature:hover {
+  transform: translateY(calc(var(--travel, 8px) * -0.5));
+  box-shadow: var(--shadow, none);
+}
+.feature .icon {
+  width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: calc(var(--radius, 16px) * 0.75);
+  background: color-mix(in srgb, var(--accent, #2b8fd6) 15%, transparent);
+  color: var(--accent, #2b8fd6); margin-bottom: 0.8rem;
+}

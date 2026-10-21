@@ -1,0 +1,17 @@
+<!-- dashboard — Topbar + sidebar + content metric grid — full admin shell.  (best for: admin panels, analytics, back-office) -->
+<style>
+  .l-dash { display: grid; grid-template-columns: 220px 1fr; grid-template-rows: 56px 1fr;
+            min-height: 100vh; }
+  .l-dash .top { grid-column: 1 / -1; display:flex; align-items:center; padding:0 1.25rem;
+                 background: var(--surface,#1e293b); border-bottom:1px solid var(--border,#334155); }
+  .l-dash .side { background: var(--bg2,#0f172a); padding:1rem; }
+  .l-dash .main { padding:1.5rem; display:grid; gap:1rem;
+                  grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); align-content:start; }
+  .l-dash .stat { background: var(--surface,#1e293b); border-radius:12px; padding:1.1rem; }
+  @media (max-width:720px){ .l-dash{ grid-template-columns:1fr } .l-dash .side{ display:none } }
+</style>
+<div class="l-dash">
+  <header class="top"><strong>Dashboard</strong></header>
+  <aside class="side">Nav</aside>
+  <main class="main"><div class="stat">12.4k</div><div class="stat">98%</div><div class="stat">$3.2k</div></main>
+</div>
